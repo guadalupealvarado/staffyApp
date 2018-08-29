@@ -10,7 +10,7 @@ public class TimeLapsedNotification {
     public String getNotificationDate(String DateNotification) throws ParseException {
         Calendar calendar = new GregorianCalendar();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd H:m");
-
+        //
         //Obtenemos los valores del Dia,Mes y Año en curso
         String Day = Integer.toString(calendar.get(Calendar.DATE));
         String Month = Integer.toString(calendar.get(Calendar.MONTH) + 1);
