@@ -37,7 +37,7 @@ public class AdapterExpert extends RecyclerView.Adapter<AdapterExpert.ExpertView
                 false);
 
         spinner =(Spinner)view.findViewById(R.id.spinnertipo);
-        adapter= ArrayAdapter.createFromResource(view.getContext(),R.array.perfil_s3tring,
+        adapter= ArrayAdapter.createFromResource(view.getContext(),R.array.perfil_string,
                 android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
