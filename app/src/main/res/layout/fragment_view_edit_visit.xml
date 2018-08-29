@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.visits.editVisit.EditVisitView">
+
+    <include
+        android:id="@+id/toolbar_details_requi"
+        layout="@layout/actionbar_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_details_requi">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/contener_see_visit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/redondvx"
+            android:elevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_see_visit"
+                android:layout_width="@dimen/with_img_profile"
+                android:layout_height="@dimen/height_img_profile"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_picture_resource"
+                app:border_color="@android:color/white"
+                app:border_width="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name_see_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/example_name_profile"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_see_visit" />
+
+            <TextView
+                android:id="@+id/tv_email_see_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="m_btncourt@correo.com.mx "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_see_visit" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/srollPerfilDetailsPurse"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_email_see_visit">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginRight="8dp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/back_button_perfil"
+                        android:text="Sr. java"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="1dp"
+
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_button_perfil"
+
+                        android:text="PHP"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="1dp"
+
+
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_button_perfil"
+
+
+                        android:text="Android"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="66dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="1dp"
+
+
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_button_perfil"
+
+                        android:text="+2"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryDark" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/tv_date_and_hour_see_visit"
+                style="@style/text_orange_view_assessments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Programar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/srollPerfilDetailsPurse" />
+
+
+            <TextView
+                android:id="@+id/textView94"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                app:layout_constraintBottom_toBottomOf="@+id/textView95"
+                app:layout_constraintStart_toStartOf="@+id/tv_date_and_hour_see_visit"
+                app:layout_constraintTop_toTopOf="@+id/textView95" />
+
+            <EditText
+                android:id="@+id/editText16"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/redondvx"
+                android:drawableRight="@drawable/ic_calendar"
+                android:elevation="1dp"
+                android:hint="dd/mm/aaaa"
+                android:inputType="date"
+                android:text="@string/example_data_evaluation"
+                app:layout_constraintEnd_toStartOf="@+id/guideline30"
+                app:layout_constraintStart_toStartOf="@+id/textView94"
+                app:layout_constraintTop_toBottomOf="@+id/textView94" />
+
+            <TextView
+                android:id="@+id/textView95"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Hora"
+                app:layout_constraintEnd_toEndOf="@+id/editText15"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline30"
+                app:layout_constraintTop_toBottomOf="@+id/tv_date_and_hour_see_visit" />
+
+            <EditText
+                android:id="@+id/editText17"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/redondvx"
+                android:drawableRight="@drawable/ic_clock"
+                android:elevation="1dp"
+                android:hint="00:00"
+                android:inputType="textPersonName|time"
+                android:text="@string/example_hours_evaluation"
+                app:layout_constraintEnd_toEndOf="@+id/tv_date_and_hour_see_visit"
+                app:layout_constraintStart_toEndOf="@+id/editText16"
+                app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/tv_address_new_visit"
+                style="@style/text_register_evaluation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/text_address_see_visit"
+                app:layout_constraintEnd_toEndOf="@+id/editText17"
+                app:layout_constraintStart_toStartOf="@+id/editText16"
+                app:layout_constraintTop_toBottomOf="@+id/editText16" />
+
+            <EditText
+                android:id="@+id/et_address_new_visit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_et"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:elevation="1dp"
+                android:inputType="textPersonName"
+                android:text="@string/example_addres_see_visit"
+                app:layout_constraintEnd_toEndOf="@+id/tv_address_new_visit"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_address_new_visit"
+                app:layout_constraintTop_toBottomOf="@+id/tv_address_new_visit" />
+
+            <TextView
+                android:id="@+id/tv_text_new_visit"
+                style="@style/text_register_evaluation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/text_msg_see_visit"
+                app:layout_constraintEnd_toEndOf="@+id/et_address_new_visit"
+                app:layout_constraintStart_toStartOf="@+id/et_address_new_visit"
+                app:layout_constraintTop_toBottomOf="@+id/et_address_new_visit" />
+
+            <EditText
+                android:id="@+id/et_msg_new_visit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_et"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:elevation="1dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/example_msg_see_visit"
+                app:layout_constraintEnd_toEndOf="@+id/tv_text_new_visit"
+                app:layout_constraintStart_toStartOf="@+id/tv_text_new_visit"
+                app:layout_constraintTop_toBottomOf="@+id/tv_text_new_visit" />
+
+            <CheckBox
+                android:id="@+id/cb_notification_new_visit"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="@string/do_you_notification_gerent"
+                app:layout_constraintEnd_toEndOf="@+id/et_msg_new_visit"
+                app:layout_constraintHorizontal_bias="0.94"
+                app:layout_constraintStart_toStartOf="@+id/et_msg_new_visit"
+                app:layout_constraintTop_toBottomOf="@+id/et_msg_new_visit" />
+
+            <Button
+                android:id="@+id/btn_cancel_new_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/cancel"
+                android:theme="@style/RaisedButtonDarkCancel"
+                app:layout_constraintEnd_toStartOf="@+id/guideline30"
+                app:layout_constraintStart_toStartOf="@+id/et_msg_new_visit"
+                app:layout_constraintTop_toBottomOf="@+id/cb_notification_new_visit" />
+
+            <Button
+                android:id="@+id/btn_save_new_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/text_btn_to_acept"
+                android:theme="@style/RaisedButtonDark"
+                app:layout_constraintEnd_toEndOf="@+id/cb_notification_new_visit"
+                app:layout_constraintStart_toStartOf="@+id/guideline30"
+                app:layout_constraintTop_toBottomOf="@+id/cb_notification_new_visit" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
+

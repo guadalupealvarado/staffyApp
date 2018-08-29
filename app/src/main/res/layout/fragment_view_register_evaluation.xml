@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.evaluations.viewresourceAssessments.registerEvaluation.RegisterEvaluationView">
+
+    <include
+        android:id="@+id/toolbar_details_requi"
+        layout="@layout/actionbar_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_details_requi">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layouConstrainIndScrol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/tv_rango_register_evaluation"
+                style="@style/text_data_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Senior"
+                app:layout_constraintStart_toStartOf="@+id/tv_postulante_for_proyect_register_evaluation"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_profile_register_evaluation"
+                style="@style/text_data_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="JAVA"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_rango_register_evaluation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_rango_register_evaluation"
+                app:layout_constraintTop_toTopOf="@+id/tv_rango_register_evaluation" />
+
+            <TextView
+                android:id="@+id/tv_postulante_for_proyect_register_evaluation"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Postulante para el proyecto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rango_register_evaluation" />
+
+            <EditText
+                android:id="@+id/ed_proyect_register_evaluation"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:elevation="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_postulante_for_proyect_register_evaluation"
+                app:layout_constraintTop_toBottomOf="@+id/tv_postulante_for_proyect_register_evaluation" />
+
+            <TextView
+                android:id="@+id/tv_expert_register_evaluation"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Experto a realizar ﬁltro"
+                app:layout_constraintEnd_toEndOf="@+id/ed_proyect_register_evaluation"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/ed_proyect_register_evaluation"
+                app:layout_constraintTop_toBottomOf="@+id/ed_proyect_register_evaluation" />
+
+            <EditText
+                android:id="@+id/et_expert_register_evaluation"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:elevation="1dp"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/ed_proyect_register_evaluation"
+                app:layout_constraintStart_toStartOf="@+id/tv_expert_register_evaluation"
+                app:layout_constraintTop_toBottomOf="@+id/tv_expert_register_evaluation" />
+
+            <TextView
+                android:id="@+id/tv_data_init_register_evaluation"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Fecha de ﬁltro "
+                app:layout_constraintEnd_toStartOf="@+id/guideline21"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_expert_register_evaluation"
+
+                app:layout_constraintTop_toBottomOf="@+id/et_expert_register_evaluation" />
+
+            <EditText
+                android:id="@+id/ed_data_register_evaluation"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:drawableRight="@drawable/ic_calendar_new"
+                android:elevation="1dp"
+                android:hint="dd/mm/aaaa"
+                android:inputType="date"
+                app:layout_constraintEnd_toStartOf="@+id/guideline21"
+                app:layout_constraintStart_toStartOf="@+id/tv_data_init_register_evaluation"
+                app:layout_constraintTop_toBottomOf="@+id/tv_data_init_register_evaluation" />
+
+            <TextView
+                android:id="@+id/tv_hour_register_evaluation"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Hora"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_data_init_register_evaluation"
+                app:layout_constraintEnd_toEndOf="@+id/et_expert_register_evaluation"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline21"
+                app:layout_constraintTop_toTopOf="@+id/tv_data_init_register_evaluation" />
+
+            <EditText
+                android:id="@+id/ed_hours_register_evaluation"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:drawableRight="@drawable/ic_clock"
+                android:elevation="1dp"
+                android:hint="00:00"
+                android:inputType="textPersonName|time"
+                app:layout_constraintEnd_toEndOf="@+id/et_expert_register_evaluation"
+                app:layout_constraintStart_toStartOf="@+id/guideline21"
+                app:layout_constraintTop_toBottomOf="@+id/tv_hour_register_evaluation" />
+
+            <TextView
+                android:id="@+id/tv_result_register_evaluation"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Resultado"
+                app:layout_constraintEnd_toEndOf="@+id/ed_hours_register_evaluation"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/ed_data_register_evaluation"
+                app:layout_constraintTop_toBottomOf="@+id/ed_data_register_evaluation" />
+
+            <EditText
+                android:id="@+id/ed_result_register_evaluation"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:elevation="1dp"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/ed_hours_register_evaluation"
+                app:layout_constraintStart_toStartOf="@+id/tv_result_register_evaluation"
+                app:layout_constraintTop_toBottomOf="@+id/tv_result_register_evaluation" />
+
+            <TextView
+                android:id="@+id/tv_observ_register_evaluation"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Observaciones"
+                app:layout_constraintEnd_toEndOf="@+id/ed_result_register_evaluation"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/ed_result_register_evaluation"
+                app:layout_constraintTop_toBottomOf="@+id/ed_result_register_evaluation" />
+
+            <EditText
+                android:id="@+id/et_observ_register_evaluation"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:elevation="1dp"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/ed_result_register_evaluation"
+                app:layout_constraintStart_toStartOf="@+id/tv_observ_register_evaluation"
+                app:layout_constraintTop_toBottomOf="@+id/tv_observ_register_evaluation" />
+
+            <Button
+                android:id="@+id/btn_cancel_register_evaluation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Cancelar"
+                android:theme="@style/RaisedButtonDarkCancel"
+                app:layout_constraintEnd_toStartOf="@+id/guideline21"
+                app:layout_constraintStart_toStartOf="@+id/et_observ_register_evaluation"
+                app:layout_constraintTop_toBottomOf="@+id/et_observ_register_evaluation" />
+
+            <Button
+                android:id="@+id/btn_to_acept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Aceptar"
+                android:theme="@style/RaisedButtonDark"
+                app:layout_constraintEnd_toEndOf="@+id/et_observ_register_evaluation"
+                app:layout_constraintStart_toStartOf="@+id/guideline21"
+                app:layout_constraintTop_toBottomOf="@+id/et_observ_register_evaluation" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

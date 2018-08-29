@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.purse.showPurse.toosResource.ToosResourceView">
+
+    <include
+        android:id="@+id/include13"
+        layout="@layout/actionbar_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include13">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/contener_shoow_tool_resource"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/redondvx"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include13">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile_tools"
+                android:layout_width="@dimen/with_img_profile"
+                android:layout_height="@dimen/height_img_profile"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_picture_resource"
+                app:border_color="@android:color/white"
+                app:border_width="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name_resource_tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/example_name_profile"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_profile_tools" />
+
+            <TextView
+                android:id="@+id/tv_view_tools_tools"
+                style="@style/text_orange_data_format"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_tools_tools"
+                app:layout_constraintEnd_toStartOf="@+id/guideline29"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_resource_tools" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/tv_view_id_tools"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/text_id_tools"
+                app:layout_constraintEnd_toEndOf="@+id/tv_view_tools_tools"
+                app:layout_constraintStart_toStartOf="@+id/tv_view_tools_tools"
+                app:layout_constraintTop_toBottomOf="@+id/tv_view_tools_tools" />
+
+            <TextView
+                android:id="@+id/tv_view_notbook_tools"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/text_notbook_tools"
+                app:layout_constraintEnd_toEndOf="@+id/tv_view_computer_tools"
+                app:layout_constraintHorizontal_bias="0.422"
+                app:layout_constraintStart_toStartOf="@+id/tv_view_computer_tools"
+                app:layout_constraintTop_toBottomOf="@+id/tv_view_computer_tools" />
+
+            <TextView
+                android:id="@+id/tv_view_mail_tools"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/text_mail_tools"
+                app:layout_constraintEnd_toEndOf="@+id/tv_view_id_tools"
+                app:layout_constraintStart_toStartOf="@+id/tv_view_id_tools"
+                app:layout_constraintTop_toBottomOf="@+id/tv_view_id_tools" />
+
+            <TextView
+                android:id="@+id/tv_view_computer_tools"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/text_computer_tools"
+                app:layout_constraintEnd_toEndOf="@+id/tv_view_mail_tools"
+                app:layout_constraintStart_toStartOf="@+id/tv_view_mail_tools"
+                app:layout_constraintTop_toBottomOf="@+id/tv_view_mail_tools" />
+
+            <TextView
+                android:id="@+id/tv_id_tools"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/example_id_tools"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="@+id/guideline29"
+                app:layout_constraintTop_toTopOf="@+id/tv_view_id_tools" />
+
+            <TextView
+                android:id="@+id/tv_mail_tools"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/example_mail_tools"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tv_id_tools"
+                app:layout_constraintStart_toStartOf="@+id/tv_id_tools"
+                app:layout_constraintTop_toTopOf="@+id/tv_view_mail_tools" />
+
+            <TextView
+                android:id="@+id/tv_computer_tools"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/example_computer_tools"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tv_mail_tools"
+                app:layout_constraintStart_toStartOf="@+id/tv_mail_tools"
+                app:layout_constraintTop_toTopOf="@+id/tv_view_computer_tools" />
+
+            <TextView
+                android:id="@+id/tv_notbook_tools"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/exmaple_notbook_tools"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tv_computer_tools"
+                app:layout_constraintStart_toStartOf="@+id/tv_computer_tools"
+                app:layout_constraintTop_toBottomOf="@+id/tv_view_computer_tools" />
+
+            <TextView
+                android:id="@+id/tv_view_description_tools"
+                style="@style/text_orange_data_format"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_description_tools"
+                app:layout_constraintEnd_toEndOf="@+id/tv_view_notbook_tools"
+                app:layout_constraintStart_toStartOf="@+id/tv_view_notbook_tools"
+                app:layout_constraintTop_toBottomOf="@+id/tv_view_notbook_tools" />
+
+            <TextView
+                android:id="@+id/tv_description_tools"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/exmaple_description_tools"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_view_description_tools"
+                app:layout_constraintTop_toBottomOf="@+id/tv_view_description_tools" />
+
+            <TextView
+                android:id="@+id/tv_view_mails_tools"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/text_mail_tools"
+                app:layout_constraintEnd_toStartOf="@+id/guideline29"
+                app:layout_constraintStart_toStartOf="@+id/tv_description_tools"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description_tools" />
+
+            <EditText
+                android:id="@+id/et_email_send_tools"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/text"
+                android:background="@drawable/redondvx"
+                android:drawableRight="@drawable/ic_add_mail"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/tv_description_tools"
+                app:layout_constraintStart_toStartOf="@+id/tv_view_mails_tools"
+                app:layout_constraintTop_toBottomOf="@+id/tv_view_mails_tools" />
+
+            <Button
+                android:id="@+id/btn_send_tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/send"
+                android:theme="@style/RaisedButtonOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline29"
+                app:layout_constraintTop_toBottomOf="@+id/et_email_send_tools" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/text_btn_cancel"
+                android:theme="@style/RaisedButtonOrange"
+                app:layout_constraintEnd_toStartOf="@+id/guideline29"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_send_tools" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

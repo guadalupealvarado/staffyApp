@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="colorPrimary">#ff6309</color>
+        <color name="colorPrimaryDark">#0c2e82</color>
+        <color name="colorAccent">#e2dddd</color>
+        <color name="colorLabels">#0c2e82</color>
+    <color name="title_start">@android:color/holo_red_dark</color>
+    <color name="title_starting">#AFD063</color>
+    <color name="title_started">#7380B0</color>
+    <color name="color_title">#080808</color>
+    <color name="fondo">#fffefe</color>
+    <color name="obser">#5267d2</color>
+
+    <color name="fond_backgorund_poup">#F2F2F2</color>
+    <color name="text_backgorund_poup">#BDBDBD</color>
+    </resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/actionbar_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:accessibilityLiveRegion="none"
+        android:background="@drawable/redondvx"
+        android:elevation="3dp"
+        android:maxHeight="10dp"
+        android:minHeight="10dp"
+        android:minWidth="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imgLogoViewRequi"
+            android:layout_width="@dimen/width_img_logo"
+            android:layout_height="@dimen/height_img_logo"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_cocacola" />
+
+        <TextView
+            android:id="@+id/txv_view_proyect_requi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Cliente"
+            style="@style/TextViewTitleGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgLogoViewRequi"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/idtxtDetailsNameClient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:text="TextView"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgLogoViewRequi"
+            app:layout_constraintTop_toBottomOf="@+id/txv_view_proyect_requi" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Dirección 1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogoViewRequi" />
+
+        <TextView
+            android:id="@+id/idtxtDetailsDelegacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="...Delegacion"
+            android:textSize="17sp"
+            android:typeface="sans"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/idtxtDetailsCalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="..Calle"
+            android:textSize="17sp"
+            android:typeface="sans"
+            app:layout_constraintStart_toStartOf="@+id/idtxtDetailsDelegacion"
+            app:layout_constraintTop_toBottomOf="@+id/idtxtDetailsDelegacion" />
+
+        <TextView
+            android:id="@+id/idtxtDetailsEstado"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="4dp"
+            android:text="...Estado"
+            android:textSize="17sp"
+            android:typeface="sans"
+            app:layout_constraintEnd_toEndOf="@+id/textView17"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/idtxtDetailsDelegacion"
+            app:layout_constraintTop_toTopOf="@+id/idtxtDetailsDelegacion" />
+
+        <TextView
+            android:id="@+id/idtxtDetailsNumero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="..numero"
+            android:textSize="17sp"
+            android:typeface="sans"
+            app:layout_constraintEnd_toEndOf="@+id/idtxtDetailsEstado"
+            app:layout_constraintStart_toEndOf="@+id/idtxtDetailsCalle"
+            app:layout_constraintTop_toTopOf="@+id/idtxtDetailsCalle" />
+
+        <TextView
+            android:id="@+id/idtxtDetailsColonia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="...Colonia"
+            android:textSize="17sp"
+            android:typeface="sans"
+            app:layout_constraintEnd_toEndOf="@+id/idtxtDetailsNumero"
+            app:layout_constraintStart_toStartOf="@+id/idtxtDetailsCalle"
+            app:layout_constraintTop_toBottomOf="@+id/idtxtDetailsNumero" />
+
+        <TextView
+            android:id="@+id/idtxtDetailsCPText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="C.P. "
+            android:textSize="17sp"
+            android:typeface="sans"
+            app:layout_constraintStart_toStartOf="@+id/idtxtDetailsColonia"
+            app:layout_constraintTop_toBottomOf="@+id/idtxtDetailsColonia" />
+
+        <TextView
+            android:id="@+id/idtxtDetailsCP"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="4dp"
+            android:text="...TextView"
+            android:textSize="17sp"
+            android:typeface="sans"
+            app:layout_constraintEnd_toEndOf="@+id/idtxtDetailsNumero"
+            app:layout_constraintStart_toEndOf="@+id/idtxtDetailsCPText"
+            app:layout_constraintTop_toTopOf="@+id/idtxtDetailsCPText" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="@+id/idtxtDetailsCP"
+            app:layout_constraintStart_toStartOf="@+id/idtxtDetailsCPText"
+            app:layout_constraintTop_toBottomOf="@+id/idtxtDetailsCPText" />
+
+        <Button
+            android:id="@+id/btnModificarClient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/colorLabels"
+            android:background="@android:color/white"
+            android:text="Modificar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <Button
+            android:id="@+id/btn_add_proyect_details_client"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/colorLabels"
+            android:background="@android:color/white"
+            android:text="@string/title_addproyec"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnModificarClient" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

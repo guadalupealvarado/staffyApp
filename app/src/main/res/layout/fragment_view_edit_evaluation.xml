@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/white"
+tools:context=".ui.evaluations.viewresourceAssessments.editEvaluationResource.EditEvaluationView">
+
+    <include
+        android:id="@+id/include15"
+        layout="@layout/actionbar_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include15">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layouConstrainIndScrol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/textView90"
+                style="@style/text_data_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:text="Senior"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView91"
+                style="@style/text_data_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="JAVA"
+                app:layout_constraintBottom_toBottomOf="@+id/textView90"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView90"
+                app:layout_constraintTop_toTopOf="@+id/textView90" />
+
+            <TextView
+                android:id="@+id/textView92"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Postulante para el proyecto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+            <EditText
+                android:id="@+id/editText14"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:elevation="1dp"
+                android:text="@string/example_name_resource_evaluation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView92"
+                app:layout_constraintTop_toBottomOf="@+id/textView92" />
+
+            <TextView
+                android:id="@+id/textView93"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Experto a realizar ﬁltro"
+                app:layout_constraintEnd_toEndOf="@+id/editText14"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editText14"
+                app:layout_constraintTop_toBottomOf="@+id/editText14" />
+
+            <EditText
+                android:id="@+id/editText15"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:elevation="1dp"
+                android:inputType="textPersonName"
+                android:text="@string/example_name_expert_evaluation"
+                app:layout_constraintEnd_toEndOf="@+id/editText14"
+                app:layout_constraintStart_toStartOf="@+id/textView93"
+                app:layout_constraintTop_toBottomOf="@+id/textView93" />
+
+            <TextView
+                android:id="@+id/textView94"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Fecha de ﬁltro "
+                app:layout_constraintEnd_toStartOf="@+id/guideline21"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editText15"
+
+                app:layout_constraintTop_toBottomOf="@+id/editText15" />
+
+            <EditText
+                android:id="@+id/editText16"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:drawableRight="@drawable/ic_calendar_new"
+                android:elevation="1dp"
+                android:hint="dd/mm/aaaa"
+                android:inputType="date"
+                android:text="@string/example_data_evaluation"
+                app:layout_constraintEnd_toStartOf="@+id/guideline21"
+                app:layout_constraintStart_toStartOf="@+id/textView94"
+                app:layout_constraintTop_toBottomOf="@+id/textView94" />
+
+            <TextView
+                android:id="@+id/textView95"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Hora"
+                app:layout_constraintBottom_toBottomOf="@+id/textView94"
+                app:layout_constraintEnd_toEndOf="@+id/editText15"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline21"
+                app:layout_constraintTop_toTopOf="@+id/textView94" />
+
+            <EditText
+                android:id="@+id/editText17"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:drawableRight="@drawable/ic_clock"
+                android:elevation="1dp"
+                android:hint="00:00"
+                android:inputType="textPersonName|time"
+                android:text="@string/example_hours_evaluation"
+                app:layout_constraintEnd_toEndOf="@+id/editText15"
+                app:layout_constraintStart_toStartOf="@+id/guideline21"
+                app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+            <TextView
+                android:id="@+id/textView96"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Resultado"
+                app:layout_constraintEnd_toEndOf="@+id/editText17"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editText16"
+                app:layout_constraintTop_toBottomOf="@+id/editText16" />
+
+            <EditText
+                android:id="@+id/editText18"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:elevation="1dp"
+                android:inputType="textPersonName"
+                android:text="@string/example_result_evaluation"
+                app:layout_constraintEnd_toEndOf="@+id/editText17"
+                app:layout_constraintStart_toStartOf="@+id/textView96"
+                app:layout_constraintTop_toBottomOf="@+id/textView96" />
+
+            <TextView
+                android:id="@+id/textView97"
+                style="@style/text_register_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Observaciones"
+                app:layout_constraintEnd_toEndOf="@+id/editText18"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editText18"
+                app:layout_constraintTop_toBottomOf="@+id/editText18" />
+
+            <EditText
+                android:id="@+id/ed_observation_fragment_show_entrevi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/redondvx"
+                android:elevation="1dp"
+                android:inputType="textPersonName"
+                android:text="@string/example_obs_evaluation"
+                app:layout_constraintEnd_toEndOf="@+id/editText18"
+                app:layout_constraintStart_toStartOf="@+id/textView97"
+                app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Cancelar"
+                android:theme="@style/RaisedButtonDarkCancel"
+                app:layout_constraintEnd_toStartOf="@+id/guideline21"
+                app:layout_constraintStart_toStartOf="@+id/ed_observation_fragment_show_entrevi"
+                app:layout_constraintTop_toBottomOf="@+id/ed_observation_fragment_show_entrevi" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Aceptar"
+                android:theme="@style/RaisedButtonDark"
+                app:layout_constraintEnd_toEndOf="@+id/ed_observation_fragment_show_entrevi"
+                app:layout_constraintStart_toStartOf="@+id/guideline21"
+                app:layout_constraintTop_toBottomOf="@+id/ed_observation_fragment_show_entrevi" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

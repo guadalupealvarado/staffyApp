@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.purse.showPurse.detailsPurse.DetailsPurseView">
+
+    <include
+        android:id="@+id/tool_bar_details_resource"
+        layout="@layout/actionbar_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar_details_resource"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraintLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/redondvx"
+                    android:elevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_profile_details_fracment_postulant"
+                        android:layout_width="@dimen/with_img_profile"
+                        android:layout_height="@dimen/height_img_profile"
+
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/ic_picture_resource"
+                        app:border_color="@android:color/white"
+                        app:border_width="2dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_name_view_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Miguel Betancourt Cravioto "
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/img_profile_details_fracment_postulant" />
+
+                    <TextView
+                        android:id="@+id/tv_email_view_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="m_btncourt@correo.com.mx "
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_name_view_profile" />
+
+                    <TextView
+                        android:id="@+id/txtPerfilDetailsPurse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Senior Java "
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_email_view_profile" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/srollPerfilDetailsPurse"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:scrollbars="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtPerfilDetailsPurse">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button5"
+                                android:layout_width="73dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginEnd="1dp"
+                                android:layout_marginRight="8dp"
+
+                                android:layout_weight="1"
+                                android:background="@drawable/back_button_perfil"
+                                android:text="Sr. java"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <Button
+                                android:id="@+id/button6"
+                                android:layout_width="72dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginEnd="1dp"
+
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/back_button_perfil"
+
+                                android:text="PHP"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <Button
+                                android:id="@+id/button8"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginEnd="1dp"
+
+
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/back_button_perfil"
+
+
+                                android:text="Android"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <Button
+                                android:id="@+id/button7"
+                                android:layout_width="66dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginEnd="1dp"
+
+
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/back_button_perfil"
+
+
+                                android:text="+2"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorPrimaryDark" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/tx_view_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="24dp"
+                        android:text="Teléfono"
+                        app:layout_constraintStart_toStartOf="@+id/srollPerfilDetailsPurse"
+                        app:layout_constraintTop_toBottomOf="@+id/srollPerfilDetailsPurse" />
+
+                    <TextView
+                        android:id="@+id/txtViewRefPhoneDetailsPurse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Referencia tel"
+                        app:layout_constraintStart_toStartOf="@+id/tx_view_phone"
+                        app:layout_constraintTop_toBottomOf="@+id/tx_view_phone" />
+
+                    <TextView
+                        android:id="@+id/txtViewDateNacPurse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Fecha de nacimiento"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/txtViewRefPhoneDetailsPurse"
+                        app:layout_constraintTop_toBottomOf="@+id/txtViewRefPhoneDetailsPurse" />
+
+                    <TextView
+                        android:id="@+id/txtPhoneDetailsPurse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="55 1132 3512 "
+                        android:textColor="@android:color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/tx_view_phone"
+                        app:layout_constraintEnd_toEndOf="@+id/srollPerfilDetailsPurse"
+                        app:layout_constraintStart_toStartOf="@+id/txtRefPhoneDetailsPurse"
+                        app:layout_constraintTop_toTopOf="@+id/tx_view_phone" />
+
+                    <TextView
+                        android:id="@+id/txtDateNacPurse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:text="15/12/1996"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtViewDateNacPurse"
+                        app:layout_constraintEnd_toEndOf="@+id/srollPerfilDetailsPurse"
+                        app:layout_constraintStart_toEndOf="@+id/txtViewDateNacPurse" />
+
+                    <TextView
+                        android:id="@+id/txtRefPhoneDetailsPurse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="55 9172 8363 "
+                        android:textColor="@android:color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtViewRefPhoneDetailsPurse"
+                        app:layout_constraintEnd_toEndOf="@+id/srollPerfilDetailsPurse"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/txtDateNacPurse"
+                        app:layout_constraintTop_toTopOf="@+id/txtViewRefPhoneDetailsPurse"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/btn_request"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_signo_mas"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraintLayout15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/redondvx"
+                    android:elevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+                    <TextView
+                        android:id="@+id/txtViewDisponibilidadPurse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Disponibilidad"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guideline18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+                    <TextView
+                        android:id="@+id/txtViewTittleReclutador"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Reclutador"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/txtViewDisponibilidadPurse"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+                    <TextView
+                        android:id="@+id/txtNameReclutador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Manuel Vázquez Toma"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/txtViewTittleReclutador"
+                        app:layout_constraintStart_toStartOf="@+id/txtViewTittleReclutador"
+                        app:layout_constraintTop_toBottomOf="@+id/txtViewTittleReclutador" />
+
+                    <TextView
+                        android:id="@+id/txtNumberReclutador"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="55 1898-3612 "
+                        app:layout_constraintEnd_toEndOf="@+id/txtViewTittleReclutador"
+                        app:layout_constraintStart_toStartOf="@+id/txtViewTittleReclutador"
+                        app:layout_constraintTop_toBottomOf="@+id/txtNameReclutador" />
+
+                    <TextView
+                        android:id="@+id/txtMailReclutador"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="vazquez_mt@correo.com.mx"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/txtNumberReclutador"
+                        app:layout_constraintStart_toStartOf="@+id/txtNumberReclutador"
+                        app:layout_constraintTop_toBottomOf="@+id/txtNumberReclutador" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                        app:layout_constraintStart_toStartOf="@+id/txtViewDisponibilidadPurse"
+                        app:layout_constraintTop_toBottomOf="@+id/txtViewDisponibilidadPurse">
+
+                        <TextView
+                            android:id="@+id/txtDayDisponibilidad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:text="10"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtMonthDisponibilidad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Junio"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/txtYearDisponibilidad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:text="2018"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/linearLayout5"
+                        app:layout_constraintEnd_toEndOf="@+id/txtViewDisponibilidadPurse"
+                        app:layout_constraintStart_toStartOf="@+id/guideline18"
+                        app:layout_constraintTop_toTopOf="@+id/linearLayout5"
+                        app:layout_constraintVertical_bias="0.6">
+
+                        <TextView
+                            android:id="@+id/textHorsDisponibilidad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="10"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewHorsDisponibilidad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Hrs." />
+
+                        <TextView
+                            android:id="@+id/textMinutsDisponibilidad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="30"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewMinutsDisponibilidad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Min." />
+                    </LinearLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

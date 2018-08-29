@@ -1,0 +1,355 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">staffy</string>
+    <!-- String de clients -->
+
+    <string name="titulo_apellidopaterno">Apellido paterno</string>
+    <string name="titulo_apellidomaterno">Apellido materno</string>
+    <string name="titulo_correo">Correo</string>
+    <string name="titulo_numerotelefonico">Numero Telefonico</string>
+    <string name="titulo_extencion">Extención</string>
+    <string name="titulo_nombree">Nombre</string>
+
+
+    <string-array name="Games">
+        <item>Selecciona</item>
+        <item>Posición 1 </item>
+        <item>Posición 2 </item>
+        <item>Posición 3 </item>
+
+
+    </string-array>
+
+    <string-array name="Games2">
+        <item>Selecciona</item>
+        <item>Posicin 1 </item>
+        <item>Posicin 2 </item>
+        <item>Posicin 3 </item>
+
+
+    </string-array>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="mail">Correo</string>
+
+
+    <string name="session">User</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="forget_your_password">¿Olvidaste tu contraseña?</string>
+    <string name="acept">Login</string>
+    <string name="send">Enviar</string>
+    <string name="error_input_login">Llena correctamente los campos</string>
+    <string name="aceptbtn">Aceptar</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="tab_activityM">Actividades</string>
+    <string name="tab_calendarM">Calendario</string>
+    <string name="send_email"> Se envió correo a:</string>
+    <string name="Perfil">Perfiles</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_referencia">referencia</string>
+    <string name="log_out_item">Cerrar sesión</string>
+    <string name="configuration_item">Configuración</string>
+    <string name="requests_item">Solicitudes</string>
+    <string name="purse_item">Cartera</string>
+    <string name="recruiter_item">Reclutador</string>
+    <string name="evaluators_praxis_item">Personal Praxis</string>
+    <string name="customers_item">Cliente</string>
+    <string name="draft_item">Proyecto</string>
+    <string name="nameCardNotification">Ivonne R.</string>
+    <string name="textTimeCardNotification">5 minutos</string>
+    <string name="textDescriptionCardNotification">Terminó la etapa de ?ltro para el proyecto sura servicios.</string>
+    <string name="txt_you_must_enter_an_email_msg">Debes escribir un mail</string>
+    <string name="the_mail_was_not_found_msg">El correo no fue encontrado.</string>
+
+
+    <string name="title_proyect">Proyectos</string>
+    <string name="title_start">Por iniciar</string>
+    <string name="title_starting">Iniciados</string>
+    <string name="title_started">Finalizados</string>
+    <string name="title_sura">Sura negocios</string>
+    <string name="title_telcel">Telcel</string>
+    <string name="title_mail">Escriba a</string>
+    <string name="addEmailHelp">Ingrese el correo</string>
+    <string name="sendMail">Enviar</string>
+    <string name="title_addproyec">Agregar proyecto</string>
+    <string name="title_sendto">Nombre del proyecto</string>
+    <string name="title_time_statar">Fecha inicial</string>
+    <string name="title_time_finish">Fecha final</string>
+    <string name="title_observation">Observaciones</string>
+    <string name="contac">Contacto</string>
+    <string name="direction">Dirección</string>
+    <string name="direction_option1">Dirección 1</string>
+    <string name="direction_option2">Dirección 2</string>
+    <string name="direction_street">Calle</string>
+    <string name="direction_number">Número</string>
+    <string name="direction_colony">Colonia</string>
+    <string name="direction_CP">C.P.</string>
+    <string name="direction_municipality">Municipio</string>
+    <string name="direction_state">Estado</string>
+    <string name="direction_streetSUB">Paseo de las lomas</string>
+    <string name="direction_numberSUB">23-A</string>
+    <string name="direction_colonySUB">Las lomas</string>
+    <string name="direction_CPSUB">30065</string>
+    <string name="direction_municipalitySUB">Las Lomas</string>
+    <string name="direction_stateSUB">Ciudad de México</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="show_requi">Ver requisición</string>
+    <string name="title_editproyect">Editar Proyecto</string>
+    <string name="option_direction">Estas son las direcciones registradas para el cliene.
+        Por favor selecciona la que corresponda al proyecto.</string>
+
+    <string name="open_sesion">Cerrar sesión</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel_sesion">Cancelar</string>
+    <string name="confirmation">¿Esta seguro que desea cerrar sesión?</string>
+    <string name="accept_close_sesion">¿Deseas cerrar sesión?""</string>
+    <string name="bye">Hasta pronto :D</string>
+    <string name="title_about">Acerca de Staffy :D</string>
+    <string name="title_purse">Cartera</string>
+    <string name="title_requests">Solicitudes</string>
+    <string name="description">Descripción</string>
+    <string name="status">Estatus</string>
+    <string name="fill">Vefifique este campo por favor</string>
+    <string name="editTools">Modificar Herramientas</string>
+    <string name="select_request">Seleccione la Herramienta</string>
+    <string name="id">ID</string>
+    <string name="editRequest">Modifcar solicitud</string>
+
+
+    <!-- String de clients -->
+
+    <string name="Titulo_calle">Calle</string>
+    <string name="Titulo_referencia">Referencia</string>
+    <string name="Titulo_c.p">C.P</string>
+    <string name="Titulo_delmunicipio">Del./Municipio</string>
+    <string name="Titulo_numero">Número</string>
+    <string name="Titulo_colonia">Colonia</string>
+    <string name="Titulo_estado">Estado</string>
+    <string name="Titulo_nombre">Nombre</string>
+    <string name="title_adduser">Agregar usuario</string>
+    <string name="title_edituser">Modificar mi información</string>
+    <string name="title_textAbout">Staffy está creada para el personal del área de coordinación y asignaciones de la gerencia de soluciones móviles de praxis México.
+            El objetivo es mejorar la gestión de recordatorio de actividades a realizar y optimizar la gestión de sus datos.</string>
+    <string name="invalid_email_recover_password_enter_mail">Correo invalido.</string>
+    <string name="error_body_recover_password_web_services">Error general.</string>
+    <string name="Titulo_apellidopaterno">Apellido paterno</string>
+    <string name="Titulo_apellidomaterno">Apellido materno</string>
+    <string name="Titulo_correo">Correo</string>
+    <string name="Titulo_observaciones">Observaciónes</string>
+    <string name="Titulo_numerotelefonico">Numero Telefonico</string>
+    <string name="Titulo_extencion">Extención</string>
+    <string name="Titulo_nombree">Nombre</string>
+    <string name="level">Nivel</string>
+    <string name="result_obser">A través del proyecto sistema detallista
+    se pretende que el cliente por medio de
+    una aplicación móvil pueda solicitar los
+    productos que va a requerir.
+    </string>
+    <string-array name="perfil_string">
+        <item>Junior</item>
+        <item>Master</item>
+        <item>Senior</item>
+        <item>Semisenior</item>
+    </string-array>
+    <string name="view_proyect_txt">Proyecto</string>
+    <string name="request_txt">Requiere</string>
+    <string name="about_this_app">Área de coordinación y asiganaciones para soluciones móviles Praxis, México.</string>
+    <string name="send_text_to_fragment_view_recource">Enviar correo a:</string>
+    <string name="txt_name_resource_details_assessment">Miguel Betancourt Cravioto</string>
+    <string name="expert_to_perform_filter_view">Experto a realizar fltro</string>
+    <string name="loading">Cargando..</string>
+    <string name="nivel">nivel</string>
+    <string name="about_proyect_example">Proyecto de desarrollo en HTML, venta de productos.</string>
+    <string name="punt_details_requi">-</string>
+    <string name="example_perfil_details_requi">Java</string>
+    <string name="example_number_requi_details_requi">2</string>
+    <string name="example_perfil_details_requi2">Administrador de BD </string>
+    <string name="exampler_rango_details_requi">Junior</string>
+    <string name="exampler_rango_details_requi2">senior</string>
+    <string name="text_btn_exmaple_requi">Java Junior SQlite Requi: 5588</string>
+    <string name="text_btn_exmaple_requi2">Android Requi: 58439</string>
+    <string name="text_requi_details_requi">Requi : </string>
+    <string name="example_number_requi_details">559394</string>
+    <string name="btn_postular_details_requi">Postular</string>
+    <string name="btn_ver_postulados">Ver Postulados</string>
+    <string name="example_name_profile">Gamio Lozano Gloria</string>
+    <string name="example_email_profile">m_btncourt@correo.com.mx</string>
+    <string name="text_phone_profile">Teléfono</string>
+    <string name="example_phone_profile">55 1132 3512</string>
+    <string name="titulo_nombre">Nombre</string>
+    <string name="alert">Alerta</string>
+    <string name="titulo_postulantes">Postulante</string>
+    <string name="alertCancel">¿Desea salir sin guardar un nada?</string>
+    <string name="titulo_cocacola">Coca-Cola</string>
+    <string name="titulo_delmunicipio">Delegación/Miunicipio</string>
+    <string name="titulo_referencia">Referencía</string>
+    <string name="titulo6_nombree">TitleNombre6</string>
+    <string name="tools">Herramienta</string>
+    <string name="formato">Formatos</string>
+    <string name="permission">Permisos</string>
+
+
+    <string name="request">Solicitar</string>
+
+
+    <string name="requisition">Numero de requisición</string>
+    <string name="observation">Observaciones</string>
+    <string name="deadline">Fecha limite</string>
+    <string name="postu">Postulantes</string>
+    <string name="perfil">Perfil</string>
+    <string name="candites">Candidatos</string>
+    <string name="results">Resultado</string>
+    <string name="post_proyect">Postulante para el proyecto</string>
+    <string name="expert">Experto a realizar filtro</string>
+    <string name="date_filter">Fecha de fltro</string>
+    <string name="hour_filter">Hora</string>
+    <string name="interviewer">Entrevistador</string>
+    <string name="email_send">Enviar correo a:</string>
+    <string name="acompañante">Acompañante</string>
+    <string name="ubication">Ubicación</string>
+    <string name="uzer">Usuarios</string>
+    <string name="notification">Notificaciones</string>
+    <string name="about">Acerca de </string>
+    <string name="programming">Programación</string>
+    <string name="database">Base de datos</string>
+    <string name="networks">Redes</string>
+    <string name="servers">Servidores</string>
+    <string name="means">Recursos</string>
+    <string name="date">Fecha</string>
+    <string name="select">Seleccionar</string>
+    <string name="consultant">Consultor</string>
+    <string name="type_of_request">Tipo de solicitud</string>
+    <string name="initial_date">Fecha inicial</string>
+    <string name="reason">Motivo</string>
+    <string name="email">Correo</string>
+    <string name="schedule_notifications">Programar avisos</string>
+    <string name="birthday">Cumpleaños</string>
+    <string name="interview">Entrevistas</string>
+    <string name="filters">Filtros</string>
+    <string name="visits">Visitas</string>
+    <string name="addFormat">Agregar formato</string>
+    <string name="editFormat">Editar formato</string>
+
+
+    <string name="titulo_calle">Calle</string>
+    <string name="titulo_c.p">C.P</string>
+    <string name="titulo_numero">Número</string>
+    <string name="titulo_colonia">Colonia</string>
+    <string name="titulo_estado">Estado</string>
+
+
+    <string name="titulo_appaterno">Apellido paterno</string>
+    <string name="titulo_apmaterno">Apellido materno</string>
+    <string name="titulo_datoscontacto">Datos de contacto</string>
+    <string name="titulo_contactoarea">Contacto de área</string>
+    <string name="titulo_tipocontacto">Tipo de contacto</string>
+    <string name="titulo_observaciones">Observasiónes</string>
+    <string name="titulo_telefono">Telefono</string>
+
+    <string name="titulo_extension">Extensión</string>
+    <string name="titulo_tipo">Tipo</string>
+    <string name="titulo_btncancelar">Cancelar</string>
+    <string name="titulo_btnguardar">Guardar</string>
+
+
+    <string name="titulo_postulantesregistrados">Postulantes registrados</string>
+    <string name="titulo_btnenviar">Enviar</string>
+
+
+    <string name="titulo_datospersonales">Datos personales</string>
+    <string name="titulo_esexperto">Es experto</string>
+    <string name="titulo_btnperfil">Perfil</string>
+
+
+    <string name="titulo_fechanacimiento">Fecha de nacimiento</string>
+    <string name="titulo_referenciatelefonica">Referencia telefónica</string>
+    <string name="titulo_disponibilidad">Disponibilidad</string>
+    <string name="titulo_fecha">Fecha</string>
+    <string name="titulo_hora">Hora</string>
+    <string name="titulo_btnasignarconocimientos">Hacignar conocimientos</string>
+    <string name="titulo_reclutados">Reclutados</string>
+
+
+    <string name="titulo_Promedio">Promedio</string>
+    <string name="titulo_retro">Retro</string>
+    <string name="titulo_periodo">Periodo</string>
+    <string name="titulo_programar">Programar</string>
+    <string name="titulo_fechaevaluacion">Fecha de evaluación</string>
+    <string name="titulo_estatus">Estatus</string>
+    <string name="titulo_evaluador">Evaluador</string>
+
+
+    <string name="titulo_seleccionarusuario">Seleccionar usuario</string>
+    <string name="titulo_confirmarcontraseña">Confirmar contraseña</string>
+    <string name="text_btn_see_more_view_resource">Ver más</string>
+    <string name="text_btn_see_interview_view_resource">Ver entrevista</string>
+    <string name="btn_new_filter_view_resource">Nuevo filtro</string>
+    <string name="text_btn_schedule_interview_view_resource">Programar entrevista</string>
+    <string name="text_btn_evaluations_view_resource">Evaluaciones</string>
+    <string name="text_btn_to_acept">Guardar</string>
+    <string name="text_btn_register_evaluation_view_resource">Registrar evaluación</string>
+    <string name="text_btn_cancel">Cancelar</string>
+    <string name="text_view_format_activity">Formato de actividades</string>
+    <string name="example_name_formt">Gerardo Pérez Gómez</string>
+    <string name="example_mail_format">pegg@praxis.com.mx</string>
+    <string name="view_format_format">Formatos</string>
+    <string name="text_view_format_task">Formato de tareas</string>
+    <string name="text_view_format_asist">Formato de asistencia</string>
+    <string name="data_init_format">Fecha inicio</string>
+    <string name="exmaple_mounth_format_init">Junio</string>
+    <string name="example_day_format_init">10</string>
+    <string name="exmaple_year_format_init">2018</string>
+    <string name="example_day_format_end">31</string>
+    <string name="exmaple_mounth_format_end">Octubre</string>
+    <string name="exmaple_year_format_end">2018</string>
+    <string name="data_end_format">Fecha ?n</string>
+    <string name="text_tools_tools">Herramientas</string>
+    <string name="text_id_tools">ID</string>
+    <string name="text_notbook_tools">Libreta</string>
+    <string name="text_mail_tools">Mail</string>
+    <string name="text_computer_tools">Computadora</string>
+    <string name="example_id_tools">BEDC</string>
+    <string name="example_mail_tools">becm@praxis.com.mx</string>
+    <string name="example_computer_tools">Computadora</string>
+    <string name="exmaple_notbook_tools">1</string>
+    <string name="text_description_tools">Descripción</string>
+    <string name="exmaple_description_tools">La computadora se encontrará lista para ambientación el día viernes</string>
+    <string name="example_name_client">Coca-Conal</string>
+    <string name="example_name_proyect">Sistema detallista</string>
+    <string name="text_btn_editar_details_evaluation_resource">Editar</string>
+    <string name="example_name_resource_evaluation">Miguel Betancourt Cravioto</string>
+    <string name="example_name_expert_evaluation">Manuel Vázquez Hernández</string>
+    <string name="example_data_evaluation">10/09/2018</string>
+    <string name="example_hours_evaluation">10:00</string>
+    <string name="example_result_evaluation">Sobresaliente</string>
+    <string name="example_obs_evaluation">El postulante está capacitado con conocimientos de tecnología orientada a objetos (TOO), construye aplicaciones utilizando el lenguaje de programación</string>
+    <string name="text_address_see_visit">Ubicación</string>
+    <string name="example_title_addres_see_visit">Femsa Coca-Cola dirección 2</string>
+    <string name="example_addres_see_visit">Carretera Los Reyes – La Paz Km. 15, s/n, Industrial Los Reyes, Estado de México, C.P. 69022</string>
+    <string name="text_msg_see_visit">Mensaje</string>
+    <string name="example_msg_see_visit">La visita se realizará con la presencia de tu jefe directo en esta asignación.</string>
+    <string name="do_you_notification_gerent">¿Quieres noti?car al gerente?</string>
+    <string name="text_mail_recover_password">Correo</string>
+    <string name="text_code_enter_code">Código</string>
+    <string name="text_recover_password">Recuperar</string>
+    <string name="text_password_recover">Contraseña</string>
+    <string name="cliente">Cliente:</string>
+    <string name="btn_edit_details_requi">Editar</string>
+    <string name="detail_proyect">Detalle de proyecto</string>
+    <string name="poup_confirm">Confirmar</string>
+    <string name="text_btn_to_acept_poup">Aceptar</string>
+    <string name="hint_date">dd/mm/aaaa</string>
+
+
+    <string name="text_send_mail_to_postulant">Enviar correo a</string>
+</resources>
+

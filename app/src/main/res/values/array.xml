@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lista">
+         <item>uno</item>
+        <item>dos</item>
+        <item>tres</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Selecione un estatus</item>
+        <item>Por iniciar</item>
+        <item>Iniciado</item>
+        <item>Finalizado</item>
+    </string-array>
+
+    <string-array name="contact">
+        <item>Selecione un contacto</item>
+        <item>Contacto 1</item>
+        <item>Contacto 2</item>
+        <item>Contacto 3</item>
+    </string-array>
+
+    <string-array name="level">
+        <item>Selecione un nivel</item>
+        <item>10%</item>
+        <item>20%</item>
+        <item>30%</item>
+        <item>40%</item>
+        <item>50%</item>
+        <item>60%</item>
+        <item>70%</item>
+        <item>80%</item>
+        <item>90%</item>
+        <item>100%</item>
+    </string-array>
+
+    <string-array name="tools">
+        <item>Selecione una herramienta</item>
+        <item>Equipo de computo</item>
+        <item>Papeleria</item>
+        <item>Tabletas</item>
+        <item>Telefonos moviles</item>
+    </string-array>
+
+    <string-array name="id">
+        <item>Selecione un ID</item>
+        <item>e.perez</item>
+        <item>e.jacabo</item>
+        <item>y.najera</item>
+        <item>a.colin</item>
+    </string-array>
+
+    <string-array name="mail">
+        <item>Selecione un Correo</item>
+        <item>e.perez@praxis.com.mx</item>
+        <item>e.jacabo@praxis.com.mx</item>
+        <item>y.najera@praxis.com.mx</item>
+        <item>a.colin@praxis.com.mx</item>
+    </string-array>
+
+
+</resources>

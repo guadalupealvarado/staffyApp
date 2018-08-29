@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.requisition.detailsRequisition.DetailsRequisitionView">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </android.support.constraint.ConstraintLayout>
+    <include
+        android:id="@+id/toolbar_details_requi"
+        layout="@layout/actionbar_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container_details_requi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:accessibilityLiveRegion="none"
+        android:background="@drawable/redondvx"
+        android:elevation="3dp"
+        android:maxHeight="10dp"
+        android:minHeight="10dp"
+        android:minWidth="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_details_requi"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/img_logo_client_view_details_requi"
+            android:layout_width="@dimen/width_img_logo"
+            android:layout_height="@dimen/height_img_logo"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_cocacola" />
+
+        <TextView
+            android:id="@+id/tv_requi_details_requi"
+            style="@style/TextViewTitleGray"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_requi_details_requi"
+            app:layout_constraintStart_toEndOf="@+id/img_logo_client_view_details_requi"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tx_details_proyect_details_requi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/about_proyect_example"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_logo_client_view_details_requi"
+            app:layout_constraintTop_toBottomOf="@+id/tv_requi_details_requi" />
+
+        <TextView
+            android:id="@+id/tx_perfil_details_requi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/example_perfil_details_requi"
+            app:layout_constraintStart_toStartOf="@+id/img_logo_client_view_details_requi"
+            app:layout_constraintTop_toBottomOf="@+id/tx_details_proyect_details_requi" />
+
+        <TextView
+            android:id="@+id/tv_rango_details_requi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/exampler_rango_details_requi"
+            app:layout_constraintBottom_toBottomOf="@+id/tx_perfil_details_requi"
+            app:layout_constraintStart_toEndOf="@+id/tx_perfil_details_requi"
+            app:layout_constraintTop_toTopOf="@+id/tx_perfil_details_requi" />
+
+        <TextView
+            android:id="@+id/tx_perfil_details_requi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/example_perfil_details_requi2"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_rango_details_requi"
+            app:layout_constraintStart_toEndOf="@+id/tv_rango_details_requi"
+            app:layout_constraintTop_toTopOf="@+id/tv_rango_details_requi" />
+
+        <TextView
+            android:id="@+id/tv_text_requi_details_requi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/text_requi_details_requi"
+            app:layout_constraintBottom_toBottomOf="@+id/tx_perfil_details_requi2"
+            app:layout_constraintStart_toEndOf="@+id/tx_perfil_details_requi2"
+            app:layout_constraintTop_toTopOf="@+id/tx_perfil_details_requi2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tx_number_requi_details_requi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/example_number_requi_details"
+            style="@style/TextViewTitleGray"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_requi_details_requi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_requi_details_requi"
+            app:layout_constraintTop_toTopOf="@+id/tv_requi_details_requi" />
+
+        <TextView
+            android:id="@+id/tv_nameacompañante_fragment_show_entrevi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/example_number_requi_details"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_text_requi_details_requi"
+            app:layout_constraintStart_toEndOf="@+id/tv_text_requi_details_requi"
+            app:layout_constraintTop_toTopOf="@+id/tv_text_requi_details_requi" />
+
+        <Button
+            android:id="@+id/btn_postular_details_requi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/btn_postular_details_requi"
+            android:theme="@style/RaisedButtonDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nameacompañante_fragment_show_entrevi" />
+
+        <Button
+            android:id="@+id/btn_see_postulados_details_requi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_ver_postulados"
+            android:theme="@style/RaisedButtonDark"
+            app:layout_constraintEnd_toEndOf="@+id/btn_postular_details_requi"
+            app:layout_constraintStart_toStartOf="@+id/btn_postular_details_requi"
+            app:layout_constraintTop_toBottomOf="@+id/btn_postular_details_requi" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

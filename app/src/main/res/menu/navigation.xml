@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Notificationmt"
+        android:title="@string/notifications"
+        android:icon="@drawable/ic_alert"
+
+        />
+    <item
+        android:id="@+id/ListActivity"
+        android:title="@string/tab_activityM"
+        android:icon="@drawable/ic_list"
+        />
+    <item
+        android:id="@+id/Calendar"
+        android:title="@string/tab_calendarM"
+        android:icon="@drawable/ic_calendar"
+        />
+</menu>

@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="height_bottomBar">40dp</dimen>
+    <dimen name="list">24dp</dimen>
+    <dimen name="text">38dp</dimen>
+    <dimen name="label">14dp</dimen>
+    <dimen name="request">20dp</dimen>
+    <dimen name="line_hor">120dp</dimen>
+    <dimen name="toolbar_text">10dp</dimen>
+
+
+
+    <dimen name="header_left_padding">16dp</dimen>
+    <dimen name="header_height">192dp</dimen>
+
+    <dimen name="perfil_image_size">64dp</dimen>
+    <dimen name="heigtCardNotificaction">95dp</dimen>
+    <dimen name="cardRadiosNotification">6dp</dimen>
+    <dimen name="sizeTextCardNotification">16sp</dimen>
+    <dimen name="sizeTextCardNameNotificaction">17sp</dimen>
+    <dimen name="paddingButtonIndexNavigation">70dp</dimen>
+    <dimen name="widthImageViewCardView">40dp</dimen>
+    <dimen name="margin_left_cardview">32dp</dimen>
+    <dimen name="margin_rigth_cardview">8dp</dimen>
+    <dimen name="size_formulario_title">18dp</dimen>
+    <dimen name="width_img_logo">90dp</dimen>
+    <dimen name="height_img_logo">80dp</dimen>
+
+    <dimen name="size_text_about_proyect_requi">17sp
+    </dimen>
+    <dimen name="with_img_profile">115dp</dimen>
+    <dimen name="height_img_profile">115dp</dimen>
+    <dimen name="with_img_assessments">90dp</dimen>
+    <dimen name="height_img_assessments">65dp</dimen>
+    <dimen name="height_et">36dp</dimen>
+</resources>

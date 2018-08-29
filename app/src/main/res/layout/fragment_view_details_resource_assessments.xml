@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.evaluations.viewresourceAssessments.deatilsResourceAssesments.DetailsResourceAssessmentsView">
+
+    <include
+        android:id="@+id/toolbar_details_requi"
+        layout="@layout/actionbar_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_details_requi">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_name_resource_details_assessment"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_notification_fragment_configuration"
+                style="@style/text_orange_view_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/expert_to_perform_filter_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Manuel Vázquez Hernández"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_notification_fragment_configuration"
+                app:layout_constraintTop_toBottomOf="@+id/tv_notification_fragment_configuration" />
+
+            <TextView
+                android:id="@+id/tv_about_fragment_configuration"
+                style="@style/text_orange_view_assessments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Fecha"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView74"
+                app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+            <TextView
+                android:id="@+id/tv_example_day_details_assessments"
+                style="@style/text_data_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="10"
+                app:layout_constraintStart_toStartOf="@+id/tv_about_fragment_configuration"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_fragment_configuration" />
+
+            <TextView
+                android:id="@+id/tv_mouth_details_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="sept."
+                app:layout_constraintBottom_toBottomOf="@+id/tv_example_day_details_assessments"
+                app:layout_constraintStart_toEndOf="@+id/tv_example_day_details_assessments"
+                app:layout_constraintTop_toTopOf="@+id/tv_example_day_details_assessments" />
+
+            <TextView
+                android:id="@+id/tv_exmple_year_details_assessments"
+                style="@style/text_data_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="2018"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_mouth_details_assessments"
+                app:layout_constraintStart_toEndOf="@+id/tv_mouth_details_assessments"
+                app:layout_constraintTop_toTopOf="@+id/tv_mouth_details_assessments" />
+
+            <TextView
+                android:id="@+id/tv_hours_details_assessments"
+                style="@style/text_data_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="10"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_exmple_year_details_assessments"
+                app:layout_constraintStart_toEndOf="@+id/tv_exmple_year_details_assessments"
+                app:layout_constraintTop_toTopOf="@+id/tv_exmple_year_details_assessments" />
+
+            <TextView
+                android:id="@+id/tv_text_hours_details_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="hrs."
+                app:layout_constraintBottom_toBottomOf="@+id/tv_hours_details_assessments"
+                app:layout_constraintStart_toEndOf="@+id/tv_hours_details_assessments"
+                app:layout_constraintTop_toTopOf="@+id/tv_hours_details_assessments" />
+
+            <TextView
+                android:id="@+id/tv_example_minuts_details_assessments"
+                style="@style/text_data_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="00"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_text_hours_details_assessments"
+                app:layout_constraintStart_toEndOf="@+id/tv_text_hours_details_assessments"
+                app:layout_constraintTop_toTopOf="@+id/tv_text_hours_details_assessments" />
+
+            <TextView
+                android:id="@+id/tv_text_min_details_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="min."
+                app:layout_constraintBottom_toBottomOf="@+id/tv_example_minuts_details_assessments"
+                app:layout_constraintStart_toEndOf="@+id/tv_example_minuts_details_assessments"
+                app:layout_constraintTop_toTopOf="@+id/tv_example_minuts_details_assessments" />
+
+            <TextView
+                android:id="@+id/textView84"
+                style="@style/text_orange_view_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Resultado"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_example_day_details_assessments"
+                app:layout_constraintTop_toBottomOf="@+id/tv_example_day_details_assessments" />
+
+            <TextView
+                android:id="@+id/textView85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Sobresaliente"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView84"
+                app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+            <TextView
+                android:id="@+id/textView86"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:text="en el ﬁltro realizado al postulante."
+                app:layout_constraintBottom_toBottomOf="@+id/textView85"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView85"
+                app:layout_constraintTop_toTopOf="@+id/textView85" />
+
+            <TextView
+                android:id="@+id/textView87"
+                style="@style/text_orange_view_assessments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Observaciones"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView85"
+                app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+            <TextView
+                android:id="@+id/textView88"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:text="El postulante está capacitado con conocimientos de tecnología orientada a objetos (TOO), construye aplicaciones utilizando el lenguaje de programación orientado a objetos (POO) como java. "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView87"
+                app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Cancelar"
+                android:theme="@style/RaisedButtonDarkCancel"
+                app:layout_constraintEnd_toStartOf="@+id/guideline16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView88" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="8dp"
+                android:text="Aceptar"
+                android:theme="@style/RaisedButtonDark"
+                app:layout_constraintBottom_toBottomOf="@+id/button17"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toTopOf="@+id/button17" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mnNavPostulants"
+        android:title="Postulantes"
+        android:icon="@drawable/ic_cartera"
+        />
+
+    <item
+        android:id="@+id/mnNavConsultants"
+        android:title="Consultor"
+        android:icon="@drawable/ic_personal_praxis" />
+
+</menu>

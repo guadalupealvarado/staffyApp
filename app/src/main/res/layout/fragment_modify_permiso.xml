@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/permitsModifyTool">
+
+        <TextView
+            android:id="@+id/textCon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="290dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/consultant"
+            android:textColor="@color/colorLabels"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/guideline27"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle2" />
+
+        <TextView
+            android:id="@+id/textTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="291dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/select"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/guideline27"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_number_requi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/type_of_request"
+            android:textColor="@color/colorLabels"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/guideline27"
+            app:layout_constraintTop_toBottomOf="@+id/sp_consultor_fragment_modify_permiso" />
+
+        <Spinner
+            android:id="@+id/sp_consultor_fragment_modify_permiso"
+            style="@android:style/Widget.Spinner.DropDown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/guideline27"
+            app:layout_constraintTop_toBottomOf="@+id/textCon2" />
+
+        <Spinner
+            android:id="@+id/sp_tipe_request_fragment_modify_permiso"
+            style="@android:style/Widget.Spinner.DropDown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/guideline27"
+            app:layout_constraintTop_toBottomOf="@+id/tv_number_requi2" />
+
+        <TextView
+            android:id="@+id/tv_number_requi_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/initial_date"
+            android:textColor="@color/colorLabels"
+            app:layout_constraintStart_toEndOf="@+id/guideline27"
+            app:layout_constraintTop_toBottomOf="@+id/sp_tipe_request_fragment_modify_permiso" />
+
+        <TextView
+            android:id="@+id/tv_name_resource_assesments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/title_time_finish"
+            android:textColor="@color/colorLabels"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_number_requi_details"
+            app:layout_constraintTop_toBottomOf="@+id/sp_tipe_request_fragment_modify_permiso" />
+
+        <EditText
+            android:id="@+id/ed_initialdate_fragment_modify_permiso"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_corner"
+            android:drawableRight="@drawable/ic_calendar"
+            android:elevation="1dp"
+            android:ems="10"
+            android:hint="dd/mm/aaaa"
+            android:inputType="date"
+            android:padding="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/ed_finaldate_fragment_modify_permiso"
+            app:layout_constraintStart_toStartOf="@+id/guideline27"
+            app:layout_constraintTop_toBottomOf="@+id/tv_number_requi_details" />
+
+        <EditText
+            android:id="@+id/ed_finaldate_fragment_modify_permiso"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_corner"
+            android:drawableRight="@drawable/ic_calendar"
+            android:elevation="1dp"
+            android:ems="10"
+            android:hint="dd/mm/aaaa"
+            android:inputType="date"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ed_initialdate_fragment_modify_permiso"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_resource_assesments" />
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/reason"
+            android:textColor="@color/colorLabels"
+            app:layout_constraintStart_toEndOf="@+id/guideline27"
+            app:layout_constraintTop_toBottomOf="@+id/ed_initialdate_fragment_modify_permiso" />
+
+        <EditText
+            android:id="@+id/ed_reason_fragment_modify_pernmiso"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_corner"
+            android:elevation="1dp"
+            android:ems="10"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView74"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline27"
+            app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+        <TextView
+            android:id="@+id/textView74"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/email"
+            android:textColor="@color/colorLabels"
+            app:layout_constraintBottom_toTopOf="@+id/ed_sendmail_fragment_modify_permiso"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/guideline27"
+            app:layout_constraintTop_toBottomOf="@+id/ed_reason_fragment_modify_pernmiso" />
+
+        <EditText
+            android:id="@+id/ed_sendmail_fragment_modify_permiso"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_corner"
+            android:drawableRight="@drawable/ic_add_mail"
+            android:elevation="1dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/guideline27"
+            app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline27"
+            app:layout_constraintTop_toBottomOf="@+id/ed_sendmail_fragment_modify_permiso">
+
+            <Button
+                android:id="@+id/btn_postular_details_requi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/cardview_light_background"
+                android:drawable="@drawable/rounded_corner"
+                android:elevation="3dp"
+                android:padding="9dp"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:theme="@style/RaisedButtonOrange"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_see_postulados_details_requi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_see_postulados_details_requi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/cardview_light_background"
+                android:drawable="@drawable/rounded_corner"
+                android:elevation="3dp"
+                android:padding="9dp"
+                android:text="@string/accept"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:theme="@style/RaisedButtonDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_postular_details_requi"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/permitsModifyTool"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/colorPrimary" />
+</android.support.constraint.ConstraintLayout>
