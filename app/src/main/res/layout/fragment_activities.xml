@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     android:fitsSystemWindows="true"
-    tools:context=".ui.activities.ActivitiesView"
-    >
+    android:orientation="horizontal"
+    tools:context=".ui.activities.ActivitiesView">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="513dp"
         android:background="@color/cardview_light_background">
 
 
@@ -21,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent=".50" />
+            app:layout_constraintGuide_percent="0.5" />
 
 
         <android.support.constraint.Guideline
@@ -36,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent=".95" />
+            app:layout_constraintGuide_percent="1.0" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline12"
@@ -63,7 +61,7 @@
 
         <include
             android:id="@+id/include"
-            layout="@layout/cardview_activities"
+            layout="@layout/cardview_activitiesss"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
@@ -78,15 +76,17 @@
 
         <include
             android:id="@+id/include2"
-            layout="@layout/cardview_activities"
+            layout="@layout/cardview_activitiesss"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginEnd="4dp"
             android:layout_marginStart="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/include"
             app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline15"
-            app:layout_constraintTop_toTopOf="@+id/include" />
+            app:layout_constraintTop_toTopOf="@+id/include"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/textView6"
@@ -111,7 +111,21 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.02" />
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
         <include
+            android:id="@+id/include16"
             layout="@layout/cardview_activities"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -121,7 +135,11 @@
             android:layout_marginTop="8dp"
             app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintEnd_toStartOf="@+id/guideline15"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/guideline9"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintVertical_bias="1.0" />
+
+
     </android.support.constraint.ConstraintLayout>
 </android.support.design.widget.CoordinatorLayout>
