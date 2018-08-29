@@ -64,7 +64,7 @@ public  class NewClientModel extends PostEventGeneral implements NewClientMVP.mo
 
             @Override
             public void onFailure(Call<GetPojoInsertClient> call, Throwable t) {
-
+                postEvent(GeneralEvent.onErrorEvent,t.getLocalizedMessage());
             }
         });
     return true;

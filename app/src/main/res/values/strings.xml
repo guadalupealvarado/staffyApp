@@ -58,9 +58,9 @@
     <string name="log_out_item">Cerrar sesión</string>
     <string name="configuration_item">Configuración</string>
     <string name="requests_item">Solicitudes</string>
-    <string name="purse_item">Cartera</string>
+    <string name="purse_item">Retros</string>
     <string name="recruiter_item">Reclutador</string>
-    <string name="evaluators_praxis_item">Personal Praxis</string>
+    <string name="evaluators_praxis_item">Consultores Praxis</string>
     <string name="customers_item">Cliente</string>
     <string name="draft_item">Proyecto</string>
     <string name="nameCardNotification">Ivonne R.</string>

@@ -43,6 +43,7 @@ public class NotificationModel extends PostEventGeneral implements NotificacionM
                 public void onResponse(Call<ListNotification> call, Response<ListNotification> response) {
                     if(!response.isSuccessful())
                     {
+                        Log.d("ESTATUS","CARGADO");
                         String error = "";
                         if (response.errorBody()
                                 .contentType()
@@ -58,6 +59,7 @@ public class NotificationModel extends PostEventGeneral implements NotificacionM
 
                     }else
                     {
+                        Log.d("ESTATUS","CARGADO");
                         ListNotification listNotification=response.body();
                         //ArrayList<Notification> list=listNotification.getObject();
                         //  NotificationView.list=list;

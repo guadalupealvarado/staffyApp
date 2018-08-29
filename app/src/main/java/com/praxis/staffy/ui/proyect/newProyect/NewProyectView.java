@@ -35,7 +35,7 @@ import butterknife.Optional;
 import static android.app.Activity.RESULT_OK;
 
 
-public class NewProyectView extends BaseView implements AdapterView.OnItemSelectedListener
+public class  NewProyectView extends BaseView implements AdapterView.OnItemSelectedListener
 {
     public static ManagerFragmentProyect states;
     /**Declaración de los objetos*/
