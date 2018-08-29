@@ -13,4 +13,5 @@
 
     <color name="fond_backgorund_poup">#F2F2F2</color>
     <color name="text_backgorund_poup">#BDBDBD</color>
+    <color name="fond_color_edit_Text_login">#FFB1B1B1</color>
     </resources>
