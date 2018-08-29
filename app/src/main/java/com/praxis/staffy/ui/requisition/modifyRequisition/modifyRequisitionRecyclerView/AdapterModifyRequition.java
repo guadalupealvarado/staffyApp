@@ -37,7 +37,7 @@ public class AdapterModifyRequition extends  RecyclerView.Adapter<AdapterModifyR
         View view = LayoutInflater.from(parent.getContext()).inflate(resource,parent,
                 false);
         spinner =(Spinner)view.findViewById(R.id.spinnertipo);
-        adapter= ArrayAdapter.createFromResource(view.getContext(),R.array.perfil_string,
+        adapter= ArrayAdapter.createFromResource(view.getContext(),R.array.perfil_s3tring,
                 android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
