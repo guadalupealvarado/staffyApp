@@ -355,7 +355,7 @@
 
     <!--Nuevos Strings-->
     <string name="nueva_contraseña">Nueva Contraseña</string>
-    <string name="verifi_nuevaContraseña">Verifica nueva contraseña</string>
+    <string name="verifi_nuevacontraseña">Confirmar contraseña</string>
     <string name="btn_regresar">Regresar</string>
     <string name="no_realiza">No realizado</string>
     <string name="realizado">Realizado</string>

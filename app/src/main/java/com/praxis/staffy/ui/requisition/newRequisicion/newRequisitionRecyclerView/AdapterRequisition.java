@@ -43,7 +43,7 @@ public class AdapterRequisition extends RecyclerView.Adapter<AdapterRequisition.
                 false);
 
         spinner =(Spinner)view.findViewById(R.id.spinnertipo);
-        adapter= ArrayAdapter.createFromResource(view.getContext(),R.array.perfil_string,
+        adapter= ArrayAdapter.createFromResource(view.getContext(),R.array.perfil_s3tring,
                 android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
