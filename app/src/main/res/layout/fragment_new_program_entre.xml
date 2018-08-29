@@ -148,7 +148,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/acompañante"
+            android:text="@string/companion"
             android:textColor="@color/colorLabels"
             app:layout_constraintBottom_toTopOf="@+id/ed_acompañante_fragment_new_program_entre"
             app:layout_constraintEnd_toEndOf="parent"

@@ -372,7 +372,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginTop="16dp"
-                android:text="@string/titulo_cocacola"
+                android:text="@string/title_cocacola"
                 android:textColor="@color/bb_tabletRightBorderDark"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"

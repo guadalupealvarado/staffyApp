@@ -143,7 +143,7 @@
                 android:layout_marginStart="16dp"
                 android:background="@drawable/redondvx"
                 android:ems="10"
-                android:hint="@string/titulo_correo"
+                android:hint="@string/title_mail"
                 android:inputType="textEmailAddress"
                 android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -219,7 +219,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="@string/Titulo_correo"
+                android:text="@string/title_mail"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_finish_date_format" />

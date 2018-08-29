@@ -297,7 +297,7 @@ public class  NewProyectView extends BaseView implements AdapterView.OnItemSelec
                 .setTitle(getString(R.string.title_addproyec))
                 .setMessage(getString(R.string.alertCancel))
                 .setIcon(R.drawable.img_pregunta)
-                .setPositiveButton(getString(R.string.aceptbtn),
+                .setPositiveButton(getString(R.string.accept),
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id)
                             {

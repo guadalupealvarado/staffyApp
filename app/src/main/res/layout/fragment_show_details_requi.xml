@@ -165,7 +165,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/btn_ver_postulados"
+            android:text="@string/btn_view_postulates"
             android:theme="@style/RaisedButtonDark"
             app:layout_constraintEnd_toEndOf="@+id/btn_postular_details_requi"
             app:layout_constraintStart_toStartOf="@+id/btn_postular_details_requi"

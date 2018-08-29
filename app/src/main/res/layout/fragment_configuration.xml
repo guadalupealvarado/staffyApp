@@ -45,7 +45,7 @@
                 android:id="@+id/tv_user_fragment_configuration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/uzer"
+                android:text="@string/users"
                 android:textColor="@color/colorLabels"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/imv_user_next_fragment_configuration"

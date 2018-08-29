@@ -76,7 +76,7 @@ public class NewToolsView extends BaseView
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
         final ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         if (actionBar != null) {
-            actionBar.setTitle(getString(R.string.tools));
+            actionBar.setTitle(getString(R.string.tool));
             actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
             actionBar.setDisplayHomeAsUpEnabled(true);
             toolbar.setNavigationOnClickListener(new View.OnClickListener() {
