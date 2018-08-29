@@ -144,7 +144,7 @@
     <string name="Titulo_apellidopaterno">Apellido paterno</string>
     <string name="Titulo_apellidomaterno">Apellido materno</string>
     <string name="Titulo_correo">Correo</string>
-    <string name="Titulo_observaciones">Observaciónes</string>
+    <string name="Titulo_observaciones">Observaciones</string>
     <string name="Titulo_numerotelefonico">Numero Telefonico</string>
     <string name="Titulo_extencion">Extención</string>
     <string name="Titulo_nombree">Nombre</string>
@@ -154,7 +154,7 @@
     una aplicación móvil pueda solicitar los
     productos que va a requerir.
     </string>
-    <string-array name="perfil_string">
+    <string-array name="perfil_s3tring">
         <item>Junior</item>
         <item>Master</item>
         <item>Senior</item>
@@ -252,7 +252,7 @@
     <string name="titulo_datoscontacto">Datos de contacto</string>
     <string name="titulo_contactoarea">Contacto de área</string>
     <string name="titulo_tipocontacto">Tipo de contacto</string>
-    <string name="titulo_observaciones">Observasiónes</string>
+    <string name="titulo_observaciones">Observaciones</string>
     <string name="titulo_telefono">Telefono</string>
 
     <string name="titulo_extension">Extensión</string>
@@ -268,6 +268,7 @@
     <string name="titulo_datospersonales">Datos personales</string>
     <string name="titulo_esexperto">Es experto</string>
     <string name="titulo_btnperfil">Perfil</string>
+
 
 
     <string name="titulo_fechanacimiento">Fecha de nacimiento</string>
@@ -351,5 +352,18 @@
 
 
     <string name="text_send_mail_to_postulant">Enviar correo a</string>
+
+    <!--Nuevos Strings-->
+    <string name="nueva_contraseña">Nueva Contraseña</string>
+    <string name="verifi_nuevaContraseña">Verifica nueva contraseña</string>
+    <string name="btn_regresar">Regresar</string>
+    <string name="no_realiza">No realizado</string>
+    <string name="realizado">Realizado</string>
+    <string name="iniciado">Iniciado</string>
+    <string name="finaliza">Finalizado</string>
+    <string name="porIniciar">Por iniciar</string>
+    <string name="perfil_senior">Senior</string>
+    <string name="java">JAVA</string>
+
 </resources>
 
