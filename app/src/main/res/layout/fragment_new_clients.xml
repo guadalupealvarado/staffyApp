@@ -136,7 +136,7 @@
                         android:layout_marginTop="16dp"
                         android:backgroundTint="@color/bb_inActiveBottomBarItemColor"
                         android:ems="10"
-                        android:hint="@string/titulo_nombre"
+                        android:hint="@string/title_name"
                         android:inputType="textEmailAddress"
                         android:labelFor="@id/inputUser"
                         android:textStyle="normal"

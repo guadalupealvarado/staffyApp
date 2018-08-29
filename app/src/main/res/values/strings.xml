@@ -2,12 +2,12 @@
     <string name="app_name">staffy</string>
     <!-- String de clients -->
 
-    <string name="titulo_apellidopaterno">Apellido paterno</string>
-    <string name="titulo_apellidomaterno">Apellido materno</string>
-    <string name="titulo_correo">Correo</string>
-    <string name="titulo_numerotelefonico">Numero Telefonico</string>
-    <string name="titulo_extencion">Extención</string>
-    <string name="titulo_nombree">Nombre</string>
+    <string name="title_lastName">Apellido paterno</string>
+    <string name="title_motherLastName">Apellido materno</string>
+    <string name="title_mail">Correo</string>
+    <string name="title_numberPhone">Numero Telefonico</string>
+    <string name="title_extension">Extensión</string>
+    <string name="title_name">Nombre</string>
 
 
     <string-array name="Games">
@@ -45,7 +45,7 @@
     <string name="acept">Login</string>
     <string name="send">Enviar</string>
     <string name="error_input_login">Llena correctamente los campos</string>
-    <string name="aceptbtn">Aceptar</string>
+
     <string name="notifications">Notificaciones</string>
     <string name="tab_activityM">Actividades</string>
     <string name="tab_calendarM">Calendario</string>
@@ -76,7 +76,7 @@
     <string name="title_started">Finalizados</string>
     <string name="title_sura">Sura negocios</string>
     <string name="title_telcel">Telcel</string>
-    <string name="title_mail">Escriba a</string>
+    <string name="title_writeTo">Escriba a</string>
     <string name="addEmailHelp">Ingrese el correo</string>
     <string name="sendMail">Enviar</string>
     <string name="title_addproyec">Agregar proyecto</string>
@@ -127,34 +127,32 @@
 
     <!-- String de clients -->
 
-    <string name="Titulo_calle">Calle</string>
-    <string name="Titulo_referencia">Referencia</string>
-    <string name="Titulo_c.p">C.P</string>
-    <string name="Titulo_delmunicipio">Del./Municipio</string>
-    <string name="Titulo_numero">Número</string>
-    <string name="Titulo_colonia">Colonia</string>
-    <string name="Titulo_estado">Estado</string>
-    <string name="Titulo_nombre">Nombre</string>
+    <string name="title_street">Calle</string>
+    <string name="title_reference">Referencia</string>
+    <string name="title_cp">C.P</string>
+    <string name="title_municipality">Del./Municipio</string>
+    <string name="title_number">Número</string>
+    <string name="title_colony">Colonia</string>
+    <string name="title_state">Estado</string>
     <string name="title_adduser">Agregar usuario</string>
     <string name="title_edituser">Modificar mi información</string>
     <string name="title_textAbout">Staffy está creada para el personal del área de coordinación y asignaciones de la gerencia de soluciones móviles de praxis México.
             El objetivo es mejorar la gestión de recordatorio de actividades a realizar y optimizar la gestión de sus datos.</string>
     <string name="invalid_email_recover_password_enter_mail">Correo invalido.</string>
     <string name="error_body_recover_password_web_services">Error general.</string>
-    <string name="Titulo_apellidopaterno">Apellido paterno</string>
-    <string name="Titulo_apellidomaterno">Apellido materno</string>
-    <string name="Titulo_correo">Correo</string>
-    <string name="Titulo_observaciones">Observaciones</string>
-    <string name="Titulo_numerotelefonico">Numero Telefonico</string>
-    <string name="Titulo_extencion">Extención</string>
-    <string name="Titulo_nombree">Nombre</string>
+
+
+    <string name="Title_observationes">Observaciones</string>
+
+
+
     <string name="level">Nivel</string>
     <string name="result_obser">A través del proyecto sistema detallista
     se pretende que el cliente por medio de
     una aplicación móvil pueda solicitar los
     productos que va a requerir.
     </string>
-    <string-array name="perfil_s3tring">
+    <string-array name="perfil_string">
         <item>Junior</item>
         <item>Master</item>
         <item>Senior</item>
@@ -163,11 +161,11 @@
     <string name="view_proyect_txt">Proyecto</string>
     <string name="request_txt">Requiere</string>
     <string name="about_this_app">Área de coordinación y asiganaciones para soluciones móviles Praxis, México.</string>
-    <string name="send_text_to_fragment_view_recource">Enviar correo a:</string>
+
     <string name="txt_name_resource_details_assessment">Miguel Betancourt Cravioto</string>
     <string name="expert_to_perform_filter_view">Experto a realizar fltro</string>
     <string name="loading">Cargando..</string>
-    <string name="nivel">nivel</string>
+
     <string name="about_proyect_example">Proyecto de desarrollo en HTML, venta de productos.</string>
     <string name="punt_details_requi">-</string>
     <string name="example_perfil_details_requi">Java</string>
@@ -180,21 +178,21 @@
     <string name="text_requi_details_requi">Requi : </string>
     <string name="example_number_requi_details">559394</string>
     <string name="btn_postular_details_requi">Postular</string>
-    <string name="btn_ver_postulados">Ver Postulados</string>
+    <string name="btn_view_postulates">Ver Postulados</string>
     <string name="example_name_profile">Gamio Lozano Gloria</string>
     <string name="example_email_profile">m_btncourt@correo.com.mx</string>
     <string name="text_phone_profile">Teléfono</string>
     <string name="example_phone_profile">55 1132 3512</string>
-    <string name="titulo_nombre">Nombre</string>
+
     <string name="alert">Alerta</string>
-    <string name="titulo_postulantes">Postulante</string>
+    <string name="title_postulant">Postulante</string>
     <string name="alertCancel">¿Desea salir sin guardar un nada?</string>
-    <string name="titulo_cocacola">Coca-Cola</string>
-    <string name="titulo_delmunicipio">Delegación/Miunicipio</string>
-    <string name="titulo_referencia">Referencía</string>
-    <string name="titulo6_nombree">TitleNombre6</string>
-    <string name="tools">Herramienta</string>
-    <string name="formato">Formatos</string>
+    <string name="title_cocacola">Coca-Cola</string>
+    <string name="title_delMunicipality">Delegación/Miunicipio</string>
+
+    <string name="titulo6_nombree">TitleNombre6</string><!--Corregir si es 6 o no-->
+    <string name="tool">Herramientas</string>
+    <string name="formats">Formatos</string>
     <string name="permission">Permisos</string>
 
 
@@ -214,9 +212,9 @@
     <string name="hour_filter">Hora</string>
     <string name="interviewer">Entrevistador</string>
     <string name="email_send">Enviar correo a:</string>
-    <string name="acompañante">Acompañante</string>
+    <string name="companion">Acompañante</string>
     <string name="ubication">Ubicación</string>
-    <string name="uzer">Usuarios</string>
+    <string name="users">Usuarios</string>
     <string name="notification">Notificaciones</string>
     <string name="about">Acerca de </string>
     <string name="programming">Programación</string>
@@ -240,57 +238,57 @@
     <string name="editFormat">Editar formato</string>
 
 
-    <string name="titulo_calle">Calle</string>
-    <string name="titulo_c.p">C.P</string>
-    <string name="titulo_numero">Número</string>
-    <string name="titulo_colonia">Colonia</string>
-    <string name="titulo_estado">Estado</string>
-
-
-    <string name="titulo_appaterno">Apellido paterno</string>
-    <string name="titulo_apmaterno">Apellido materno</string>
-    <string name="titulo_datoscontacto">Datos de contacto</string>
-    <string name="titulo_contactoarea">Contacto de área</string>
-    <string name="titulo_tipocontacto">Tipo de contacto</string>
-    <string name="titulo_observaciones">Observaciones</string>
-    <string name="titulo_telefono">Telefono</string>
-
-    <string name="titulo_extension">Extensión</string>
-    <string name="titulo_tipo">Tipo</string>
-    <string name="titulo_btncancelar">Cancelar</string>
-    <string name="titulo_btnguardar">Guardar</string>
-
-
-    <string name="titulo_postulantesregistrados">Postulantes registrados</string>
-    <string name="titulo_btnenviar">Enviar</string>
-
-
-    <string name="titulo_datospersonales">Datos personales</string>
-    <string name="titulo_esexperto">Es experto</string>
-    <string name="titulo_btnperfil">Perfil</string>
 
 
 
-    <string name="titulo_fechanacimiento">Fecha de nacimiento</string>
-    <string name="titulo_referenciatelefonica">Referencia telefónica</string>
-    <string name="titulo_disponibilidad">Disponibilidad</string>
-    <string name="titulo_fecha">Fecha</string>
-    <string name="titulo_hora">Hora</string>
-    <string name="titulo_btnasignarconocimientos">Hacignar conocimientos</string>
-    <string name="titulo_reclutados">Reclutados</string>
 
 
-    <string name="titulo_Promedio">Promedio</string>
-    <string name="titulo_retro">Retro</string>
-    <string name="titulo_periodo">Periodo</string>
-    <string name="titulo_programar">Programar</string>
-    <string name="titulo_fechaevaluacion">Fecha de evaluación</string>
-    <string name="titulo_estatus">Estatus</string>
-    <string name="titulo_evaluador">Evaluador</string>
 
 
-    <string name="titulo_seleccionarusuario">Seleccionar usuario</string>
-    <string name="titulo_confirmarcontraseña">Confirmar contraseña</string>
+
+    <string name="title_dataContact">Datos de contacto</string>
+    <string name="title_contactArea">Contacto de área</string>
+    <string name="title_typeContact">Tipo de contacto</string>
+
+    <string name="title_phone">Telefono</string>
+
+
+    <string name="title_type">Tipo</string>
+    <string name="title_btnCancel">Cancelar</string>
+    <string name="title_btnGuardar">Guardar</string>
+
+
+    <string name="title_postulantsRegistred">Postulantes registrados</string>
+    <string name="title_send">Enviar</string>
+
+
+    <string name="title_personalData">Datos personales</string>
+    <string name="title_isExpert">Es experto</string>
+    <string name="title_btnPerfil">Perfil</string>
+
+
+
+    <string name="title_birthdate">Fecha de nacimiento</string>
+    <string name="title_referencePhone">Referencia telefónica</string>
+    <string name="title_availability">Disponibilidad</string>
+    <string name="title_date">Fecha</string>
+    <string name="title_hour">Hora</string>
+    <string name="title_assignKnowledge">Asignar conocimientos</string>
+    <string name="title_recruited">Reclutados</string>
+
+
+    <string name="title_average">Promedio</string>
+    <string name="title_retro">Retro</string>
+    <string name="title_period">Periodo</string>
+    <string name="title_program">Programar</string>
+    <string name="title_dataEvaluation">Fecha de evaluación</string>
+    <string name="title_status">Estatus</string>
+    <string name="title_evaluator">Evaluador</string>
+
+
+
+    <string name="title_selectUser">Seleccionar usuario</string>
+    <string name="title_confirmPassword">Confirmar contraseña</string>
     <string name="text_btn_see_more_view_resource">Ver más</string>
     <string name="text_btn_see_interview_view_resource">Ver entrevista</string>
     <string name="btn_new_filter_view_resource">Nuevo filtro</string>
@@ -339,31 +337,31 @@
     <string name="text_msg_see_visit">Mensaje</string>
     <string name="example_msg_see_visit">La visita se realizará con la presencia de tu jefe directo en esta asignación.</string>
     <string name="do_you_notification_gerent">¿Quieres noti?car al gerente?</string>
-    <string name="text_mail_recover_password">Correo</string>
+
     <string name="text_code_enter_code">Código</string>
     <string name="text_recover_password">Recuperar</string>
-    <string name="text_password_recover">Contraseña</string>
+
     <string name="cliente">Cliente:</string>
     <string name="btn_edit_details_requi">Editar</string>
     <string name="detail_proyect">Detalle de proyecto</string>
     <string name="poup_confirm">Confirmar</string>
-    <string name="text_btn_to_acept_poup">Aceptar</string>
     <string name="hint_date">dd/mm/aaaa</string>
 
 
-    <string name="text_send_mail_to_postulant">Enviar correo a</string>
+
 
     <!--Nuevos Strings-->
-    <string name="nueva_contraseña">Nueva Contraseña</string>
-    <string name="verifi_nuevaContraseña">Verifica nueva contraseña</string>
-    <string name="btn_regresar">Regresar</string>
-    <string name="no_realiza">No realizado</string>
-    <string name="realizado">Realizado</string>
-    <string name="iniciado">Iniciado</string>
-    <string name="finaliza">Finalizado</string>
-    <string name="porIniciar">Por iniciar</string>
-    <string name="perfil_senior">Senior</string>
-    <string name="java">JAVA</string>
+    <string name="title_newPassword">Nueva Contraseña</string>
+    <string name="title_verifyNewPassword">Verifica nueva contraseña</string>
+    <string name="title_back">Regresar</string>
+    <string name="title_unrealized">No realizado</string>
+    <string name="title_realized">Realizado</string>
+    <string name="title_initiated">Iniciado</string>
+    <string name="title_finished">Finalizado</string>
+    <string name="title_toStart">Por iniciar</string>
+    <string name="title_seniorProfile">Senior</string>
+    <string name="title_java">JAVA</string>
+
 
 </resources>
 

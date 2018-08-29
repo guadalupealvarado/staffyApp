@@ -68,7 +68,7 @@
         android:layout_height="49dp"
         android:layout_marginTop="8dp"
         android:onClick="Aceptar"
-        android:text="@string/text_btn_to_acept_poup"
+        android:text="@string/accept"
         android:theme="@style/RaisedButtonDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button3"

@@ -39,7 +39,7 @@
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="@string/text_send_mail_to_postulant"
+            android:text="@string/email_send"
             android:textColor="@color/colorLabels"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"

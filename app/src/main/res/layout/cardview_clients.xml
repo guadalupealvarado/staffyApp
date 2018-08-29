@@ -37,7 +37,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
-            android:text="@string/titulo_cocacola"
+            android:text="@string/title_cocacola"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
             android:textStyle="bold"
