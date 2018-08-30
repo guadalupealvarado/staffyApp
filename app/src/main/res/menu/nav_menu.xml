@@ -2,6 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+
+
         <item
             android:id="@+id/nav_customers"
             android:checked="true"
@@ -12,19 +14,22 @@
             android:title="@string/draft_item"
             android:icon="@drawable/ic_proyectos"/>
         <item
-            android:id="@+id/nav_evaluators_praxis"
-            android:icon="@drawable/ic_personal_praxis"
-            android:title="@string/evaluators_praxis_item"/>
-        <item
             android:id="@+id/nav_purse"
             android:icon="@drawable/ic_cartera"
             android:title="@string/purse_item"/>
+
+        <item
+            android:id="@+id/nav_evaluators_praxis"
+            android:icon="@drawable/ic_personal_praxis"
+            android:title="@string/evaluators_praxis_item" />
         <item
             android:id="@+id/retros"
             android:icon="@drawable/ic_retro"
-            android:title="@string/purse_item"/>
-
-
+            android:title="@string/retro_item"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/black"/>
 
         <!-- Sección de configuración -->
             <item
@@ -36,5 +41,7 @@
                 android:icon="@drawable/ic_cerrar_sesion"
                 android:title="@string/log_out_item" />
     </group>
+
+
 
 </menu>

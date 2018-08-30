@@ -13,7 +13,8 @@
         android:background="@android:color/white"
         app:titleMarginStart="@dimen/toolbar_text"
         android:elevation="5dp"
+        app:popupTheme="@style/ActionBarStyle"
         app:titleTextColor="@color/colorPrimary" />
 
-    <!--  app:popupTheme="@style/ActionBarStyle"-->
+
 </android.support.design.widget.AppBarLayout>
