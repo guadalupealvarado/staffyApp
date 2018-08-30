@@ -75,6 +75,7 @@ public class IndexView extends AppCompatActivity {
                         break;
                     case R.id.Calendar:
                         setToolbar("Calendario");
+                        changeFragment(ManagerFragmentIndexE.CALENDAR);
                         break;
                 }
                 return true;

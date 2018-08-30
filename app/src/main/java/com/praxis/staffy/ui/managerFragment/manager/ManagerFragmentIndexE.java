@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import com.praxis.staffy.R;
 import com.praxis.staffy.ui.activities.ActivitiesView;
+import com.praxis.staffy.ui.calendar.calendar;
 import com.praxis.staffy.ui.client.consultClients.ConsultClienteView;
 import com.praxis.staffy.ui.configuration.ConfigurationView;
 import com.praxis.staffy.ui.managerFragment.activityViewXML.IndexView;
@@ -35,7 +36,7 @@ public enum ManagerFragmentIndexE {
         @Override
         public Fragment execute(IndexView activity)
         {
-            return setFragment(activity, R.id.fragmentConteinerIndex, ModifyConsultantView.class);
+            return setFragment(activity, R.id.fragmentConteinerIndex, calendar.class);
         }
     },CLIENTS {
                 @Override

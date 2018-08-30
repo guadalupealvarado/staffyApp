@@ -155,7 +155,7 @@
             android:layout_width="0dp"
             android:layout_height="19dp"
             android:layout_marginTop="8dp"
-            android:text="@string/observation"
+            android:text="@string/title_observation"
             android:textColor="@color/colorLabels"
             app:layout_constraintBottom_toTopOf="@+id/edt_observation_fragment_modify_filter"
             app:layout_constraintEnd_toEndOf="parent"
