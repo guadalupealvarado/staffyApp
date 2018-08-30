@@ -10,6 +10,7 @@
     <color name="color_title">#080808</color>
     <color name="fondo">#fffefe</color>
     <color name="obser">#5267d2</color>
+    <color name ="separator">#939191</color>
 
     <color name="fond_backgorund_poup">#F2F2F2</color>
     <color name="text_backgorund_poup">#BDBDBD</color>
