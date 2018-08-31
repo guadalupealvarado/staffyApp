@@ -315,5 +315,13 @@
     <string name="start">Inicio</string>
     <string name="Finish">Fin</string>
     <string name="textVi">TextView</string>
+    <string name="item_request_praxis">Solicitudes</string>
+    <string name="item_visit">Visitas</string>
+    <string-array name="optionsCalendar">
+        <item>Calendario</item>
+        <item>Cancelar</item>
+
+    </string-array>
+
 </resources>
 
