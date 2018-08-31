@@ -329,6 +329,7 @@
     <string name="example_name_expert_evaluation">Manuel Vázquez Hernández</string>
     <string name="example_data_evaluation">10/09/2018</string>
     <string name="example_hours_evaluation">10:00</string>
+
     <string name="example_result_evaluation">Sobresaliente</string>
     <string name="example_obs_evaluation">El postulante está capacitado con conocimientos de tecnología orientada a objetos (TOO), construye aplicaciones utilizando el lenguaje de programación</string>
     <string name="text_address_see_visit">Ubicación</string>
