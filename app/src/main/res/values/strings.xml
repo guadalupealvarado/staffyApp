@@ -61,7 +61,6 @@
     <string name="purse_item">Cartera</string>
     <string name="recruiter_item">Reclutador</string>
     <string name="evaluators_praxis_item">Consultores Praxis</string>
-    <string name="item_request_praxis">Solicitudes</string>
     <string name="customers_item">Cliente</string>
     <string name="draft_item">Proyecto</string>
     <string name="retro_item">Retros</string>
@@ -363,7 +362,6 @@
     <string name="title_toStart">Por iniciar</string>
     <string name="title_seniorProfile">Senior</string>
     <string name="title_java">JAVA</string>
-    <string name="item_visit">Visita</string>
 
 
 </resources>

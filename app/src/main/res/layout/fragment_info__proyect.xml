@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="16dp"
-                android:text="Cliente"
+                android:text="@string/client"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -342,7 +342,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="@string/textVi"
                     app:layout_constraintStart_toStartOf="@+id/textView55"
                     app:layout_constraintTop_toBottomOf="@+id/textView55" />
 
@@ -352,7 +352,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="@string/textVi"
                     app:layout_constraintEnd_toEndOf="@+id/textView55"
                     app:layout_constraintTop_toBottomOf="@+id/textView55" />
 
@@ -362,7 +362,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="4dp"
-                    android:text="Inicio"
+                    android:text="@string/start"
                     app:layout_constraintStart_toStartOf="@+id/constraintLayout19"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout19" />
 
@@ -372,7 +372,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:layout_marginTop="4dp"
-                    android:text="Fin"
+                    android:text="@string/Finish"
                     app:layout_constraintEnd_toEndOf="@+id/constraintLayout19"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout19" />
 
@@ -410,7 +410,7 @@
                             android:id="@+id/tv_day_init_proyect_info"
                             android:layout_width="wrap_content"
                             android:layout_height="18dp"
-                            android:text="TextView"
+                            android:text="@string/textVi"
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="@+id/tv_mouth_init_proyect_info"
@@ -420,7 +420,7 @@
                             android:id="@+id/tv_mouth_init_proyect_info"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="TextView"
+                            android:text="@string/textVi"
                             android:textColor="@android:color/black"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -439,7 +439,7 @@
                             android:id="@+id/tv_day_end_proyect_info"
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:text="TextView"
+                            android:text="@string/textVi"
                             android:textColor="@android:color/white"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="@+id/tv_mouth_end_proyect_info"
@@ -449,7 +449,7 @@
                             android:id="@+id/tv_mouth_end_proyect_info"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="TextView"
+                            android:text="@string/textVi"
                             android:textColor="@android:color/white"
 
                             app:layout_constraintStart_toStartOf="parent"

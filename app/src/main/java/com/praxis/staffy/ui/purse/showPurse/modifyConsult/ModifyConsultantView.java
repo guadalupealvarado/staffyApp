@@ -19,6 +19,7 @@ import com.praxis.staffy.ui.BaseView;
 public class ModifyConsultantView extends BaseView {
     public ModifyConsultantView()
     {
+
     }
 
     @Override
