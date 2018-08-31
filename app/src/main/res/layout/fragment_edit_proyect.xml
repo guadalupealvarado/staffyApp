@@ -397,6 +397,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/spi_status" />
 
             <TextView
+
+
                 android:id="@+id/textView23"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
