@@ -203,14 +203,15 @@
 
             <Button
                 android:id="@+id/btn_one_requi"
+                android:text="@string/text_btn_exmaple_requi"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/text_btn_exmaple_requi"
                 android:theme="@style/RaisedButtonDark"
-                app:layout_constraintEnd_toEndOf="@+id/linear_container_requis_requi"
+               app:layout_constraintEnd_toEndOf="@+id/linear_container_requis_requi"
                 app:layout_constraintStart_toStartOf="@+id/linear_container_requis_requi"
                 app:layout_constraintTop_toBottomOf="@+id/linear_container_requis_requi" />
+
 
             <Button
                 android:id="@+id/btn_two_requi"
