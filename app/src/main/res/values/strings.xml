@@ -109,6 +109,7 @@
     <string name="editTools">Modificar Herramientas</string>
     <string name="select_request">Seleccione la Herramienta</string>
     <string name="id">ID</string>
+
     <string name="editRequest">Modifcar solicitud</string>
     <!-- String de clients -->
     <string name="title_street">Calle</string>
