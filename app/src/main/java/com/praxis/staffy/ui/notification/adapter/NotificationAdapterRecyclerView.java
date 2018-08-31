@@ -11,16 +11,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.praxis.staffy.R;
-import com.praxis.staffy.model.DAO.notification.NotificationDAO;
+
 import com.praxis.staffy.model.pojo.Notification;
 import com.praxis.staffy.utils.TimeLapsedNotification;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
+
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
+
 
 public class NotificationAdapterRecyclerView extends
         RecyclerView.Adapter<NotificationAdapterRecyclerView.NotificationViewHolder> {

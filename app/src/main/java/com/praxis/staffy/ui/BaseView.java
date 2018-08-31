@@ -4,9 +4,12 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.ViewModelStoreOwner;
@@ -18,6 +21,8 @@ import android.support.v7.app.AppCompatCallback;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.view.Window;
+
+import com.praxis.staffy.R;
 
 
 public abstract class BaseView extends Fragment {
@@ -54,7 +59,20 @@ public abstract class BaseView extends Fragment {
 
 
     public void showToastMsj(String msj){
-        Toast.makeText(context, msj, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(context, msj, Toast.LENGTH_SHORT).show();
+        Toast toast = new Toast(context);
+        //usamos cualquier layout como Toast
+        View toast_layout = getLayoutInflater().inflate(R.layout.custom_toast_layout, (ViewGroup) rootView.findViewById(R.id.rlToast));
+        toast.setView(toast_layout);
+        
+
+        //se podría definir el texto en el layout si es invariable pero lo hacemos programáticamente como ejemplo
+        //tenemos acceso a cualquier widget del layout del Toast
+        TextView textView = (TextView) toast_layout.findViewById(R.id.toastMessage);
+        textView.setText(msj);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.show();
+
     }
 
 

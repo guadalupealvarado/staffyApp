@@ -1,22 +1,55 @@
 package com.praxis.staffy.model.pojo;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Timer;
 
 public class ActivityP {
-    private int id;
-    private String descripcion;
-    private Timer fh;
-    private int id_actualizacion;
-    private Timer tm_actualizacion;
-    private int id_creacion;
-    private Timer tm_creacion;
 
-    public int getId() {
-        return id;
+    @SerializedName("id_actividad")
+    @Expose
+    private Integer idActividad;
+    @SerializedName("descripcion")
+    @Expose
+    private String descripcion;
+    @SerializedName("fecha")
+    @Expose
+    private String fecha;
+    @SerializedName("hora")
+    @Expose
+    private String hora;
+    @SerializedName("id_creacion")
+    @Expose
+    private Integer idCreacion;
+    @SerializedName("tm_creacion")
+    @Expose
+    private String tmCreacion;
+    @SerializedName("id_actualizacion")
+    @Expose
+    private Integer idActualizacion;
+    @SerializedName("tm_actualizacion")
+    @Expose
+    private String tmActualizacion;
+    @SerializedName("id_estatus_actividad")
+    @Expose
+    private Integer idEstatusActividad;
+    @SerializedName("estatus_actividad")
+    @Expose
+    private String estatusActividad;
+    @SerializedName("id_tp_actividad")
+    @Expose
+    private Integer idTpActividad;
+    @SerializedName("tp_actividad")
+    @Expose
+    private String tpActividad;
+
+    public Integer getIdActividad() {
+        return idActividad;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdActividad(Integer idActividad) {
+        this.idActividad = idActividad;
     }
 
     public String getDescripcion() {
@@ -27,43 +60,83 @@ public class ActivityP {
         this.descripcion = descripcion;
     }
 
-    public Timer getFh() {
-        return fh;
+    public String getFecha() {
+        return fecha;
     }
 
-    public void setFh(Timer fh) {
-        this.fh = fh;
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 
-    public int getId_actualizacion() {
-        return id_actualizacion;
+    public String getHora() {
+        return hora;
     }
 
-    public void setId_actualizacion(int id_actualizacion) {
-        this.id_actualizacion = id_actualizacion;
+    public void setHora(String hora) {
+        this.hora = hora;
     }
 
-    public Timer getTm_actualizacion() {
-        return tm_actualizacion;
+    public Integer getIdCreacion() {
+        return idCreacion;
     }
 
-    public void setTm_actualizacion(Timer tm_actualizacion) {
-        this.tm_actualizacion = tm_actualizacion;
+    public void setIdCreacion(Integer idCreacion) {
+        this.idCreacion = idCreacion;
     }
 
-    public int getId_creacion() {
-        return id_creacion;
+    public String getTmCreacion() {
+        return tmCreacion;
     }
 
-    public void setId_creacion(int id_creacion) {
-        this.id_creacion = id_creacion;
+    public void setTmCreacion(String tmCreacion) {
+        this.tmCreacion = tmCreacion;
     }
 
-    public Timer getTm_creacion() {
-        return tm_creacion;
+    public Integer getIdActualizacion() {
+        return idActualizacion;
     }
 
-    public void setTm_creacion(Timer tm_creacion) {
-        this.tm_creacion = tm_creacion;
+    public void setIdActualizacion(Integer idActualizacion) {
+        this.idActualizacion = idActualizacion;
+    }
+
+    public String getTmActualizacion() {
+        return tmActualizacion;
+    }
+
+    public void setTmActualizacion(String tmActualizacion) {
+        this.tmActualizacion = tmActualizacion;
+    }
+
+    public Integer getIdEstatusActividad() {
+        return idEstatusActividad;
+    }
+
+    public void setIdEstatusActividad(Integer idEstatusActividad) {
+        this.idEstatusActividad = idEstatusActividad;
+    }
+
+    public String getEstatusActividad() {
+        return estatusActividad;
+    }
+
+    public void setEstatusActividad(String estatusActividad) {
+        this.estatusActividad = estatusActividad;
+    }
+
+    public Integer getIdTpActividad() {
+        return idTpActividad;
+    }
+
+    public void setIdTpActividad(Integer idTpActividad) {
+        this.idTpActividad = idTpActividad;
+    }
+
+    public String getTpActividad() {
+        return tpActividad;
+    }
+
+    public void setTpActividad(String tpActividad) {
+        this.tpActividad = tpActividad;
     }
 }

@@ -6,12 +6,14 @@
     android:id="@+id/notificationCard"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="@dimen/cardRadiosNotification">
+    app:cardCornerRadius="@dimen/cardRadiosNotification"
+    >
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/cardview_light_background">
+        android:background="@color/cardview_light_background"
+        >
 
         <TextView
             android:id="@+id/textCardName"
