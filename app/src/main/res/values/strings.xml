@@ -15,19 +15,28 @@
         <item>Posición 1 </item>
         <item>Posición 2 </item>
         <item>Posición 3 </item>
+
+
     </string-array>
+
     <string-array name="Games2">
         <item>Selecciona</item>
-        <item>Posicion 1 </item>
-        <item>Posicion 2 </item>
-        <item>Posicion 3 </item>
+        <item>Posicin 1 </item>
+        <item>Posicin 2 </item>
+        <item>Posicin 3 </item>
+
+
     </string-array>
+
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="mail">Correo</string>
+
 
     <string name="session">User</string>
     <string name="password">Contraseña</string>
@@ -36,11 +45,13 @@
     <string name="acept">Login</string>
     <string name="send">Enviar</string>
     <string name="error_input_login">Llena correctamente los campos</string>
+
     <string name="notifications">Notificaciones</string>
     <string name="tab_activityM">Actividades</string>
     <string name="tab_calendarM">Calendario</string>
     <string name="send_email"> Se envió correo a:</string>
     <string name="Perfil">Perfiles</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_referencia">referencia</string>
@@ -55,9 +66,11 @@
     <string name="retro_item">Retros</string>
     <string name="nameCardNotification">Ivonne R.</string>
     <string name="textTimeCardNotification">5 minutos</string>
-    <string name="textDescriptionCardNotification">Terminó la etapa de filtro para el proyecto sura servicios.</string>
+    <string name="textDescriptionCardNotification">Terminó la etapa de ?ltro para el proyecto sura servicios.</string>
     <string name="txt_you_must_enter_an_email_msg">Debes escribir un mail</string>
     <string name="the_mail_was_not_found_msg">El correo no fue encontrado.</string>
+
+
     <string name="title_proyect">Proyectos</string>
     <string name="title_start">Por iniciar</string>
     <string name="title_starting">Iniciados</string>
@@ -94,6 +107,7 @@
     <string name="title_editproyect">Editar Proyecto</string>
     <string name="option_direction">Estas son las direcciones registradas para el cliene.
         Por favor selecciona la que corresponda al proyecto.</string>
+
     <string name="open_sesion">Cerrar sesión</string>
     <string name="accept">Aceptar</string>
     <string name="cancel_sesion">Cancelar</string>
@@ -110,7 +124,10 @@
     <string name="select_request">Seleccione la Herramienta</string>
     <string name="id">ID</string>
     <string name="editRequest">Modifcar solicitud</string>
+
+
     <!-- String de clients -->
+
     <string name="title_street">Calle</string>
     <string name="title_reference">Referencia</string>
     <string name="title_cp">C.P</string>
@@ -124,6 +141,11 @@
             El objetivo es mejorar la gestión de recordatorio de actividades a realizar y optimizar la gestión de sus datos.</string>
     <string name="invalid_email_recover_password_enter_mail">Correo invalido.</string>
     <string name="error_body_recover_password_web_services">Error general.</string>
+
+
+    <string name="Title_observationes">Observaciones</string>
+
+
 
     <string name="level">Nivel</string>
     <string name="result_obser">A través del proyecto sistema detallista
@@ -140,9 +162,11 @@
     <string name="view_proyect_txt">Proyecto</string>
     <string name="request_txt">Requiere</string>
     <string name="about_this_app">Área de coordinación y asiganaciones para soluciones móviles Praxis, México.</string>
+
     <string name="txt_name_resource_details_assessment">Miguel Betancourt Cravioto</string>
     <string name="expert_to_perform_filter_view">Experto a realizar fltro</string>
     <string name="loading">Cargando..</string>
+
     <string name="about_proyect_example">Proyecto de desarrollo en HTML, venta de productos.</string>
     <string name="punt_details_requi">-</string>
     <string name="example_perfil_details_requi">Java</string>
@@ -158,19 +182,26 @@
     <string name="btn_view_postulates">Ver Postulados</string>
     <string name="example_name_profile">Gamio Lozano Gloria</string>
     <string name="example_email_profile">m_btncourt@correo.com.mx</string>
+    <string name="text_phone_profile">Teléfono</string>
     <string name="example_phone_profile">55 1132 3512</string>
+
     <string name="alert">Alerta</string>
     <string name="title_postulant">Postulante</string>
     <string name="alertCancel">¿Desea salir sin guardar un nada?</string>
     <string name="title_cocacola">Coca-Cola</string>
     <string name="title_delMunicipality">Delegación/Miunicipio</string>
+
     <string name="titulo6_nombree">TitleNombre6</string><!--Corregir si es 6 o no-->
     <string name="tool">Herramientas</string>
     <string name="formats">Formatos</string>
     <string name="permission">Permisos</string>
-    <string name="request">Solicitar</string>
-    <string name="requisition">Numero de requisición</string>
 
+
+    <string name="request">Solicitar</string>
+
+
+    <string name="requisition">Numero de requisición</string>
+    <string name="observation">Observaciones</string>
     <string name="deadline">Fecha limite</string>
     <string name="postu">Postulantes</string>
     <string name="perfil">Perfil</string>
@@ -206,18 +237,37 @@
     <string name="visits">Visitas</string>
     <string name="addFormat">Agregar formato</string>
     <string name="editFormat">Editar formato</string>
+
+
+
+
+
+
+
+
+
     <string name="title_dataContact">Datos de contacto</string>
     <string name="title_contactArea">Contacto de área</string>
     <string name="title_typeContact">Tipo de contacto</string>
-    <string name="title_phone">Teléfono</string>
+
+    <string name="title_phone">Telefono</string>
+
+
     <string name="title_type">Tipo</string>
     <string name="title_btnCancel">Cancelar</string>
     <string name="title_btnGuardar">Guardar</string>
+
+
     <string name="title_postulantsRegistred">Postulantes registrados</string>
     <string name="title_send">Enviar</string>
+
+
     <string name="title_personalData">Datos personales</string>
     <string name="title_isExpert">Es experto</string>
-    <string name="title_profile">Perfil</string>
+    <string name="title_btnPerfil">Perfil</string>
+
+
+
     <string name="title_birthdate">Fecha de nacimiento</string>
     <string name="title_referencePhone">Referencia telefónica</string>
     <string name="title_availability">Disponibilidad</string>
@@ -225,6 +275,8 @@
     <string name="title_hour">Hora</string>
     <string name="title_assignKnowledge">Asignar conocimientos</string>
     <string name="title_recruited">Reclutados</string>
+
+
     <string name="title_average">Promedio</string>
     <string name="title_retro">Retro</string>
     <string name="title_period">Periodo</string>
@@ -232,6 +284,9 @@
     <string name="title_dataEvaluation">Fecha de evaluación</string>
     <string name="title_status">Estatus</string>
     <string name="title_evaluator">Evaluador</string>
+
+
+
     <string name="title_selectUser">Seleccionar usuario</string>
     <string name="title_confirmPassword">Confirmar contraseña</string>
     <string name="text_btn_see_more_view_resource">Ver más</string>
@@ -255,7 +310,7 @@
     <string name="example_day_format_end">31</string>
     <string name="exmaple_mounth_format_end">Octubre</string>
     <string name="exmaple_year_format_end">2018</string>
-    <string name="data_end_format">Fecha</string>
+    <string name="data_end_format">Fecha ?n</string>
     <string name="text_tools_tools">Herramientas</string>
     <string name="text_id_tools">ID</string>
     <string name="text_notbook_tools">Libreta</string>
@@ -282,13 +337,19 @@
     <string name="text_msg_see_visit">Mensaje</string>
     <string name="example_msg_see_visit">La visita se realizará con la presencia de tu jefe directo en esta asignación.</string>
     <string name="do_you_notification_gerent">¿Quieres noti?car al gerente?</string>
+
     <string name="text_code_enter_code">Código</string>
     <string name="text_recover_password">Recuperar</string>
-    <string name="client">Cliente:</string>
+
+    <string name="cliente">Cliente:</string>
     <string name="btn_edit_details_requi">Editar</string>
     <string name="detail_proyect">Detalle de proyecto</string>
     <string name="poup_confirm">Confirmar</string>
     <string name="hint_date">dd/mm/aaaa</string>
+
+
+
+
     <!--Nuevos Strings-->
     <string name="title_newPassword">Nueva Contraseña</string>
     <string name="title_verifyNewPassword">Verifica nueva contraseña</string>
@@ -300,28 +361,7 @@
     <string name="title_toStart">Por iniciar</string>
     <string name="title_seniorProfile">Senior</string>
     <string name="title_java">JAVA</string>
-    <string name="title_seniorJP">Senior en JAVA, PHP</string>
-    <string name="title_filterProgram">Filtro programado</string>
-    <string name="title_inFilter">En filtro</string>
-    <string name="title_hm">hh:mm</string>
-    <string name="title_nameExample1">Doriane Palma Sosa</string>
-    <string name="title_dateExample1">10 jul. 2018</string>
-    <string name="title_hourExample1">10 hrs. 00 min.</string>
-    <string name="title_pending">Pendiente</string>
-    <string name="observations_example">Faltó enlistar compromisos en el documento entregable.</string>
-    <string name="title_dataExample2">Lunes 18/09/2018</string>
-    <string name="title_changePassword">Cambiar contraseña</string>
-    <string name="version">Versión 1.0</string>
-    <string name="start">Inicio</string>
-    <string name="Finish">Fin</string>
-    <string name="textVi">TextView</string>
-    <string name="item_request_praxis">Solicitudes</string>
-    <string name="item_visit">Visitas</string>
-    <string-array name="optionsCalendar">
-        <item>Calendario</item>
-        <item>Cancelar</item>
 
-    </string-array>
 
 </resources>
 
