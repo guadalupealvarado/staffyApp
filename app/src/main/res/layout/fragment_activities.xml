@@ -128,21 +128,21 @@
                 android:orientation="vertical" />
 
 
-            <include
-                android:id="@+id/include16"
-                layout="@layout/cardview_activities"
-                android:layout_width="0dp"
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activitiesPerformedRecycler"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginBottom="8dp"
                 android:layout_marginEnd="4dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="8dp"
+                android:scrollbars="horizontal"
                 app:layout_constraintBottom_toTopOf="@+id/textView4"
                 app:layout_constraintEnd_toStartOf="@+id/guideline15"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline9"
                 app:layout_constraintTop_toBottomOf="@+id/textView6"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="1.0"/>
 
 
 
