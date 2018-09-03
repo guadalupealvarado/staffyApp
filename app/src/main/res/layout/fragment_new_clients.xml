@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +9,7 @@
     android:background="@android:color/white"
     android:fitsSystemWindows="true">
 
-    <include
+        <include
         android:id="@+id/include4"
         layout="@layout/actionbar_toolbar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -15,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <ScrollView
+         <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -25,11 +27,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include4">
 
+
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.constraint.ConstraintLayout
+
+        <android.support.constraint.ConstraintLayout
                 android:id="@+id/constraintLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -40,6 +44,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/include6">
+
 
                 <Button
                     android:id="@+id/btnCancelNewClient"
@@ -58,8 +63,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/guideline8"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
+               <Button
                     android:id="@+id/aceptarNewClient"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -114,8 +118,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/include3"
                 tools:ignore="MissingConstraints">
-
-                <android.support.design.widget.TextInputLayout
+            <android.support.design.widget.TextInputLayout
                     android:id="@+id/txnombr"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -128,7 +131,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
 
-                    <android.support.design.widget.TextInputEditText
+            <android.support.design.widget.TextInputEditText
                         android:id="@+id/txtNombreNewClient"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -143,9 +146,10 @@
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/txtnumberDirection" />
-                </android.support.design.widget.TextInputLayout>
+            </android.support.design.widget.TextInputLayout>
 
-                <android.support.constraint.ConstraintLayout
+
+            <android.support.constraint.ConstraintLayout
                     android:id="@+id/linearLayout"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
@@ -169,13 +173,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
-                </android.support.constraint.ConstraintLayout>
-
-
-            </android.support.constraint.ConstraintLayout>
-
-        </android.support.constraint.ConstraintLayout>
-    </ScrollView>
-
-
+             </android.support.constraint.ConstraintLayout>
+          </android.support.constraint.ConstraintLayout>
+      </android.support.constraint.ConstraintLayout>
+   </ScrollView>
 </android.support.constraint.ConstraintLayout>

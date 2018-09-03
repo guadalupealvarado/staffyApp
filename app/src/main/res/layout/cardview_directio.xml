@@ -10,8 +10,8 @@
         android:id="@+id/IdCarview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="0dp"
-        android:background="@drawable/redondvx">
+        android:background="@drawable/redondvx"
+        android:elevation="0dp">
 
         <TextView
             android:id="@+id/txtnumberDirection"
@@ -31,6 +31,19 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_agregarfracment_listretro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:borderWidth="1dp"
+            app:elevation="2dp"
+            app:srcCompat="@drawable/ic_more"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="313dp"
+            tools:layout_editor_absoluteY="16dp" />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/txcalletx"

@@ -9,6 +9,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
+        android:title="Detalles de Requisiciòn"
         android:layout_height="?attr/actionBarSize"
         android:background="@android:color/white"
         app:titleMarginStart="@dimen/toolbar_text"
