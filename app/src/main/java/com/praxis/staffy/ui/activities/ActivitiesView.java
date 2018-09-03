@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,23 +31,25 @@ public class ActivitiesView extends BaseView implements ActivitiesMvp.view {
     @Nullable
     @BindView(R.id.activitiesPerformedRecycler)
     RecyclerView activitiesRecyclerView;
-
+    @Nullable
+    @BindView(R.id.activitiesPerformedRecyclerSecond)
+    RecyclerView activitiesRecyclerViewSecond;
     ActivitiesPresenter activitiesPresenter;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_activities, container, false);
-        ButterKnife.bind(this,rootView);
+        ButterKnife.bind(this, rootView);
 
         activitiesPresenter = new ActivitiesPresenter(this);
         activitiesPresenter.oncreate();
         activitiesPresenter.loadList();
-        setLinearLayouManager(activitiesRecyclerView);
+
         rootView.setFocusableInTouchMode(true);
         rootView.requestFocus();
 
-        if(!NotificationModel.UPDATE)
-        {
+        if (!NotificationModel.UPDATE) {
             cardDataCardView(ActivitiesDAO.getInstance().getList());
             showMessage("Ya se cargó.");
         }
@@ -81,30 +84,47 @@ public class ActivitiesView extends BaseView implements ActivitiesMvp.view {
 
     }
 
-    private void setLinearLayouManager(RecyclerView activitiesRecycler)
-    {
+    private void setLinearLayouManager(RecyclerView activitiesRecycler) {
         //RecyclerView notificationRecycler=rootView.findViewById(R.id.notificationRecycler);
-        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(context);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         linearLayoutManager.scrollToPosition(LinearLayout.SCROLLBAR_POSITION_DEFAULT);
         activitiesRecycler.setLayoutManager(linearLayoutManager);
     }
-    public void setDataCardView(RecyclerView notificationRecycler,ArrayList<Notification> list)
-    {
-        NotificationAdapterRecyclerView notificationAdapterRecyclerView=
+
+    public void setDataCardView(RecyclerView notificationRecycler, ArrayList<Notification> list) {
+        NotificationAdapterRecyclerView notificationAdapterRecyclerView =
                 new NotificationAdapterRecyclerView(
-                        list,R.layout.cardview_activities,getActivity());
+                        list, R.layout.cardview_activities, getActivity());
         notificationRecycler.setAdapter(notificationAdapterRecyclerView);
     }
 
 
-    public void cardDataCardView(ArrayList<ActivityP> list)
-    {
-        ActivitiesAdapterRecyclerView activitiesAdapterRecyclerView=
-                new ActivitiesAdapterRecyclerView(
-                        list,R.layout.cardview_activities,getActivity());
-        activitiesRecyclerView.setAdapter(activitiesAdapterRecyclerView);
+    public void cardDataCardView(ArrayList<ActivityP> list) {
+        ArrayList<ActivityP> list_ok = new ArrayList<>();
+        ArrayList<ActivityP> list_not_ok = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("VALOR"+ActivitiesDAO.getInstance().getList().get(i).getIdEstatusActividad().toString());
+            if(list.get(i).getIdEstatusActividad()==1)
+            {
+                list_not_ok.add(list.get(i));
+                setLinearLayouManager(activitiesRecyclerViewSecond);
+                ActivitiesAdapterRecyclerView activitiesAdapterRecyclerView =
+                        new ActivitiesAdapterRecyclerView(
+                                list_not_ok, R.layout.cardview_activitiesss, getActivity());
+                activitiesRecyclerViewSecond.setAdapter(activitiesAdapterRecyclerView);
+            }else if (list.get(i).getIdEstatusActividad()==3){
+                list_ok.add(list.get(i));
+                setLinearLayouManager(activitiesRecyclerView);
+                ActivitiesAdapterRecyclerView activitiesAdapterRecyclerView2=
+                        new ActivitiesAdapterRecyclerView(
+                                list_ok,R.layout.cardview_activities,getActivity());
+                activitiesRecyclerView.setAdapter(activitiesAdapterRecyclerView2);
+                break;
+            }
+        }
     }
+
     @Override
     public void onDestroyView() {
         activitiesPresenter.ondestroy();
