@@ -9,6 +9,7 @@ import com.praxis.staffy.model.DAO.Activities.ActivitiesDAO;
 import com.praxis.staffy.model.DAO.user.UserDAO;
 import com.praxis.staffy.model.DTO.ListActivities;
 
+import com.praxis.staffy.model.User;
 import com.praxis.staffy.model.setPojoServices.SetObjectActivitiesAll;
 
 import com.praxis.staffy.service.serviceActivities.AppiActivities;
@@ -33,7 +34,7 @@ public class ActivitiesModel extends PostEventGeneral implements ActivitiesMvp.m
     public void loadAllActivities() {
         if (ActivitiesModel.UPDATE) {
             Call<ListActivities> response = appiActivities.servicesActivities.getAllActivities(
-                    new SetObjectActivitiesAll("2018-08-30 11:52:27.22217","5"));
+                    new SetObjectActivitiesAll(UserDAO.getInstance().getList().get(0).getId().toString()));
             Log.e("ID user...", String.valueOf(UserDAO.getInstance().getList().get(0).getId()));
             response.enqueue(new Callback<ListActivities>() {
                 @Override

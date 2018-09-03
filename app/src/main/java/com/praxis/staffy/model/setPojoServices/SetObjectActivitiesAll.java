@@ -25,6 +25,10 @@ public class SetObjectActivitiesAll {
         this.idUsuario = idUsuario;
     }
 
+    public SetObjectActivitiesAll(String id) {
+        this.idUsuario = id;
+    }
+
     public String getFecha() {
         return fecha;
     }
