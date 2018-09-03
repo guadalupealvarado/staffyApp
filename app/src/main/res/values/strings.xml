@@ -313,7 +313,7 @@
     <string name="title_dataExample2">Lunes 18/09/2018</string>
     <string name="title_changePassword">Cambiar contraseña</string>
     <string name="version">Versión 1.0</string>
-    <string name="start">Inicio</string>
+    <string name="start">Inicio</string>6
     <string name="Finish">Fin</string>
     <string name="textVi">TextView</string>
     <string name="item_request_praxis">Solicitudes</string>
@@ -322,6 +322,7 @@
         <item>Calendario</item>
         <item>Cancelar</item>
     </string-array>
+    <string name="coca-cola">Coca-Cola</string>
 
 
 </resources>
