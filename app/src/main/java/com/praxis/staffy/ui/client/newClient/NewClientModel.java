@@ -69,7 +69,5 @@ public  class NewClientModel extends PostEventGeneral implements NewClientMVP.mo
         });
     return true;
     }
-
-
 }
 

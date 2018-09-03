@@ -13,6 +13,10 @@
         android:background="@drawable/redondvx"
         android:elevation="0dp">
 
+
+
+
+
         <TextView
             android:id="@+id/txtnumberDirection"
             android:layout_width="0dp"
@@ -37,13 +41,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="50dp"
             app:backgroundTint="@color/colorPrimaryDark"
             app:borderWidth="1dp"
             app:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtnumberDirection"
+            app:layout_constraintEnd_toEndOf="@+id/txtnumberDirection"
+            app:layout_constraintTop_toTopOf="@+id/txtnumberDirection"
+            app:layout_constraintVertical_bias="0.446"
             app:srcCompat="@drawable/ic_more"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="313dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:ignore="MissingConstraints" />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/txcalletx"
@@ -229,7 +237,7 @@
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/txreferenciatx"
-            android:layout_width="0dp"
+            android:layout_width="333dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
@@ -245,7 +253,7 @@
 
             <android.support.design.widget.TextInputEditText
                 android:id="@+id/txreferencia"
-                android:layout_width="match_parent"
+                android:layout_width="336dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:backgroundTint="@color/colorPrimaryDark"

@@ -321,9 +321,8 @@
     <string-array name="optionsCalendar">
         <item>Calendario</item>
         <item>Cancelar</item>
-
-
     </string-array>
+
 
 </resources>
 
