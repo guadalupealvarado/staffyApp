@@ -26,7 +26,7 @@ import butterknife.Optional;
 
 public class ViewPostulanPurseView extends BaseView implements ViewPostulanPurseMVP.ViewPostulanPurseView {
 
-    ViewPostulanPurseMVP.ViewPostulanPursePresenter viewPostulanPursePresenter;
+    ViewPostulanPursePresenter viewPostulanPursePresenter;
 
     @Nullable
     @BindView(R.id.rv_view_list_posulant_purse_view)
@@ -74,10 +74,18 @@ public class ViewPostulanPurseView extends BaseView implements ViewPostulanPurse
     @Override
     public void viewResource() {
         recyclerView.setLayoutManager(new GridLayoutManager(context, 2));
+
+        ArrayList<InfoRecursoPurse> postulantes = new ArrayList<>();
         ArrayList<InfoRecursoPurse> infoRecursoPurses = (ArrayList<InfoRecursoPurse>)
                 PurseDAO.getInstance().getAllResourcePurse();
+
+        for (int i=0;i<infoRecursoPurses.size();i++){
+            if (infoRecursoPurses.get(i).getIdTpRecurso()==1){
+                postulantes.add(infoRecursoPurses.get(i));
+            }
+        }
         AdapteRecyclerPostulantResouse resourceAdapterRecyclerView = new AdapteRecyclerPostulantResouse
-                (infoRecursoPurses, R.layout.card_view_purse, this);
+                (postulantes, R.layout.card_view_purse, this);
         recyclerView.setAdapter(resourceAdapterRecyclerView);
     }
 

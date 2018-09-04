@@ -46,6 +46,7 @@ public class ViewListProyect extends BaseView implements MVPViewProyect.ViewAllP
         resetList();
 
         viewProyectPresenter.consultAllProyecy();
+
         showToolbar(rootView);
         MyAplication.setContext(activity);
         return rootView;
@@ -101,7 +102,7 @@ public class ViewListProyect extends BaseView implements MVPViewProyect.ViewAllP
         }
     }
 
-  /*  public void getAllProject()
+   /*public void getAllProject()
     {
         Call<ListAllProject> response=appiAllProject.servicesSelectAllProject.getAllProject();
         response.enqueue(new Callback<ListAllProject>() {
