@@ -59,7 +59,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.938"
-        app:srcCompat="@drawable/ic_more" />
+        app:srcCompat="@drawable/ic_more"
+
+        />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolVisits"

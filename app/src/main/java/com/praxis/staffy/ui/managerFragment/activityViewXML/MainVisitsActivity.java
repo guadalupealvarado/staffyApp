@@ -15,7 +15,14 @@ public class MainVisitsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_visits);
         MyAplication.setContext(this);
-        changeFragment(MainVisitsActivity.state);
+        if(state!=null){
+
+            changeFragment(state);
+        }else{
+
+        }
+
+
     }
 
     public void changeFragment(ManagerFragmentVisit state)

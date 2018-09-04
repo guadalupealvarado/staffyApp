@@ -9,6 +9,7 @@ import com.praxis.staffy.ui.managerFragment.activityViewXML.MainVisitsActivity;
 import com.praxis.staffy.ui.visits.detailsVisit.DetailsVisitView;
 import com.praxis.staffy.ui.visits.newVisit.NeewVisitView;
 import com.praxis.staffy.ui.visits.editVisit.EditVisitView;
+import com.praxis.staffy.ui.visits.viewVisits.ListVisitView;
 
 public enum  ManagerFragmentVisit {
 
@@ -17,7 +18,7 @@ public enum  ManagerFragmentVisit {
             {
                 @Override
                 public Fragment execute(MainVisitsActivity activity) {
-                    return setFragment(activity,R.id.fragment_container_visit,DetailsVisitView.class);
+                    return setFragment(activity,R.id.fragment_container_visit, ListVisitView.class);
                 }
             },
     NEWVISIT

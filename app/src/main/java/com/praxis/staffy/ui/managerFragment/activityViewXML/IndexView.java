@@ -21,6 +21,7 @@ import com.praxis.staffy.ui.MyAplication;
 import com.praxis.staffy.R;
 import com.praxis.staffy.model.DAO.user.UserDAO;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentPurse;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentVisit;
 import com.praxis.staffy.ui.proyect.ContainerProyect;
 import org.jetbrains.annotations.Nullable;
 import butterknife.BindView;
@@ -174,6 +175,10 @@ public class IndexView extends AppCompatActivity {
                                 //cerrar sesion
                                 signoff();
                                 break;
+                            case R.id.visitas:
+                                //configuracion
+                                goVisits(ManagerFragmentVisit.SEEVISIT);
+                                break;
 
 
                         }
@@ -198,6 +203,12 @@ public class IndexView extends AppCompatActivity {
         Intent configuration = new Intent(getApplicationContext(),
                 ActivityConfiguration.class);
         startActivity(configuration);
+    }
+    private void goVisits(ManagerFragmentVisit state) {//Recibo como parametro que es lo que quiero cargar en este caso SEEVISIT
+        MainVisitsActivity.state=state;//Asigno que cargar
+        Intent visitas = new Intent(getApplicationContext(),
+                MainVisitsActivity.class);
+        startActivity(visitas);
     }
 
 
