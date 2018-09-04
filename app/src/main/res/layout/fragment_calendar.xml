@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.calendar.calendar">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
 
-    <!-- TODO: Update blank fragment layout -->
+    >
 
-        />
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
+   <com.darwindeveloper.onecalendar.views.OneCalendarView
+       android:id="@+id/calendarView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:backgroundColorDaysOfAnotherMonth="@color/white"
+       app:backgroundColorDaysOfMonth="@color/white"
+       app:calendarBackgroundColor="@color/white"
+       app:calendarLanguage="EN"
+       app:currentDayBackgroundColor="@color/colorPrimary"
+       app:mainBackgroundColor="@color/colorPrimary"
+       app:textColorDaysOfAnotherMonth="@color/othersDayMonth"
+       app:textColorDaysOfMonth="@color/colorLabels"
+       app:textColorMonthAndYear="@color/colorLabels"
+       app:backgroundColorSelectedDay="@color/othersDayMonth"
+       app:textColorSelectedDay="@color/color_title">
 
-        >
 
-
-
-    </CalendarView>
-
-</FrameLayout>
+   </com.darwindeveloper.onecalendar.views.OneCalendarView>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Este será el calendario"
+    android:textSize="30dp"
+    android:textColor="@color/colorPrimary"
+    />
+</LinearLayout>
