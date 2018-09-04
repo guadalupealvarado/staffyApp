@@ -6,7 +6,7 @@ import com.praxis.staffy.model.pojo.Address;
 import com.praxis.staffy.model.pojo.Client;
 import java.util.ArrayList;
 
-public interface NewClientMVP {
+public interface NewClientMVP  {
     interface view
     {
         void showMSG(String msg);

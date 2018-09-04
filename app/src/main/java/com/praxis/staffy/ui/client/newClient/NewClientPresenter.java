@@ -1,5 +1,7 @@
 package com.praxis.staffy.ui.client.newClient;
 
+import android.view.View;
+
 import com.praxis.staffy.event.general.GeneralEvent;
 import com.praxis.staffy.helper.EventbusHelperImp;
 import com.praxis.staffy.helper.EventbusInterface;

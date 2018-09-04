@@ -23,7 +23,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_details_requi">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_details_requi"
+        app:layout_constraintVertical_bias="1.0">
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/layouConstrainIndScrol"
@@ -110,6 +111,19 @@
                 app:layout_constraintStart_toStartOf="@+id/tv_expert_register_evaluation"
                 app:layout_constraintTop_toBottomOf="@+id/tv_expert_register_evaluation" />
 
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btn_add_expert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:borderWidth="1dp"
+                app:elevation="2dp"
+                app:srcCompat="@drawable/ic_more"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="328dp"
+                tools:layout_editor_absoluteY="73dp" />
             <TextView
                 android:id="@+id/tv_data_init_register_evaluation"
                 style="@style/text_register_evaluation"
@@ -182,7 +196,7 @@
 
             <EditText
                 android:id="@+id/ed_result_register_evaluation"
-                android:layout_width="0dp"
+                android:layout_width="354dp"
                 android:layout_height="41dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginTop="8dp"
@@ -207,25 +221,28 @@
 
             <EditText
                 android:id="@+id/et_observ_register_evaluation"
-                android:layout_width="0dp"
-                android:layout_height="75dp"
+                android:layout_width="353dp"
+                android:layout_height="68dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/redondvx"
                 android:elevation="1dp"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="@+id/ed_result_register_evaluation"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/tv_observ_register_evaluation"
                 app:layout_constraintTop_toBottomOf="@+id/tv_observ_register_evaluation" />
 
             <Button
                 android:id="@+id/btn_cancel_register_evaluation"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="28dp"
                 android:text="@string/cancel"
-                android:theme="@style/RaisedButtonOrange"                app:layout_constraintEnd_toStartOf="@+id/guideline21"
+                android:theme="@style/RaisedButtonDarkCancel"
+                app:layout_constraintEnd_toStartOf="@+id/guideline21"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/et_observ_register_evaluation"
                 app:layout_constraintTop_toBottomOf="@+id/et_observ_register_evaluation" />
 
@@ -235,14 +252,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="24dp"
                 android:text="@string/accept"
                 android:theme="@style/RaisedButtonDark"
                 app:layout_constraintEnd_toEndOf="@+id/et_observ_register_evaluation"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline21"
                 app:layout_constraintTop_toBottomOf="@+id/et_observ_register_evaluation" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>

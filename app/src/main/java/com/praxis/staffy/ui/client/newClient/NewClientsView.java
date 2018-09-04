@@ -4,6 +4,8 @@ package com.praxis.staffy.ui.client.newClient;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.Button;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
@@ -25,6 +27,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Optional;
+
 
 public  class NewClientsView extends BaseView implements NewClientMVP.view{
 
