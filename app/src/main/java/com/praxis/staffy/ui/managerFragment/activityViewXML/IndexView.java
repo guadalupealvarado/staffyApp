@@ -175,6 +175,7 @@ public class IndexView extends AppCompatActivity {
                                 signoff();
                                 break;
 
+
                         }
                         return true;
                     }
@@ -191,11 +192,14 @@ public class IndexView extends AppCompatActivity {
         startActivity(cliente);
     }
 
+
+
     private void goconfiguration() {
         Intent configuration = new Intent(getApplicationContext(),
                 ActivityConfiguration.class);
         startActivity(configuration);
     }
+
 
 
 
