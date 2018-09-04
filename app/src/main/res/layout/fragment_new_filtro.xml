@@ -108,7 +108,7 @@
             style="@style/Widget.AppCompat.AutoCompleteTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="8dp"
             android:background="@drawable/rounded_corner"
             android:drawableRight="@drawable/ic_clock"
             android:elevation="1dp"
@@ -230,7 +230,7 @@
             app:layout_constraintHorizontal_bias="0.479"
             app:layout_constraintStart_toEndOf="@+id/editText13"
             app:layout_constraintTop_toBottomOf="@+id/tv_text_send_mail_to_postulant"
-            app:layout_constraintVertical_bias="0.652"
+            app:layout_constraintVertical_bias="0.75"
             app:srcCompat="@drawable/ic_more" />
 
         <android.support.constraint.Guideline

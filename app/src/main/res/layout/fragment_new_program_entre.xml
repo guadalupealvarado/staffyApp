@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -77,7 +78,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:background="@drawable/rounded_corner"
-            android:drawableRight="@drawable/ic_calendar"
+            android:drawableRight="@drawable/ic_clock"
             android:elevation="1dp"
             android:ems="10"
             android:hint="00:00"
@@ -130,7 +131,7 @@
         <EditText
             android:id="@+id/ed_sendmail_fragment_new_program_entre"
             style="@style/Widget.AppCompat.AutoCompleteTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="208dp"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corner"
             android:elevation="1dp"
@@ -139,7 +140,7 @@
             android:padding="5dp"
             app:layout_constraintBottom_toTopOf="@+id/tx_perfil_details_requi2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.01"
             app:layout_constraintStart_toEndOf="@+id/guideline26"
             app:layout_constraintTop_toBottomOf="@+id/textView52" />
 

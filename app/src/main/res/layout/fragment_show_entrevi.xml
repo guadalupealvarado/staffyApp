@@ -109,7 +109,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:text="Sobresaliente en el filtro realizado al postulante"
+            android:text="Margarita Saolis "
             android:textColor="@color/bb_darkBackgroundColor"
             app:layout_constraintBottom_toTopOf="@+id/tv_emailsend_fragment_show_entrevi"
             app:layout_constraintEnd_toEndOf="parent"

@@ -96,7 +96,8 @@
                     android:elevation="2dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent">
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="0dp">
 
                     <EditText
                         android:id="@+id/ed_numRequitition_fragment_modify_requicition"
@@ -110,7 +111,7 @@
                         app:layout_constraintHorizontal_bias="0.461"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView45" />
-//
+
                     <TextView
                         android:id="@+id/textView44"
                         android:layout_width="wrap_content"
@@ -157,7 +158,7 @@
                         android:id="@+id/ed_observatio_fragment_modify_requicition"
                         style="@style/Widget.AppCompat.AutoCompleteTextView"
                         android:layout_width="0dp"
-                        android:layout_height="24dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/rounded_corner"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -166,9 +167,8 @@
 
                     <EditText
                         android:id="@+id/ed_postulanteCant_fragment_modify_"
-                        android:layout_width="0dp"
+                        android:layout_width="99dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/rounded_corner"
                         android:elevation="1dp"
@@ -176,15 +176,42 @@
                         android:inputType="date"
                         android:padding="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/ed_requiticionDate_fragment_modify_requicition"
+                        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+                        app:layout_constraintStart_toEndOf="@+id/imageButton4"
                         app:layout_constraintTop_toBottomOf="@+id/textView98" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/simbolo_de_resta"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/ed_postulanteCant_fragment_modify_"
+                        app:layout_constraintStart_toEndOf="@+id/ed_requiticionDate_fragment_modify_requicition"
+                        app:layout_constraintTop_toBottomOf="@+id/textView98"
+                        app:layout_constraintVertical_bias="0.71000004" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/simbolo_de_suma"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/ed_postulanteCant_fragment_modify_"
+                        app:layout_constraintTop_toBottomOf="@+id/textView98"
+                        app:layout_constraintVertical_bias="0.56" />
 
                     <EditText
                         android:id="@+id/ed_requiticionDate_fragment_modify_requicition"
-                        android:layout_width="0dp"
+                        android:layout_width="134dp"
                         android:layout_height="34dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="4dp"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/rounded_corner"
                         android:drawableRight="@drawable/ic_calendar"
@@ -194,7 +221,6 @@
                         android:inputType="date"
                         android:padding="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/ed_postulanteCant_fragment_modify_"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView89" />
 
@@ -221,7 +247,7 @@
                         android:textColor="@color/colorLabels"
                         app:layout_constraintBottom_toTopOf="@+id/ed_postulanteCant_fragment_modify_"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.558"
+                        app:layout_constraintHorizontal_bias="0.845"
                         app:layout_constraintStart_toEndOf="@+id/textView89"
                         app:layout_constraintTop_toBottomOf="@+id/ed_observatio_fragment_modify_requicition" />
 

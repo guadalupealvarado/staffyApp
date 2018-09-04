@@ -395,7 +395,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.571"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_year_init_info_proyect" />
+                        app:layout_constraintTop_toBottomOf="@+id/tv_year_init_info_proyect"
+                        tools:ignore="NotSibling" />
 
                     <android.support.constraint.ConstraintLayout
                         android:id="@+id/constraind_data_init_info_proyect"
