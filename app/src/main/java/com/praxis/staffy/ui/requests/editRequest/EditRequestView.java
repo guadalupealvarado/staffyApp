@@ -92,4 +92,5 @@ public class EditRequestView extends AppCompatActivity {
         adapterMail.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMail.setAdapter(adapterMail);
     }
+
 }

@@ -95,6 +95,7 @@
     <string name="option_direction">Estas son las direcciones registradas para el cliene.
         Por favor selecciona la que corresponda al proyecto.</string>
     <string name="open_sesion">Cerrar sesión</string>
+    <string name="requests">Solicutudes</string>
     <string name="accept">Aceptar</string>
     <string name="cancel_sesion">Cancelar</string>
     <string name="confirmation">¿Esta seguro que desea cerrar sesión?</string>
@@ -169,7 +170,9 @@
     <string name="tool">Herramientas</string>
     <string name="formats">Formatos</string>
     <string name="permission">Permisos</string>
+    <string name="requesstt">Registrar Herramienta</string>
     <string name="request">Solicitar</string>
+    <string name="requestt">Modificar Herramienta</string>
     <string name="requisition">Numero de requisición</string>
 
     <string name="deadline">Fecha limite</string>
@@ -329,7 +332,12 @@
         <item name="3">3</item>
         <item name="4">4</item>
         <item name="5">5</item>
-        <item name="6">6</item>
+       <item name="6">6</item>
+       </string-array>
+
+    <string-array name="typeTel">
+        <item name="tel">Casa</item>
+        <item name = "cel">Celular</item>
     </string-array>
 </resources>
 

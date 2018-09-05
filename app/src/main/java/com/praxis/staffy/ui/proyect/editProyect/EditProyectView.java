@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import com.praxis.staffy.R;
 import com.praxis.staffy.ui.BaseView;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentProyect;
+
 import com.praxis.staffy.ui.proyect.ContainerProyect;
 
 public class EditProyectView extends BaseView
