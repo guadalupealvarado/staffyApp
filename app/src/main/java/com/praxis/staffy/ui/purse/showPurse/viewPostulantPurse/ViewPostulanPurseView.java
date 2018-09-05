@@ -1,6 +1,8 @@
 package com.praxis.staffy.ui.purse.showPurse.viewPostulantPurse;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.GridLayoutManager;
@@ -27,11 +29,11 @@ import butterknife.Optional;
 public class ViewPostulanPurseView extends BaseView implements ViewPostulanPurseMVP.ViewPostulanPurseView {
 
     ViewPostulanPursePresenter viewPostulanPursePresenter;
-
+    SharedPreferences prefs;
     @Nullable
     @BindView(R.id.rv_view_list_posulant_purse_view)
     RecyclerView recyclerView;
-
+    //Se almacena el id del cardview seleccionado
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -84,16 +86,22 @@ public class ViewPostulanPurseView extends BaseView implements ViewPostulanPurse
                 postulantes.add(infoRecursoPurses.get(i));
             }
         }
+        PurseDAO.getInstance().setAllResourcePurse(postulantes);
         AdapteRecyclerPostulantResouse resourceAdapterRecyclerView = new AdapteRecyclerPostulantResouse
                 (postulantes, R.layout.card_view_purse, this);
         recyclerView.setAdapter(resourceAdapterRecyclerView);
     }
 
-    public void goDetilsResource(int id_position) {
+    public void goDetilsResource(int id_position,int card_position) {
         Bundle bundle = new Bundle();
         bundle.putInt(DetailsPurseView.POSICIONRESOURCE, id_position);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putInt(DetailsPurseView.POSICIONRESOURCE,id_position);
+        editor.putInt("cardPosition",card_position);
+        editor.commit();
         MainActivityPurse.state = ManagerFragmentPurse.SHOWDETAILSPURSE.setBundle(bundle);
         Intent intent = new Intent(rootView.getContext(), MainActivityPurse.class);
+        intent.putExtra(DetailsPurseView.POSICIONRESOURCE,id_position);
         startActivity(intent);
     }
 
@@ -104,5 +112,12 @@ public class ViewPostulanPurseView extends BaseView implements ViewPostulanPurse
         MainActivityPurse.state= ManagerFragmentPurse.ADDPOSTULADO;
         Intent intent=new Intent(getActivity(), MainActivityPurse.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        prefs =context.getSharedPreferences("FileLog", Context.MODE_PRIVATE);
+
     }
 }

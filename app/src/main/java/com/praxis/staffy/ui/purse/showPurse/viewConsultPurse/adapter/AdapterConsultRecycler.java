@@ -69,7 +69,7 @@ public class AdapterConsultRecycler extends RecyclerView.Adapter<AdapterConsultR
             imgEditPurse.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    gotDetailsResource(getAdapterPosition());
+                    gotDetailsResource(infoRecursoPurses.get(getAdapterPosition()).getId());
                 }
             });
         }

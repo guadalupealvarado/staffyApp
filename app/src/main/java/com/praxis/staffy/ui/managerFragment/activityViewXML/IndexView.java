@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentClient;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentConsultor;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentIndexE;
 import com.praxis.staffy.ui.MyAplication;
 import com.praxis.staffy.R;
@@ -23,6 +24,8 @@ import com.praxis.staffy.model.DAO.user.UserDAO;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentPurse;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentVisit;
 import com.praxis.staffy.ui.proyect.ContainerProyect;
+import com.praxis.staffy.ui.purse.showPurse.viewConsultPurse.ViewConsultPurseView;
+
 import org.jetbrains.annotations.Nullable;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -153,6 +156,7 @@ public class IndexView extends AppCompatActivity {
 
                             case R.id.nav_evaluators_praxis:
                                 //evaluadores
+                                consultores();
                                 break;
 
                             case R.id.nav_purse:
@@ -217,6 +221,11 @@ public class IndexView extends AppCompatActivity {
     private void gopurse() {
         MainActivityPurse.state= ManagerFragmentPurse.SHOWPURSE;
         Intent purse = new Intent(getApplicationContext(), MainActivityPurse.class);
+        startActivity(purse);
+    }
+    private void consultores() {
+        MainConsultorActivity.state= ManagerFragmentConsultor.SHOWMAIN;
+        Intent purse = new Intent(getApplicationContext(), MainConsultorActivity.class);
         startActivity(purse);
     }
 

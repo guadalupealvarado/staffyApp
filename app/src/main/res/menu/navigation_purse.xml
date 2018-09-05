@@ -6,9 +6,9 @@
         android:icon="@drawable/ic_cartera"
         />
 
-    <item
+    <!--<item
         android:id="@+id/mnNavConsultants"
         android:title="Consultor"
-        android:icon="@drawable/ic_personal_praxis" />
+        android:icon="@drawable/ic_personal_praxis" />-->
 
 </menu>

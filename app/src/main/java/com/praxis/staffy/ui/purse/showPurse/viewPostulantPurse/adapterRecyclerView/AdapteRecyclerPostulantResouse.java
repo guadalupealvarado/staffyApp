@@ -18,6 +18,7 @@ public class AdapteRecyclerPostulantResouse  extends
     private ArrayList<InfoRecursoPurse> infoRecursoPurses;
     private int resourse;
     private ViewPostulanPurseView activity;
+    private int getID;
 
     public AdapteRecyclerPostulantResouse
             (ArrayList<InfoRecursoPurse> infoRecursoPurses, int resourse, ViewPostulanPurseView activity) {
@@ -26,10 +27,11 @@ public class AdapteRecyclerPostulantResouse  extends
         this.activity = activity;
     }
 
-    private void gotDetailsResource(int id_posicion)
+    private void gotDetailsResource(int id_posicion,int card_position)
     {
-        activity.goDetilsResource(id_posicion);
+        activity.goDetilsResource(id_posicion,card_position);
     }
+
 
     @NonNull
     @Override
@@ -42,6 +44,7 @@ public class AdapteRecyclerPostulantResouse  extends
     public void onBindViewHolder(@NonNull AdapteRecyclerPostulantResouse.ResourceViewHolder holder, int position) {
         InfoRecursoPurse infoRecursoPurse=infoRecursoPurses.get(position);
         holder.txtViewNameResourse.setText(infoRecursoPurse.getNombre()+" "+infoRecursoPurse.getApPaterno());
+        getID = infoRecursoPurses.get(position).getId();
         if(infoRecursoPurse.getRecursoPerfil()!=null)
         {
             if(infoRecursoPurse.getRecursoPerfil().get(0)!=null)
@@ -70,7 +73,7 @@ public class AdapteRecyclerPostulantResouse  extends
             imgEditPurse.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    gotDetailsResource(getAdapterPosition());
+                    gotDetailsResource(infoRecursoPurses.get(getAdapterPosition()).getId(),getAdapterPosition());
                 }
             });
         }

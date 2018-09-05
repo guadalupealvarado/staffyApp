@@ -14,7 +14,7 @@ public class ResourceProfile {
     @SerializedName("id_rango")
     @Expose
     private Integer idRango;
-    @SerializedName("Profile")
+    @SerializedName("perfil")
     @Expose
     private String perfil;
     @SerializedName("rango")

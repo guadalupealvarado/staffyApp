@@ -34,7 +34,7 @@
             android:name=".ui.proyect.ContainerProyect"
             android:screenOrientation="nosensor" />
         <activity android:name=".ui.managerFragment.activityViewXML.MainActivityPurse" />
-       <activity android:name=".ui.managerFragment.activityViewXML.MainActivityInterview"/>
+        <activity android:name=".ui.managerFragment.activityViewXML.MainActivityInterview" />
         <activity android:name=".ui.managerFragment.activityViewXML.ActivityConfiguration" />
         <activity android:name=".Splash_staffy">
             <intent-filter>
@@ -43,13 +43,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.managerFragment.activityViewXML.MainActivityFilter"/>
+        <activity android:name=".ui.managerFragment.activityViewXML.MainActivityFilter" />
         <activity android:name=".ui.managerFragment.activityViewXML.MainRequiActivity" />
         <activity android:name=".ui.requests.editRequest.EditRequestView" />
         <activity android:name=".ui.managerFragment.activityViewXML.MainVisitsActivity" />
         <activity android:name=".ui.managerFragment.activityViewXML.MainViewProfileActivity" />
         <activity android:name=".ui.requests.AcitivityRequest" />
-        <activity android:name=".ui.requests.ContainerRequest"></activity>
+        <activity android:name=".ui.requests.ContainerRequest" />
+        <activity android:name=".ui.managerFragment.activityViewXML.MainConsultorActivity"></activity>
     </application>
 
 </manifest>
