@@ -51,6 +51,7 @@
         <activity android:name=".ui.requests.AcitivityRequest" />
         <activity android:name=".ui.requests.ContainerRequest" />
         <activity android:name=".ui.managerFragment.activityViewXML.MainConsultorActivity"></activity>
+    <activity android:name=".ui.managerFragment.activityViewXML.ContainerRetro"></activity>
     </application>
 
 </manifest>

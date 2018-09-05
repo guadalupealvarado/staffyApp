@@ -16,7 +16,7 @@ public enum ManagerFragmentConsultor {
     SHOWMAIN() {
         @Override
         public Fragment execute(MainConsultorActivity activity) {
-            return setFragment(activity, R.id.fragmentConteinerConsultor,showConsultor.class);
+            return setFragment(activity, R.id.fragmentConteinerConsultor,ViewConsultPurseView.class);
         }
     };
     public abstract Fragment execute(MainConsultorActivity activity);

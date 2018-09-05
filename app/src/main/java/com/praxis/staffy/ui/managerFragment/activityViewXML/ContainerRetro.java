@@ -19,7 +19,7 @@ public class ContainerRetro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_retro);
-        changeFragment(ManagerFragmentRetro.LISTRETRO);
+
         MyAplication.setContext(this);
 
         if(states!=null)
