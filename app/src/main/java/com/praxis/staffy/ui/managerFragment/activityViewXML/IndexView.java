@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentClient;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentConfiguration;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentConsultor;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentIndexE;
 import com.praxis.staffy.ui.MyAplication;
@@ -173,7 +174,7 @@ public class IndexView extends AppCompatActivity {
 
                             case R.id.nav_configuration:
                                 //configuracion
-                                goconfiguration();
+                                goConfiguration(ManagerFragmentConfiguration.VIEWCONFIGURATION);
                                 break;
 
                             case R.id.nav_log_out:
@@ -209,7 +210,8 @@ public class IndexView extends AppCompatActivity {
 
 
 
-    private void goconfiguration() {
+    private void goConfiguration(ManagerFragmentConfiguration state) {
+        ActivityConfiguration.state=state;
         Intent configuration = new Intent(getApplicationContext(),
                 ActivityConfiguration.class);
         startActivity(configuration);
