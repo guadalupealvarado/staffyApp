@@ -20,6 +20,8 @@ import com.praxis.staffy.model.DAO.purse.PurseDAO;
 import com.praxis.staffy.model.pojo.Purse.InfoRecursoPurse;
 import com.praxis.staffy.ui.BaseView;
 import com.praxis.staffy.ui.managerFragment.activityViewXML.MainActivityPurse;
+import com.praxis.staffy.ui.managerFragment.activityViewXML.MainConsultorActivity;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentConsultor;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentPurse;
 import com.praxis.staffy.ui.purse.showPurse.detailsPurse.DetailsPurseView;
 import com.praxis.staffy.ui.purse.showPurse.viewConsultPurse.adapter.AdapterConsultRecycler;
@@ -29,6 +31,8 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Optional;
 
 public class ViewConsultPurseView extends BaseView implements ViewConsultMVP.ViewConsultPurseView {
 
@@ -53,7 +57,19 @@ showToolConfiguration(rootView);
         return rootView;
     }
 
+@Optional
+@OnClick(R.id.btn_floating_add_consult_purse_view)
+public void onClick(){
+        goAddConsult(ManagerFragmentConsultor.SHOWADDCONSULTER);
 
+}
+
+    private void goAddConsult(ManagerFragmentConsultor showaddconsulter) {
+        MainConsultorActivity.state=showaddconsulter;
+        Intent myIntent=new Intent(rootView.getContext(),MainConsultorActivity.class);
+        startActivity(myIntent);
+
+    }
 
     @Override
     public void showLoading() {

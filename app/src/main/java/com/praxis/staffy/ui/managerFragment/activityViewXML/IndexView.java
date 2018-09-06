@@ -164,7 +164,7 @@ public class IndexView extends AppCompatActivity {
                             case R.id.nav_purse:
                                 //cartera
 
-                                gopurse();
+                                goPurse(ManagerFragmentPurse.SHOWPURSE);
                                 break;
 
                             case R.id.retros:
@@ -182,7 +182,7 @@ public class IndexView extends AppCompatActivity {
                                 signoff();
                                 break;
                             case R.id.visitas:
-                                //configuracion
+                                //Visitas
                                 goVisits(ManagerFragmentVisit.SEEVISIT);
                                 break;
 
@@ -226,8 +226,8 @@ public class IndexView extends AppCompatActivity {
 
 
 
-    private void gopurse() {
-        MainActivityPurse.state= ManagerFragmentPurse.SHOWPURSE;
+    private void goPurse(ManagerFragmentPurse state) {
+        MainActivityPurse.state= state;
         Intent purse = new Intent(getApplicationContext(), MainActivityPurse.class);
         startActivity(purse);
     }

@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -114,15 +115,18 @@ public class NewConsultantView extends Fragment {
      return rootView;
 
     }
-    public void showToolbar(View view) {
-        //llamar toolbar
-        Toolbar toolbar = view.findViewById(R.id.toolbar_fracment_newconsult);
-        //poner el titulo
+    public void showToolbar(View view)
+    {
+        Toolbar toolbar= view.findViewById(R.id.toolbar_fracment_newconsult);
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Nuevo consultor");
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(true);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back);
+        final ActionBar actionBar=((AppCompatActivity) getActivity()).getSupportActionBar();
+        if(actionBar!=null)
+        {
+            actionBar.setTitle("Nuevo consultor");
+            actionBar.setDisplayShowHomeEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
+        }
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
