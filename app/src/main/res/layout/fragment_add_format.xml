@@ -30,7 +30,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="76dp"
-                android:text="@string/example_name_profile"
+                android:text="@string/add_format"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/label"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +56,7 @@
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/text"
+                android:layout_height="33dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
@@ -124,12 +124,13 @@
                 android:layout_height="@dimen/text"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
                 android:background="@drawable/redondvx"
                 android:ems="10"
                 android:gravity="top"
                 android:inputType="textMultiLine"
                 app:layout_constraintEnd_toStartOf="@+id/txt_finish_date_format"
-                app:layout_constraintHorizontal_bias="0.44"
+                app:layout_constraintHorizontal_bias="0.51"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
@@ -171,7 +172,7 @@
             <EditText
                 android:id="@+id/txt_mail_format"
                 android:layout_width="350dp"
-                android:layout_height="32dp"
+                android:layout_height="35dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"

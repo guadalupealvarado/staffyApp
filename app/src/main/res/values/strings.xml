@@ -158,7 +158,8 @@
     <string name="example_number_requi_details">559394</string>
     <string name="btn_postular_details_requi">Postular</string>
     <string name="btn_view_postulates">Ver Postulados</string>
-    <string name="example_name_profile">Gamio Lozano Gloria</string>
+    <string name="example_name_profile">Selecionar</string>
+
     <string name="example_email_profile">m_btncourt@correo.com.mx</string>
     <string name="example_phone_profile">55 1132 3512</string>
     <string name="alert">Alerta</string>
@@ -249,7 +250,7 @@
     <string name="text_view_format_activity">Formato de actividades</string>
     <string name="example_name_formt">Gerardo Pérez Gómez</string>
     <string name="example_mail_format">pegg@praxis.com.mx</string>
-    <string name="view_format_format">Formatos</string>
+    <string name="view_format_format">Formatos de actividades</string>
     <string name="text_view_format_task">Formato de tareas</string>
     <string name="text_view_format_asist">Formato de asistencia</string>
     <string name="data_init_format">Fecha inicio</string>
@@ -259,7 +260,7 @@
     <string name="example_day_format_end">31</string>
     <string name="exmaple_mounth_format_end">Octubre</string>
     <string name="exmaple_year_format_end">2018</string>
-    <string name="data_end_format">Fecha</string>
+    <string name="data_end_format">Fecha </string>
     <string name="text_tools_tools">Herramientas</string>
     <string name="text_id_tools">ID</string>
     <string name="text_notbook_tools">Libreta</string>
@@ -326,6 +327,8 @@
         <item>Cancelar</item>
     </string-array>
     <string name="cocacola">Coca-Cola</string>
+    <string name="consult">Consultor</string>
+    <string name="add_format">Agregar </string>
     <string-array name="number_number">
         <item name="1">1</item>
         <item name="2">2</item>

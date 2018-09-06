@@ -23,7 +23,7 @@
         <android.support.constraint.ConstraintLayout
             android:id="@+id/cardViewAbout_fragment_configuration"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:backgroundTint="@color/cardview_light_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -190,29 +190,35 @@
                 android:id="@+id/btncancelar_fracmen_new_retro"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
-                android:text="@string/save"
-                android:theme="@style/RaisedButtonDark"
+                android:text="@string/cancel"
+                android:theme="@style/RaisedButtonDarkCancel"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guideline6"
-                app:layout_constraintStart_toStartOf="@+id/guideline5"
-                app:layout_constraintTop_toBottomOf="@+id/txt_spin" />
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtobservvacion_fracment_new_retro"
+                app:layout_constraintVertical_bias="0.293" />
 
             <Button
                 android:id="@+id/btnaceptar_fracment_new_retro"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:text="@string/save"
+                 android:text="@string/text_btn_to_acept"
                 android:theme="@style/RaisedButtonDark"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guideline6"
-                app:layout_constraintStart_toStartOf="@+id/guideline5"
-                app:layout_constraintTop_toBottomOf="@+id/txt_spin"  />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/btncancelar_fracmen_new_retro"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="UnknownId" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar_fracment_newretro"
