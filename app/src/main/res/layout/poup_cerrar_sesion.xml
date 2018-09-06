@@ -5,9 +5,10 @@
     android:id="@+id/layout-root3"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:background="@drawable/poup_rendox"
     android:elevation="4dp"
-    android:layout_gravity="center"
+
     android:orientation="vertical">
 
     <TextView
@@ -15,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/poup_confirmation"
+        android:text="@string/poup_alerta"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -33,17 +34,19 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_poup_confirmation" />
+        app:srcCompat="@drawable/ic_poup_alert" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="254dp"
         android:layout_height="86dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:text="¿Desea guardar nuevo correo?"
-        android:textAlignment="center"
+
+
+        android:text="@string/poup_cerrar_sesion"
+        android:gravity="center"
         android:textColor="@color/text_backgorund_poup"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,8 +59,8 @@
         android:layout_height="49dp"
         android:layout_marginTop="8dp"
         android:onClick="Cancelar"
-        android:text="Cancelar "
         android:elevation="2dp"
+        android:text="@string/poup_no"
         android:theme="@style/RaisedButtonDarkCancel"
         app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,9 +71,9 @@
         android:layout_width="0dp"
         android:layout_height="49dp"
         android:layout_marginTop="8dp"
-        android:elevation="2dp"
         android:onClick="Aceptar"
-        android:text="@string/accept"
+        android:elevation="2dp"
+        android:text="@string/poup_si"
         android:theme="@style/RaisedButtonDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button3"

@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout-root3"
     android:layout_width="match_parent"
+    android:layout_gravity="center"
     android:layout_height="wrap_content"
     android:background="@drawable/poup_rendox"
     android:elevation="4dp"
-    android:layout_gravity="center"
+
     android:orientation="vertical">
 
     <TextView
@@ -15,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/poup_confirmation"
+        android:text="@string/poup_alerta"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -33,47 +34,69 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_poup_confirmation" />
+        app:srcCompat="@drawable/ic_poup_alert" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="86dp"
+        android:id="@+id/textView29"
+        android:layout_width="270dp"
+        android:layout_height="31dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:text="¿Desea guardar nuevo correo?"
-        android:textAlignment="center"
+        android:layout_marginStart="14dp"
+        android:text="@string/poup_fallo_en_el_envio_al_destinatario"
+        android:gravity="center"
         android:textColor="@color/text_backgorund_poup"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="14dp"
+        android:text="@string/poup_correo_correo_com_mx"
+        android:gravity="center"
+        android:textColor="@color/text_backgorund_poup"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="270dp"
+        android:layout_height="99dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/poupo_porfavor_espere_5_minhe_intente_de_nuevo"
+        android:gravity="center"
+        android:textColor="@color/text_backgorund_poup"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="0dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="8dp"
-        android:onClick="Cancelar"
-        android:text="Cancelar "
-        android:elevation="2dp"
-        android:theme="@style/RaisedButtonDarkCancel"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
         android:id="@+id/button4"
-        android:layout_width="0dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="8dp"
-        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:gravity="center"
+        android:layout_marginTop="32dp"
         android:onClick="Aceptar"
-        android:text="@string/accept"
+        android:text="@string/poup_btn_entendido"
         android:theme="@style/RaisedButtonDark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 

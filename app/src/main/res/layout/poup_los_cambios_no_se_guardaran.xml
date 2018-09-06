@@ -7,19 +7,18 @@
     android:layout_height="wrap_content"
     android:background="@drawable/poup_rendox"
     android:elevation="4dp"
-    android:layout_gravity="center"
+android:layout_gravity="center"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:text="@string/poup_confirmation"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/text_backgorund_poup"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:textColor="@color/text_backgorund_poup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
@@ -36,27 +35,42 @@
         app:srcCompat="@drawable/ic_poup_confirmation" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="86dp"
+        android:id="@+id/textView116"
+        android:layout_width="251dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:text="¿Desea guardar nuevo correo?"
-        android:textAlignment="center"
+        android:layout_marginTop="24dp"
+        android:text="@string/poup_Los_cambios_no_se_guardarán"
+        android:gravity="center"
         android:textColor="@color/text_backgorund_poup"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+
+        android:text="@string/poup_esta_seguro"
+        android:textColor="@color/text_backgorund_poup"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="0dp"
         android:layout_height="49dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="36dp"
         android:onClick="Cancelar"
-        android:text="Cancelar "
+        android:text="@string/poup_no"
         android:elevation="2dp"
         android:theme="@style/RaisedButtonDarkCancel"
         app:layout_constraintEnd_toStartOf="@+id/button4"
@@ -67,10 +81,10 @@
         android:id="@+id/button4"
         android:layout_width="0dp"
         android:layout_height="49dp"
-        android:layout_marginTop="8dp"
-        android:elevation="2dp"
+        android:layout_marginTop="36dp"
         android:onClick="Aceptar"
-        android:text="@string/accept"
+        android:text="@string/poup_si"
+        android:elevation="2dp"
         android:theme="@style/RaisedButtonDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button3"
