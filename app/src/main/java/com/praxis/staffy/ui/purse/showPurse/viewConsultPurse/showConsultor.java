@@ -38,7 +38,7 @@ public class showConsultor extends BaseView {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        rootView = inflater.inflate(R.layout.fragment_show_consultor, container, false);
+        rootView = inflater.inflate(R.layout.fragment_view_consult_purse_view, container, false);
         ButterKnife.bind(this, rootView);
         changeFragment(ViewConsultPurseView.class);
         showToolbar();

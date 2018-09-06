@@ -48,7 +48,7 @@ public class ViewConsultPurseView extends BaseView implements ViewConsultMVP.Vie
         viewConsultPursePresenter= new ViewConsultPresenter(this);
         viewConsultPursePresenter.oncreate();
         viewConsultPursePresenter.showAllPuse();
-
+showToolConfiguration(rootView);
         viewResource();
         return rootView;
     }
@@ -111,6 +111,20 @@ public class ViewConsultPurseView extends BaseView implements ViewConsultMVP.Vie
         super.onAttach(context);
         prefs =context.getSharedPreferences("FileLog", Context.MODE_PRIVATE);
 
+    }
+    private void showToolConfiguration(View view) {
+        Toolbar toolbar=view.findViewById(R.id.toolbar_consult);
+        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Consultores");
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(true);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activity.finish();
+            }
+        });
     }
 
 }

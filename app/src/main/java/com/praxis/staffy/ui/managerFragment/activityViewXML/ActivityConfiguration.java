@@ -9,14 +9,20 @@ import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentConfiguration
 
 public class ActivityConfiguration extends AppCompatActivity {
 
-    private ManagerFragmentConfiguration state;
+    public static ManagerFragmentConfiguration state;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_configuration);
         //ToolbarConfiguration(true);
         MyAplication.setContext(this);
-        changeFragment(ManagerFragmentConfiguration.VIEWCONFIGURATION);
+        if(state!=null){
+
+            changeFragment(state);
+        }else{
+
+
+        }
     }
 
 

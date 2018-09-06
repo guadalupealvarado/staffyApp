@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import com.praxis.staffy.R;
 import com.praxis.staffy.ui.managerFragment.activityViewXML.ContainerRetro;
+import com.praxis.staffy.ui.retro.ViewRetro.ViewRetroView;
 import com.praxis.staffy.ui.retro.newRetro.NewRetro;
 
 public enum  ManagerFragmentRetro {
@@ -14,7 +15,7 @@ public enum  ManagerFragmentRetro {
             {
         @Override
         public Fragment execute(ContainerRetro activity)
-        { return setFragment(activity, R.id.fragment_container_retro, NewRetro.class); }
+        { return setFragment(activity, R.id.fragment_container_retro, ViewRetroView.class); }
     }
     ,NEWRETRO
             {

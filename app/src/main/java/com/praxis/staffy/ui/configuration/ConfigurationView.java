@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v7.widget.Toolbar;
 
+import com.praxis.staffy.About;
 import com.praxis.staffy.R;
 import com.praxis.staffy.ui.BaseView;
 import com.praxis.staffy.ui.managerFragment.activityViewXML.ActivityConfiguration;
@@ -57,9 +58,15 @@ public class ConfigurationView extends BaseView {
 
     @Optional
     @OnClick(R.id.btn_container_about)
-    protected void goAbout()
+    protected void onClick()
     {
-        ((ActivityConfiguration) getActivity()).changeFragment(ManagerFragmentConfiguration.ABOUT);
+        goAbout(ManagerFragmentConfiguration.ABOUT);
+    }
+
+    private void goAbout(ManagerFragmentConfiguration about) {
+        ActivityConfiguration.state=about;
+        Intent myIntent=new Intent(rootView.getContext(), ActivityConfiguration.class);
+        startActivity(myIntent);
     }
 
 

@@ -16,12 +16,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentClient;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentConfiguration;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentConsultor;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentIndexE;
 import com.praxis.staffy.ui.MyAplication;
 import com.praxis.staffy.R;
 import com.praxis.staffy.model.DAO.user.UserDAO;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentPurse;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentRetro;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentVisit;
 import com.praxis.staffy.ui.proyect.ContainerProyect;
 import com.praxis.staffy.ui.purse.showPurse.viewConsultPurse.ViewConsultPurseView;
@@ -156,7 +158,7 @@ public class IndexView extends AppCompatActivity {
 
                             case R.id.nav_evaluators_praxis:
                                 //evaluadores
-                                consultores();
+                                consultores(ManagerFragmentConsultor.SHOWMAIN);
                                 break;
 
                             case R.id.nav_purse:
@@ -167,12 +169,12 @@ public class IndexView extends AppCompatActivity {
 
                             case R.id.retros:
                                 //retros
-                                //goretros(ManagerFragmentRetro.LISTRETRO);
+                                goRetros(ManagerFragmentRetro.LISTRETRO);
                                 break;
 
                             case R.id.nav_configuration:
                                 //configuracion
-                                goconfiguration();
+                                goConfiguration(ManagerFragmentConfiguration.VIEWCONFIGURATION);
                                 break;
 
                             case R.id.nav_log_out:
@@ -192,6 +194,11 @@ public class IndexView extends AppCompatActivity {
         );
     }
 
+    private void goRetros(ManagerFragmentRetro state) {
+        ContainerRetro.states=state;
+        Intent myIntent=new Intent(getApplicationContext(),ContainerRetro.class);
+        startActivity(myIntent);
+    }
 
 
     private void goClient(ManagerFragmentClient states) {
@@ -203,7 +210,8 @@ public class IndexView extends AppCompatActivity {
 
 
 
-    private void goconfiguration() {
+    private void goConfiguration(ManagerFragmentConfiguration state) {
+        ActivityConfiguration.state=state;
         Intent configuration = new Intent(getApplicationContext(),
                 ActivityConfiguration.class);
         startActivity(configuration);
@@ -223,8 +231,8 @@ public class IndexView extends AppCompatActivity {
         Intent purse = new Intent(getApplicationContext(), MainActivityPurse.class);
         startActivity(purse);
     }
-    private void consultores() {
-        MainConsultorActivity.state= ManagerFragmentConsultor.SHOWMAIN;
+    private void consultores(ManagerFragmentConsultor state) {
+        MainConsultorActivity.state= state;
         Intent purse = new Intent(getApplicationContext(), MainConsultorActivity.class);
         startActivity(purse);
     }
