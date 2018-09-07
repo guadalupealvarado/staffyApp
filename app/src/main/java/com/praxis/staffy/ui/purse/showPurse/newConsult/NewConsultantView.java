@@ -28,7 +28,7 @@ import butterknife.Optional;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class NewConsultantView extends BaseView implements NewConsultMVP {
+public class NewConsultantView extends BaseView {
 
     public View rootView;
 
