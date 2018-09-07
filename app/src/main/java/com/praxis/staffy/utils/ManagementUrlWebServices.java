@@ -2,7 +2,7 @@ package com.praxis.staffy.utils;
 
 public class ManagementUrlWebServices {
 
-    private  static String url_web_services="http://192.168.7.23" +
+    private  static String url_web_services="http://192.168.7.22" +
             ":3000/";
 
     public static String getUrl_web_services() {

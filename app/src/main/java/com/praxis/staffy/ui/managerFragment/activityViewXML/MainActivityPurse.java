@@ -21,7 +21,7 @@ public class MainActivityPurse extends AppCompatActivity {
         {
             changeFragment(state);
         }
-       changeFragment(ManagerFragmentPurse.SHOWDETAILSPURSE);
+       //changeFragment(ManagerFragmentPurse.SHOWDETAILSPURSE);
       // ToolbarPurse(true,nameToolBar);
     }
 
