@@ -18,18 +18,20 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 import com.praxis.staffy.R;
+import com.praxis.staffy.ui.BaseView;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Optional;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class NewConsultantView extends Fragment {
+public class NewConsultantView extends BaseView {
 
     public View rootView;
-    public Activity activity;
+
 
   /*  @Nullable
     @BindView(R.id.txnombr)
@@ -111,22 +113,18 @@ public class NewConsultantView extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
      rootView = inflater.inflate(R.layout.fragment_new_consultant, container, false);
-     showToolbar(rootView);
+        ButterKnife.bind(this,rootView);
+     showToolConfiguration(rootView);
      return rootView;
 
     }
-    public void showToolbar(View view)
-    {
-        Toolbar toolbar= view.findViewById(R.id.toolbar_fracment_newconsult);
-        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
-        final ActionBar actionBar=((AppCompatActivity) getActivity()).getSupportActionBar();
-        if(actionBar!=null)
-        {
-            actionBar.setTitle("Nuevo consultor");
-            actionBar.setDisplayShowHomeEnabled(true);
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
-        }
+    private void showToolConfiguration(View view) {
+        Toolbar toolbar=view.findViewById(R.id.toolbar_fracment_newconsult);
+        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Consultores");
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(true);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

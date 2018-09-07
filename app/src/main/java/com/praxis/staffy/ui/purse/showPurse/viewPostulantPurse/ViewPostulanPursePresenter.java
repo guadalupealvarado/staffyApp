@@ -35,23 +35,23 @@ public class ViewPostulanPursePresenter implements ViewPostulanPurseMVP.ViewPost
     @Override
     public void onEventMainThread(PurseGeneralEvent event)
     {
-        if(event!=null)
-        {
-            switch (event.getEventType()) {
-                case PurseGeneralEvent.onSuccesEvent:
-                    viewPostulanPurseView.hiddenLoading();
-                    ListPurse listPurse =event.getListPurse();
-                    viewPostulanPurseRepository.saveInDAO(listPurse.getData());
-                    viewPostulanPurseView.viewResource();
-                    break;
-                case PurseGeneralEvent.onErrorEvent:
-                    if (!TextUtils.isEmpty(event.getShowMessage()))
-                    {
-                        viewPostulanPurseView.showMessage(event.getShowMessage());
-                    }
-                    break;
+            if(event!=null)
+            {
+                switch (event.getEventType()) {
+                    case PurseGeneralEvent.onSuccesEvent:
+                        viewPostulanPurseView.hiddenLoading();
+                        ListPurse listPurse =event.getListPurse();
+                        viewPostulanPurseRepository.saveInDAO(listPurse.getData());
+                        viewPostulanPurseView.viewResource();
+                        break;
+                    case PurseGeneralEvent.onErrorEvent:
+                        if (!TextUtils.isEmpty(event.getShowMessage()))
+                        {
+                            viewPostulanPurseView.showMessage(event.getShowMessage());
+                        }
+                        break;
+                }
             }
-        }
     }
 
     @Override
