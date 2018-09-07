@@ -383,6 +383,7 @@
     <string name="poup_esta_seguro_de_guardar">¿Está seguro de guardar?</string>
     <string name="poup_no_se_guardaran_los_datos">No se guardarán los datos.</string>
     <string name="poup_cambios_realizados_con_exito">Cambios realizados con éxito</string>
+    <string name="cargarimagen" />
 
 
 </resources>

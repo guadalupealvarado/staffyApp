@@ -2,8 +2,10 @@ package com.praxis.staffy.ui.requests.editRequest;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -18,6 +20,15 @@ public class EditRequestView extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapterTools;
     ArrayAdapter<CharSequence> adapterId;
     ArrayAdapter<CharSequence> adapterMail;
+
+
+
+
+    @butterknife.BindView(R.id.toolbar)
+    Toolbar toolbar;
+
+
+
 
 
     @Override
@@ -92,5 +103,24 @@ public class EditRequestView extends AppCompatActivity {
         adapterMail.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMail.setAdapter(adapterMail);
     }
+    public void showToolbar()
+    {
 
+        setSupportActionBar(toolbar);
+        final ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle("Modificar solicitud");
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+
+
+
+                @Override
+                public void onClick(View v) {
+                    finish();
+                }
+            });
+        }
+    }
 }

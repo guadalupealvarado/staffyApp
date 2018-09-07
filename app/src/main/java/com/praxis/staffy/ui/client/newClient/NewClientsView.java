@@ -3,7 +3,9 @@ package com.praxis.staffy.ui.client.newClient;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.widget.ImageView;
 import android.widget.Button;
 import android.support.annotation.Nullable;
@@ -30,7 +32,7 @@ import butterknife.Optional;
 
 
 public  class NewClientsView extends BaseView implements NewClientMVP.view{
-
+    private static final int CODIGO_SELECCIONA = 10;
 
     @Nullable
     @BindView(R.id.txtNombreNewClient)
@@ -209,6 +211,16 @@ public  class NewClientsView extends BaseView implements NewClientMVP.view{
         }
     }
 
+@Optional
+@OnClick(R.id.imageView2)
+public void cargarImagen(){
+
+    Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+    intent.setType("image/");
+    startActivityForResult(intent.createChooser(intent, "Seleccione"), CODIGO_SELECCIONA);
+
+
+}
 
 
 

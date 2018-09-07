@@ -4,16 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+
     tools:context=".ui.requests.editRequest.EditRequestView">
 
     <!-- TODO: Update blank fragment layout -->
     <include
         android:id="@+id/include12"
         layout="@layout/actionbar_toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
 
     <ScrollView
         android:layout_width="0dp"
