@@ -111,7 +111,7 @@
 
                     <EditText
                         android:id="@+id/cantPostulantes"
-                        android:layout_width="92dp"
+                        android:layout_width="64dp"
                         android:layout_height="34dp"
                         android:layout_marginTop="16dp"
                         android:background="@drawable/rounded_corner"
@@ -131,7 +131,7 @@
 
                     <EditText
                         android:id="@+id/dateRequitition"
-                        android:layout_width="146dp"
+                        android:layout_width="171dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/rounded_corner"
@@ -171,10 +171,10 @@
                         android:textColor="@color/colorLabels"
                         app:layout_constraintBottom_toTopOf="@+id/cantPostulantes"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.81"
+                        app:layout_constraintHorizontal_bias="0.955"
                         app:layout_constraintStart_toEndOf="@+id/textView89"
                         app:layout_constraintTop_toBottomOf="@+id/observation"
-                        app:layout_constraintVertical_bias="0.86" />
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <ImageButton
                         android:id="@+id/imageButton4"
