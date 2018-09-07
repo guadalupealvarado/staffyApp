@@ -28,9 +28,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_fracment_newcandidato">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_fracment_newcandidato"
+        app:layout_constraintVertical_bias="1.0">
 
 
         <android.support.constraint.ConstraintLayout
@@ -50,10 +51,10 @@
                 style="@style/Widget.AppCompat.AutoCompleteTextView"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
-                android:layout_marginTop="8dp"
                 android:background="@drawable/rounded_corner"
                 android:drawableRight="@drawable/ic_add_mail"
                 app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline3"
                 app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
@@ -74,12 +75,13 @@
                 style="@style/Widget.AppCompat.AutoCompleteTextView"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/rounded_corner"
                 android:drawableRight="@drawable/ic_calendar"
                 android:hint="dd/mm/aaaa"
                 android:inputType="date"
                 app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline3"
                 app:layout_constraintTop_toBottomOf="@+id/textView69" />
 
@@ -301,6 +303,7 @@
                 app:layout_constraintStart_toStartOf="@+id/guideline5"
                 app:layout_constraintTop_toBottomOf="@+id/textView115" />
 
+<!--android:entries="array/typeTel"-->
             <Spinner
                 android:id="@+id/spinnercontac"
                 style="@android:style/Widget.Spinner.DropDown"
@@ -400,13 +403,14 @@
             <TextView
                 android:id="@+id/textView70"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="24dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="24dp"
                 android:text="@string/title_phone"
                 android:textColor="@color/colorLabels"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline3"
                 app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
@@ -585,15 +589,37 @@
                 app:layout_constraintStart_toStartOf="@+id/guideline5"
                 app:layout_constraintTop_toBottomOf="@+id/txt_spin" />
 
+
             <android.support.design.widget.FloatingActionButton
-                android:id="@+id/floatingActionButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/floatingActionButton7"
+                android:layout_width="50dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/add_button"
                 android:clickable="true"
-                app:backgroundTint="@drawable/add_button"
-                app:rippleColor="@drawable/add_button"
-                tools:layout_editor_absoluteX="324dp"
-                tools:layout_editor_absoluteY="386dp" />
+                android:src="@drawable/ic_agregar81511"
+                app:elevation="2dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView70"
+                app:layout_constraintEnd_toEndOf="@+id/textView70"
+                app:layout_constraintTop_toTopOf="@+id/textView70"
+                app:layout_constraintVertical_bias="0.483" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton6"
+                android:layout_width="50dp"
+                android:layout_height="47dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/add_button"
+                android:clickable="true"
+                android:src="@drawable/ic_agregar81511"
+                app:elevation="2dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                app:layout_constraintEnd_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/txt_correo_fracment_newcandidate"
+                app:layout_constraintVertical_bias="0.00999999" />
 
         </android.support.constraint.ConstraintLayout>
 

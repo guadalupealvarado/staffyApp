@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout-root3"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:background="@drawable/poup_rendox"
+    android:elevation="4dp"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+          android:text="@string/poup_confirmation"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_backgorund_poup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="201dp"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_poup_confirmation" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="86dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/poup_esta_seguro_de_guardar"
+
+        android:textColor="@color/text_backgorund_poup"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:onClick="Cancelar"
+        android:text="@string/poup_no"
+        android:theme="@style/RaisedButtonDarkCancel"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:onClick="Aceptar"
+        android:text="@string/poup_si"
+        android:elevation="2dp"
+        android:theme="@style/RaisedButtonDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -21,8 +21,8 @@ public class MainActivityPurse extends AppCompatActivity {
         {
             changeFragment(state);
         }
-      // changeFragment(ManagerFragmentPurse.SHOWDETAILSPURSE);
-      //  ToolbarPurse(true,nameToolBar);
+       changeFragment(ManagerFragmentPurse.SHOWDETAILSPURSE);
+      // ToolbarPurse(true,nameToolBar);
     }
 
    /* @SuppressLint("RestrictedApi")

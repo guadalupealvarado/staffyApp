@@ -29,7 +29,7 @@ public class NewFormatView extends BaseView {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        rootView = inflater.inflate(R.layout.fragment_format, container, false);
+        rootView = inflater.inflate(R.layout.fragment_add_formatnocorrecto, container, false);
         txt_start_date_format = rootView.findViewById(R.id.txt_start_date_format);
         txt_finish_date_format = rootView.findViewById(R.id.txt_finish_date_format);
         txt_mail_format = rootView.findViewById(R.id.txt_mail_format);

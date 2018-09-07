@@ -8,7 +8,7 @@
     <dimen name="height_bottomBar">40dp</dimen>
     <dimen name="list">24dp</dimen>
     <dimen name="text">38dp</dimen>
-    <dimen name="label">14dp</dimen>
+    <dimen name="label">20dp</dimen>
     <dimen name="request">20dp</dimen>
     <dimen name="line_hor">120dp</dimen>
     <dimen name="toolbar_text">10dp</dimen>

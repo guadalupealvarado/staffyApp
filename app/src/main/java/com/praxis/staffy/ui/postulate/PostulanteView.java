@@ -2,8 +2,11 @@ package com.praxis.staffy.ui.postulate;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +27,8 @@ public class PostulanteView extends BaseView {
     @Nullable
     @BindView(R.id.recycler_view_postulante)
     RecyclerView recyclerView;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,7 +42,7 @@ public class PostulanteView extends BaseView {
     private void viewResource() {
 
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(context);
-        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recyclerView.setLayoutManager(linearLayoutManager);
         ArrayList<InfoRecursoPurse> infoRecursoPurses = (ArrayList<InfoRecursoPurse>) PurseDAO.getInstance().getAllResourcePurse();
         AdapterViewPostulados resourceAdapterRecyclerView=new AdapterViewPostulados
@@ -50,4 +55,21 @@ public class PostulanteView extends BaseView {
         ((MainActivityPurse) getActivity()).changeFragment(ManagerFragmentPurse.SHOWRESOURCEPOSTULANT);
     }
 
+public void showToolbar(View view) {
+        Toolbar toolbar = view.findViewById(R.id.toolbar);
+        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+       final ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        if (actionBar == null) {
+         actionBar.setTitle("Postulantes");
+           actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowHomeEnabled(true);
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+              @Override
+               public void onClick(View v) {
+            activity.finish();
+               }
+           });
+       } }
 }

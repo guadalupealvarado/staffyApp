@@ -95,6 +95,7 @@
     <string name="option_direction">Estas son las direcciones registradas para el cliene.
         Por favor selecciona la que corresponda al proyecto.</string>
     <string name="open_sesion">Cerrar sesión</string>
+    <string name="requests">Solicutudes</string>
     <string name="accept">Aceptar</string>
     <string name="cancel_sesion">Cancelar</string>
     <string name="confirmation">¿Esta seguro que desea cerrar sesión?</string>
@@ -157,7 +158,8 @@
     <string name="example_number_requi_details">559394</string>
     <string name="btn_postular_details_requi">Postular</string>
     <string name="btn_view_postulates">Ver Postulados</string>
-    <string name="example_name_profile">Gamio Lozano Gloria</string>
+    <string name="example_name_profile">Selecionar</string>
+
     <string name="example_email_profile">m_btncourt@correo.com.mx</string>
     <string name="example_phone_profile">55 1132 3512</string>
     <string name="alert">Alerta</string>
@@ -169,7 +171,9 @@
     <string name="tool">Herramientas</string>
     <string name="formats">Formatos</string>
     <string name="permission">Permisos</string>
+    <string name="requesstt">Registrar Herramienta</string>
     <string name="request">Solicitar</string>
+    <string name="requestt">Modificar Herramienta</string>
     <string name="requisition">Numero de requisición</string>
 
     <string name="deadline">Fecha limite</string>
@@ -246,7 +250,7 @@
     <string name="text_view_format_activity">Formato de actividades</string>
     <string name="example_name_formt">Gerardo Pérez Gómez</string>
     <string name="example_mail_format">pegg@praxis.com.mx</string>
-    <string name="view_format_format">Formatos</string>
+    <string name="view_format_format">Formatos de actividades</string>
     <string name="text_view_format_task">Formato de tareas</string>
     <string name="text_view_format_asist">Formato de asistencia</string>
     <string name="data_init_format">Fecha inicio</string>
@@ -256,7 +260,7 @@
     <string name="example_day_format_end">31</string>
     <string name="exmaple_mounth_format_end">Octubre</string>
     <string name="exmaple_year_format_end">2018</string>
-    <string name="data_end_format">Fecha</string>
+    <string name="data_end_format">Fecha </string>
     <string name="text_tools_tools">Herramientas</string>
     <string name="text_id_tools">ID</string>
     <string name="text_notbook_tools">Libreta</string>
@@ -288,7 +292,7 @@
     <string name="client">Cliente:</string>
     <string name="btn_edit_details_requi">Editar</string>
     <string name="detail_proyect">Detalle de proyecto</string>
-    <string name="poup_confirm">Confirmar</string>
+
     <string name="hint_date">dd/mm/aaaa</string>
     <!--Nuevos Strings-->
     <string name="title_newPassword">Nueva Contraseña</string>
@@ -323,13 +327,63 @@
         <item>Cancelar</item>
     </string-array>
     <string name="cocacola">Coca-Cola</string>
+    <string name="consult">Consultor</string>
+    <string name="add_format">Agregar </string>
     <string-array name="number_number">
         <item name="1">1</item>
         <item name="2">2</item>
         <item name="3">3</item>
         <item name="4">4</item>
         <item name="5">5</item>
-        <item name="6">6</item>
+       <item name="6">6</item>
+       </string-array>
+
+    <string-array name="typeTel">
+        <item name="tel">Casa</item>
+        <item name = "cel">Celular</item>
     </string-array>
+
+
+
+    <!-- Alertas Poup-->
+
+
+    <string name="poup_confirmation">Confirmar</string>
+    <string name="poup_exito">Éxito</string>
+    <string name="poup_cambios_realizados_con_éxito">Cambios realizados exitosamente</string>
+    <string name="text_btn_to_acept_poup">Aceptar</string>
+
+    <string name="poup_alerta">Alerta</string>
+    <string name="poup_esta_seguro">¿Ésta seguro?</string>
+    <string name="poup_cerrar_sesion">¿Está seguro de cerrar sesión?</string>
+    <string name="poup_registro_exitoso">Registro éxitoso</string>
+    <string name="poup_ingresar_almenos_1correo">Ingresar al menos 1 correo para enviar.</string>
+    <string name="poup_Los_cambios_no_se_guardarán">Los cambios no se guardarán.</string>
+    <string name="poup_el_cliente_se_modifico_correctamente.">El cliente se modificó correctamente.</string>
+    <string name="poup_desea_guardar_nuevo_proyecto">¿Desea guardar nuevo proyecto?</string>
+    <string name="poup_verifique_la_infromación_ingresada">Verifique la infromación ingresada.</string>
+    <string name="poup_el_requerimiento_se_guardo_correctamente">El requerimiento se guardó correctamente.</string>
+    <string name="poup_se_enviara_un_correo_a_recursos_humanos_con_la_lista_de_postulantes.xml"> Se enviará un correo a Recursos Humanos con la lista de postulantes.</string>
+    <string name="poup_no">No</string>
+    <string name="poup_si">Si</string>
+    <string name="poup_btn_no_enviar">No enviar</string>
+    <string name="poup_btn_si_enviar">Si enviar</string>
+    <string name="poup_no_has_selecionado_ningun_postulante">No has selecionado ningún postulante</string>
+    <string name="poup_desea_enviar_la_solicitud_sin_agregarlos">¿Desea enviar la solicitud sin agregarlos?</string>
+    <string name="poup_selecione_uno_o_mas_conocimientos_por_agregar">Selecione uno o más conocimientos para agregar.</string>
+    <string name="poup_entrevista_registrada_correctamente">Entrevista registrada correctamente.</string>
+    <string name="poup_esta_seguro_de_continuar">¿Estás seguro de continuar?</string>
+    <string name="poup_btn_entendido">Entiendo</string>
+    <string name="poup_no_podemos_enviar_el_mensaje_espera_5_min">No podemos enviar el mensaje, espera 5 minutos. Guardamos el recordatorio para intentarlo de nuevo.</string>
+    <string name="poup_el_gerente_se_eliminara_de_la_lista">El gerente se eliminará de la lista. </string>
+    <string name="poup_de_sea_realizarlo">¿Desea realizarlo?</string>
+    <string name="poup_fallo_en_el_envio_al_destinatario">Falló el envío al destinatario:</string>
+    <string name="poup_correo_correo_com_mx">correo@correo.com.mx </string>
+    <string name="poupo_porfavor_espere_5_minhe_intente_de_nuevo">por favor espera 5 minutos. Guardamos el recordatorio para intentarlo de nuevo.</string>
+    <string name="poup_esta_seguro_de_guardar">¿Está seguro de guardar?</string>
+    <string name="poup_no_se_guardaran_los_datos">No se guardarán los datos.</string>
+    <string name="poup_cambios_realizados_con_exito">Cambios realizados con éxito</string>
+
+
 </resources>
 

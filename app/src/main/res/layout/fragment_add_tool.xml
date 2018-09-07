@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.requests.tools.editTools.EditToolsView">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        android:id="@+id/toolbar7"
+        layout="@layout/actionbar_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar7">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="326dp">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/requesstt"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/list"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/text"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/example_name_profile"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/tool"
+                android:textColor="@color/colorLabels"
+                android:textSize="@dimen/label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <Spinner
+                android:id="@+id/spi_tools_edit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/text"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/redondvx"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/description"
+                android:textColor="@color/colorLabels"
+                android:textSize="@dimen/label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spi_tools_edit" />
+
+            <EditText
+                android:id="@+id/txt_finish_date_format"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/redondvx"
+                android:ems="10"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:text="@string/tool"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/title_mail"
+                android:textColor="@color/colorLabels"
+                android:textSize="@dimen/label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_finish_date_format" />
+
+            <EditText
+                android:id="@+id/txt_mail_format"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/text"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/redondvx"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="@string/example_email_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+            <Button
+                android:id="@+id/btn_submit_request_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/send"
+                android:theme="@style/RaisedButtonDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_mail_format"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/btn_add_mail"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_add_mail"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_mail_format"
+                app:layout_constraintEnd_toEndOf="@+id/txt_mail_format"
+                app:layout_constraintTop_toTopOf="@+id/txt_mail_format" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
