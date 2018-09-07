@@ -24,6 +24,7 @@ import android.widget.Toast;
 import com.praxis.staffy.R;
 import com.praxis.staffy.model.DAO.purse.PurseDAO;
 import com.praxis.staffy.model.pojo.Purse.InfoRecursoPurse;
+import com.praxis.staffy.model.pojo.Purse.purseInfoGeneral;
 import com.praxis.staffy.ui.BaseView;
 import com.praxis.staffy.ui.activities.adapter.ActivitiesAdapterRecyclerView;
 import com.praxis.staffy.ui.managerFragment.activityViewXML.MainActivityPurse;
@@ -39,7 +40,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class DetailsPurseView extends BaseView  {
+public class DetailsPurseView extends BaseView implements  detailsPurseMVP.viewInfoPurse  {
 
     @Nullable
     @BindView(R.id.toolbar)
@@ -48,8 +49,10 @@ public class DetailsPurseView extends BaseView  {
     @Nullable
     @BindView(R.id.srollPerfilDetailsPurse)
     RecyclerView rvSkills;
+
     ArrayList<InfoRecursoPurse> infoRecursoPurses = (ArrayList<InfoRecursoPurse>)
             PurseDAO.getInstance().getAllResourcePurse();
+
     final CharSequence[] items = {"Agregar solicitud", "Modificar solicitud",
             "Ver herramientas", "Ver Formatos"};
     ImageView request;
@@ -57,7 +60,8 @@ public class DetailsPurseView extends BaseView  {
     public static final String POSICIONRESOURCE="id_posicion";
     //Se almacena el id del cardview seleccionado
     SharedPreferences prefs;
-
+    //Se instacia el presentador desde la clase MVP
+    detailsPursePresenter presenter;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -66,6 +70,11 @@ public class DetailsPurseView extends BaseView  {
         rootView= inflater.inflate(R.layout.fragment_details_purse, container, false);
         request=rootView.findViewById(R.id.btn_request);
         ButterKnife.bind(this,rootView);
+        //Se inicializae el presentador
+        presenter = new detailsPursePresenter(this);
+        presenter.oncreate();
+        presenter.showAllPuse();
+        viewResource();
         request.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -78,7 +87,9 @@ public class DetailsPurseView extends BaseView  {
         int valID=prefs.getInt("cardPosition",0);
         //cardViewSetData();
         //Toast.makeText(context,String.valueOf(prefs.getInt(POSICIONRESOURCE,011)), Toast.LENGTH_SHORT).show();
-        Toast.makeText(context, String.valueOf(infoRecursoPurses.get(valID).getRecursoPerfil().get(valID).getPerfil()), Toast.LENGTH_SHORT).show();
+       // Toast.makeText(context, String.valueOf(infoRecursoPurses.get(valID).getRecursoPerfil().get(valID).getPerfil()), Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, String.valueOf(prefs.getInt("cardPosition",0)), Toast.LENGTH_SHORT).show();
+
         return rootView;
     }
 
@@ -144,4 +155,22 @@ public class DetailsPurseView extends BaseView  {
         showToastMsj(msg);
     }
 
+    @Override
+    public void viewResource() {
+        ArrayList<purseInfoGeneral> list = (ArrayList<purseInfoGeneral>)
+                PurseDAO.getInstance().getInfoResourcePurse();
+        Log.e("RECUSO",String.valueOf(list.size()));
+    }
+
+    @Override
+    public void onDestroyView() {
+        presenter.ondestroy();
+        super.onDestroyView();
+    }
+
+    @Override
+    public void onDestroy() {
+        presenter.ondestroy();
+        super.onDestroy();
+    }
 }
