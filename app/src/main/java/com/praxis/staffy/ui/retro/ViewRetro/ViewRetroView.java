@@ -1,6 +1,7 @@
 package com.praxis.staffy.ui.retro.ViewRetro;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -14,11 +15,15 @@ import android.view.ViewGroup;
 import com.praxis.staffy.R;
 import com.praxis.staffy.model.pojo.retro;
 import com.praxis.staffy.ui.BaseView;
+import com.praxis.staffy.ui.managerFragment.activityViewXML.ContainerRetro;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentRetro;
 import com.praxis.staffy.ui.retro.adapterRetro.AdapterRetro;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
+import butterknife.OnClick;
+import butterknife.Optional;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -85,4 +90,19 @@ public class ViewRetroView extends BaseView
 
         return retrolist;
     }
+    @Optional
+    @OnClick(R.id.btn_agregarfracment_listretro)
+    public void onClick()
+    {
+        goNewRetro(ManagerFragmentRetro.NEWRETRO);
+        //  Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+    }
+
+    private void goNewRetro(ManagerFragmentRetro newretro) {
+        ContainerRetro.states=newretro;
+        Intent myIntent=new Intent(rootView.getContext(),ContainerRetro.class);
+        startActivity(myIntent);
+    }
+
+
 }

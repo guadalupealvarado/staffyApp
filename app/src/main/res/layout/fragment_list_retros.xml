@@ -66,5 +66,6 @@
         app:backgroundTint="@color/colorPrimaryDark"
         app:borderWidth="1dp"
         app:elevation="2dp"
+    android:clickable="true"
         app:srcCompat="@drawable/ic_more" />
 </android.support.design.widget.CoordinatorLayout>
