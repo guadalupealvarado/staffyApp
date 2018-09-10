@@ -23,7 +23,10 @@ import android.widget.Spinner;
 import android.widget.Toast;
 import com.praxis.staffy.R;
 import com.praxis.staffy.ui.BaseView;
+import com.praxis.staffy.ui.managerFragment.activityViewXML.MainFragment;
 import com.praxis.staffy.ui.managerFragment.activityViewXML.MainViewProfileActivity;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragment;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentPoup;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentProyect;
 import com.praxis.staffy.ui.proyect.ContainerProyect;
 import com.praxis.staffy.ui.proyect.GestionarAdapter2;
@@ -37,7 +40,11 @@ import static android.app.Activity.RESULT_OK;
 
 public class  NewProyectView extends BaseView implements AdapterView.OnItemSelectedListener
 {
+    public static ManagerFragmentPoup stat;
+
     public static ManagerFragmentProyect states;
+
+
     /**Declaración de los objetos*/
     EditText name_proyect, description, date_start, date_finish, observation;
     Button btn_accept, btn_cancel;
@@ -90,8 +97,8 @@ public class  NewProyectView extends BaseView implements AdapterView.OnItemSelec
         imageViewLogo = rootView.findViewById(R.id.img_default);
         imageViewContac = rootView.findViewById(R.id.btn_add_contact);
         imageViewAddress= rootView.findViewById(R.id.btn_add_address);
-        btn_accept = rootView.findViewById(R.id.btn_submit_request_edit);
-        btn_cancel=rootView.findViewById(R.id.btn_cancel);
+        btn_accept = rootView.findViewById(R.id.btn_submit_request_edit); //boton de aceptar para alerta de aceptar proyectos
+        btn_cancel=rootView.findViewById(R.id.btn_cancel); // boton de cancelar para cancelar proyectos
         name_proyect= rootView.findViewById(R.id.name_proyect);
         description = rootView.findViewById(R.id.txt_add_description);
         date_start= rootView.findViewById(R.id.date_start);
@@ -169,6 +176,9 @@ public class  NewProyectView extends BaseView implements AdapterView.OnItemSelec
             @Override
             public void onClick(View v)
             {
+
+                // aqui agregar codigo de alerta
+
                 alerCancel();
             }
         });
@@ -179,20 +189,24 @@ public class  NewProyectView extends BaseView implements AdapterView.OnItemSelec
         return rootView;
     }
 
-    private void backButton()
-    {
-        rootView.setFocusableInTouchMode(true);
+
+ private void backButton()
+  {
+
+
+
+      rootView.setFocusableInTouchMode(true);
         rootView.requestFocus();
-        rootView.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+       rootView.setOnKeyListener(new View.OnKeyListener() {
+           @Override
+     public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
-                    return true;
-                }
-                return false;
-            }
-        });
-    }
+                  return true;
+              }
+              return false;
+            }});
+  }
 
     private void showToolbar(View view)
 {
@@ -274,7 +288,7 @@ public class  NewProyectView extends BaseView implements AdapterView.OnItemSelec
             new AlertDialog.Builder(getContext())
                     .setTitle(getString(R.string.title_addproyec))
                     .setMessage("¿Estas seguro de guardar?")
-                    .setIcon(R.drawable.img_pregunta)
+                    .setIcon(R.drawable.ic_poup_confirmation)
                     .setPositiveButton("Aceptar",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
@@ -290,13 +304,12 @@ public class  NewProyectView extends BaseView implements AdapterView.OnItemSelec
         }
 
     }
-
-    private void alerCancel()
+        private void alerCancel()
     {
-        new AlertDialog.Builder(getContext())
+       /* new AlertDialog.Builder(getContext())
                 .setTitle(getString(R.string.title_addproyec))
                 .setMessage(getString(R.string.alertCancel))
-                .setIcon(R.drawable.img_pregunta)
+                .setIcon(R.drawable.ic_poup_confirmation)
                 .setPositiveButton(getString(R.string.accept),
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id)
@@ -309,8 +322,15 @@ public class  NewProyectView extends BaseView implements AdapterView.OnItemSelec
                             public void onClick(DialogInterface dialog, int id) {
                                 dialog.cancel();
                             }
-                        }).show();
+                        }).show();*/
+       goPoup(ManagerFragmentPoup.EXITPOUP);
 
+    }
+
+    private void goPoup(ManagerFragmentPoup exitpoup) {
+        MainFragment.states=exitpoup;
+        Intent MyIntent= new Intent(rootView.getContext(),MainFragment.class);
+        startActivity(MyIntent);
     }
 
     @Override

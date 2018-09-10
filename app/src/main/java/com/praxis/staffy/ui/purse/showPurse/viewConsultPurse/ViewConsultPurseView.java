@@ -98,7 +98,7 @@ public void onClick(){
             }
         }
         AdapterConsultRecycler resourceAdapterRecyclerView = new AdapterConsultRecycler
-                (consultores, R.layout.card_view_purse, this);
+                (consultores, R.layout.cardview_consult, this);
         recyclerView.setAdapter(resourceAdapterRecyclerView);
     }
     public void goDetilsResource(int id_position) {

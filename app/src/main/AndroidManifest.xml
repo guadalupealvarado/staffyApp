@@ -7,7 +7,8 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/lg_staffy"
@@ -42,7 +43,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".ui.managerFragment.activityViewXML.MainActivityFilter" />
         <activity android:name=".ui.managerFragment.activityViewXML.MainRequiActivity" />
         <activity android:name=".ui.requests.editRequest.EditRequestView" />
@@ -50,8 +50,9 @@
         <activity android:name=".ui.managerFragment.activityViewXML.MainViewProfileActivity" />
         <activity android:name=".ui.requests.AcitivityRequest" />
         <activity android:name=".ui.requests.ContainerRequest" />
-        <activity android:name=".ui.managerFragment.activityViewXML.MainConsultorActivity"></activity>
-    <activity android:name=".ui.managerFragment.activityViewXML.ContainerRetro"></activity>
+        <activity android:name=".ui.managerFragment.activityViewXML.MainConsultorActivity" />
+        <activity android:name=".ui.managerFragment.activityViewXML.ContainerRetro" />
+        <activity android:name=".ui.managerFragment.activityViewXML.MainFragment"></activity>
     </application>
 
 </manifest>

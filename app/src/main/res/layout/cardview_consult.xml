@@ -14,12 +14,12 @@
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/constraintLayout3"
-            android:layout_width="179dp"
+            android:layout_width="148dp"
             android:layout_height="wrap_content"
             android:background="@drawable/redondvx">
 
             <TextView
-                android:id="@+id/txtPerfilCardView"
+                android:id="@+id/txtPerfilCardViewconsult"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_marginBottom="8dp"
@@ -31,7 +31,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/txtViewNameResourse" />
 
             <TextView
-                android:id="@+id/txtViewNameResourse"
+                android:id="@+id/txtViewNameResourseconsult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -57,7 +57,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Switch
-                android:id="@+id/switch3"
+                android:id="@+id/switchconsult"
                 android:layout_width="39dp"
                 android:layout_height="23dp"
                 android:layout_marginEnd="3dp"
@@ -80,7 +80,7 @@
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
 
             <ImageView
-                android:id="@+id/imageView10"
+                android:id="@+id/ic_delet"
                 android:layout_width="30dp"
                 android:layout_height="27dp"
                 android:layout_marginEnd="24dp"
@@ -90,7 +90,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView11"
+                android:id="@+id/ic_modific"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginBottom="8dp"

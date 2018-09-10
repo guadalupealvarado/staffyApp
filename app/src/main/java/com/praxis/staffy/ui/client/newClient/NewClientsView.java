@@ -99,6 +99,7 @@ public  class NewClientsView extends BaseView implements NewClientMVP.view{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         rootView = inflater.inflate(R.layout.fragment_new_clients, container, false);
         LayoutInflater layoutInflater=getLayoutInflater();
         ButterKnife.bind(this, rootView);

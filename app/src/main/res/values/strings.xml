@@ -335,14 +335,13 @@
         <item name="3">3</item>
         <item name="4">4</item>
         <item name="5">5</item>
-       <item name="6">6</item>
-       </string-array>
+        <item name="6">6</item>
+    </string-array>
 
     <string-array name="typeTel">
         <item name="tel">Casa</item>
-        <item name = "cel">Celular</item>
+        <item name="cel">Celular</item>
     </string-array>
-
 
 
     <!-- Alertas Poup-->
@@ -384,6 +383,9 @@
     <string name="poup_no_se_guardaran_los_datos">No se guardarán los datos.</string>
     <string name="poup_cambios_realizados_con_exito">Cambios realizados con éxito</string>
     <string name="cargarimagen" />
+
+
+    <string name="iniciados">Iniciados</string>
 
 
 </resources>

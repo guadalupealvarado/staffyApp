@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import com.praxis.staffy.R;
@@ -40,7 +41,7 @@ public class AdapterConsultRecycler extends RecyclerView.Adapter<AdapterConsultR
     @Override
     public void onBindViewHolder(@NonNull AdapterConsultRecycler.ResourceViewHolder holder, int position) {
         InfoRecursoPurse infoRecursoPurse=infoRecursoPurses.get(position);
-        holder.txtViewNameResourse.setText(infoRecursoPurse.getNombre()+" "+infoRecursoPurse.getApPaterno());
+        holder.txtViewNameResoursepouerse.setText(infoRecursoPurse.getNombre()+" "+infoRecursoPurse.getApPaterno());
         if(infoRecursoPurse.getRecursoPerfil()!=null)
         {
             if(infoRecursoPurse.getRecursoPerfil().get(0)!=null)
@@ -57,15 +58,18 @@ public class AdapterConsultRecycler extends RecyclerView.Adapter<AdapterConsultR
     public class ResourceViewHolder extends RecyclerView.ViewHolder
     {
 
-        private TextView txtViewNameResourse;
+        private TextView txtViewNameResoursepouerse;
         private TextView txtPerfilCardView;
         private ImageView imgEditPurse;
+        private ImageView imgdeletpurse;
+
         public ResourceViewHolder(View itemView)
         {
             super(itemView);
-            txtViewNameResourse=itemView.findViewById(R.id.txtViewNameResourse);
-            txtPerfilCardView=itemView.findViewById(R.id.txtPerfilCardView);
-            imgEditPurse=itemView.findViewById(R.id.imgEditPurse);
+
+            txtViewNameResoursepouerse =itemView.findViewById(R.id.txtViewNameResourseconsult);
+            txtPerfilCardView=itemView.findViewById(R.id.txtPerfilCardViewconsult);
+            imgEditPurse=itemView.findViewById(R.id.ic_modific);
             imgEditPurse.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
