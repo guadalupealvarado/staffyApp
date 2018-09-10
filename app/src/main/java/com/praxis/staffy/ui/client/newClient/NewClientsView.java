@@ -41,6 +41,7 @@ public  class NewClientsView extends BaseView implements NewClientMVP.view{
     @Nullable
     @BindView(R.id.txcalle)
     EditText  calleEditText;
+
     @Nullable
     @BindView(R.id.txnumero)
     EditText  numeroEditText;

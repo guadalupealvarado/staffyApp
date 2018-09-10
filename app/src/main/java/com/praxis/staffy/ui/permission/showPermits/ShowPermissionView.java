@@ -1,6 +1,7 @@
 package com.praxis.staffy.ui.permission.showPermits;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -36,18 +37,24 @@ public class ShowPermissionView extends BaseView {
     }
     public void showToolbar( View view)
     {//
-        Toolbar toolbar=view.findViewById(R.id.permitsTool);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Permisos");
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(true);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                activity.finish();
-            }
-        });
+        Toolbar toolbar = view.findViewById(R.id.permitsTool);
+        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+        final ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle(getString(R.string.permission));
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    goInfoProyect();
+                }
+            });
+        }
+    }
+    private void goInfoProyect()
+    {
+        changeFragment(ManagerFragmentRequest.VIEWREQUEST);
     }
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {

@@ -1,16 +1,19 @@
 package com.praxis.staffy.ui.requests.tools.newTools;
 
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.InputType;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,6 +33,7 @@ public class NewToolsView extends BaseView
 {
     public static ManagerFragmentRequest states;
     EditText etTextMail, etDescriptionTool;
+
     ImageView addMail;
     Button submit;
     Spinner spinnerTools;
@@ -48,13 +52,13 @@ public class NewToolsView extends BaseView
         fillSpiner();
         submitRequest();
         mailAdd();
-        backButton();
+       // backButton();
         showToolbar(rootView);
 
         return rootView;
 
     }
-
+/*
     private void backButton()
     {
         rootView.setFocusableInTouchMode(true);
@@ -68,7 +72,7 @@ public class NewToolsView extends BaseView
                 return false;
             }
         });
-    }
+    }*/
 
     private void showToolbar(View view)
     {
@@ -82,7 +86,11 @@ public class NewToolsView extends BaseView
             toolbar.setNavigationOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    etDescriptionTool = rootView.findViewById(R.id.txt_finish_date_format);
+                    InputMethodManager imm = (InputMethodManager) context.getSystemService(context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(etDescriptionTool.getWindowToken(), 0);//Oculta el teclado
                     goInfoProyect();
+
                 }
             });
         }
@@ -150,6 +158,7 @@ public class NewToolsView extends BaseView
 
     private void validarText()
     {
+
         etDescriptionTool = rootView.findViewById(R.id.txt_finish_date_format);
         etTextMail= rootView.findViewById(R.id.txt_mail_format);
 

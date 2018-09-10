@@ -65,10 +65,10 @@ public class ViewListProyect extends BaseView implements MVPViewProyect.ViewAllP
 
         lista=(ListView) rootView.findViewById(R.id.finalizados);
         lista.setAdapter(new GestionarAdapter((ContainerProyect) activity, finalizados));
-        backButton();
+       // backButton();
 
     }
-
+/*
     private void backButton()
     {
         rootView.setFocusableInTouchMode(true);
@@ -82,7 +82,7 @@ public class ViewListProyect extends BaseView implements MVPViewProyect.ViewAllP
                 return false;
             }
         });
-    }
+    }*/
 
     private void showToolbar(View view)
     {

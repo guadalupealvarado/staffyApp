@@ -9,9 +9,11 @@ import android.view.ViewGroup;
 
 import com.praxis.staffy.R;
 import com.praxis.staffy.ui.BaseView;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentRequest;
+import com.praxis.staffy.ui.requests.ContainerRequest;
 
 public class ModifyPermissionView extends BaseView {
-
+public ManagerFragmentRequest states;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedIntanceState) {
         rootView = inflater.inflate(R.layout.
                         fragment_modify_permiso, container,
@@ -30,8 +32,16 @@ public class ModifyPermissionView extends BaseView {
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                activity.finish();
+                goPermiss();
             }
         });
+    }
+    public void changeFragment(ManagerFragmentRequest states){
+        this.states=ManagerFragmentRequest.setState(states);
+        this.states.execute((ContainerRequest) getContext());
+
+    }
+    private void goPermiss() {
+        changeFragment(ManagerFragmentRequest.SHOWPERMIST);
     }
 }

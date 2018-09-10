@@ -15,6 +15,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentClient;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentConfiguration;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentConsultor;
@@ -22,11 +24,15 @@ import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentIndexE;
 import com.praxis.staffy.ui.MyAplication;
 import com.praxis.staffy.R;
 import com.praxis.staffy.model.DAO.user.UserDAO;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentProyect;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentPurse;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentRequest;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentRequi;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentRetro;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentVisit;
 import com.praxis.staffy.ui.proyect.ContainerProyect;
 import com.praxis.staffy.ui.purse.showPurse.viewConsultPurse.ViewConsultPurseView;
+import com.praxis.staffy.ui.requests.ContainerRequest;
 
 import org.jetbrains.annotations.Nullable;
 import butterknife.BindView;
@@ -153,7 +159,7 @@ public class IndexView extends AppCompatActivity {
 
                             case R.id.nav_draft:
                                 //Proyecto
-                                goproyect();
+                                goProyect(ManagerFragmentProyect.MAINPROYECT);
                                 break;
 
                             case R.id.nav_evaluators_praxis:
@@ -165,6 +171,12 @@ public class IndexView extends AppCompatActivity {
                                 //cartera
 
                                 goPurse(ManagerFragmentPurse.SHOWPURSE);
+                                break;
+
+                            case R.id.nav_request_praxis:
+                                //cartera
+
+                                goRequest(ManagerFragmentRequest.VIEWREQUEST);
                                 break;
 
                             case R.id.retros:
@@ -192,6 +204,13 @@ public class IndexView extends AppCompatActivity {
                     }
                 }
         );
+    }
+
+    private void goRequest(ManagerFragmentRequest viewrequest) {
+        ContainerRequest.states=viewrequest;
+
+   Intent myIntent=new Intent(getApplicationContext(),ContainerRequest.class);
+startActivity(myIntent);
     }
 
     private void goRetros(ManagerFragmentRetro state) {
@@ -278,10 +297,11 @@ public class IndexView extends AppCompatActivity {
         alert.show();
     }
 
-    private void goproyect() {
-        Intent proyectactivity = new Intent(getApplicationContext(),
+    private void goProyect(ManagerFragmentProyect state) {
+        ContainerProyect.states=state;
+        Intent myIntent = new Intent(getApplicationContext(),
                 ContainerProyect.class);
-        startActivity(proyectactivity);
+        startActivity(myIntent);
     }
 
     private void  setToolbar(String title) {

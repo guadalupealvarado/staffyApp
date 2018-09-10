@@ -29,7 +29,7 @@ public enum ManagerFragmentPurse {
     SHOWPURSE() {
         @Override
         public Fragment execute(MainActivityPurse activity) {
-            return setFragment(activity, R.id.fragmentConteinerPurse, ShowPurseView.class);
+            return setFragment(activity, R.id.fragmentConteinerPurse, ViewPostulanPurseView.class);
         }
     },
     SHOWDETAILSPURSE() {
