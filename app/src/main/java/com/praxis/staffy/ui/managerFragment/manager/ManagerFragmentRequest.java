@@ -17,6 +17,7 @@ import com.praxis.staffy.ui.requests.tools.newTools.NewToolsView;
 public enum ManagerFragmentRequest {
 
 
+
         TOOL {
             @Override
             public Fragment execute(ContainerRequest activity)
