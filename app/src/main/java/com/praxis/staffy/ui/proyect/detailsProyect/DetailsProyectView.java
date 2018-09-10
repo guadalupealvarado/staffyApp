@@ -21,12 +21,15 @@ import com.praxis.staffy.model.pojo.Project;
 import com.praxis.staffy.ui.BaseView;
 import com.praxis.staffy.ui.managerFragment.activityViewXML.MainRequiActivity;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentProyect;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentRequi;
 import com.praxis.staffy.ui.proyect.ContainerProyect;
 import com.praxis.staffy.ui.proyect.viewProyect.viewProyecyRecycletView.GestionarAdapter;
 import com.praxis.staffy.utils.MonthConverterToString;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Optional;
 
 public class DetailsProyectView extends BaseView {
     public static ManagerFragmentProyect states;
@@ -80,13 +83,15 @@ public class DetailsProyectView extends BaseView {
         tv_observaciones_info_proyect.setText(project.getDescripcion());
 
         setHasOptionsMenu(true);
+
+        /*
         Button show_requi =  rootView.findViewById(R.id.show_requi);
         show_requi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goShowRequi();
             }
-        });
+        });*/
         backButton();
         return rootView;
     }
@@ -124,7 +129,12 @@ public class DetailsProyectView extends BaseView {
         }
 
     }
+@Optional
+@OnClick(R.id.show_requi)
+public void clickShowRequi(){
+      goShowRequi(ManagerFragmentRequi.SHOWREQUI);
 
+}
     private void changeFragment(ManagerFragmentProyect states) {
         this.states = ManagerFragmentProyect.setState(states);
         this.states.execute((ContainerProyect) getContext());
@@ -156,11 +166,12 @@ public class DetailsProyectView extends BaseView {
 
     }
 
-    private void goShowRequi()
+    private void goShowRequi(ManagerFragmentRequi showrequi)
     {
-        Intent proyectactivity = new Intent(getContext(),
+        MainRequiActivity.state=showrequi;
+        Intent myInten = new Intent(getContext(),
                 MainRequiActivity.class);
-        startActivity(proyectactivity);
+        startActivity(myInten);
     }
 
 }

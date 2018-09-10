@@ -42,6 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".ui.managerFragment.activityViewXML.MainActivityFilter" />
         <activity android:name=".ui.managerFragment.activityViewXML.MainRequiActivity" />
         <activity android:name=".ui.requests.editRequest.EditRequestView" />

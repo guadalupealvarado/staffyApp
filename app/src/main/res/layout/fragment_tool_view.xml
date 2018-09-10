@@ -101,12 +101,12 @@
             <EditText
                 android:id="@+id/txt_finish_date_format"
                 android:layout_width="0dp"
-                android:layout_height="180dp"
+                android:layout_height="135dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
                 android:background="@drawable/redondvx"
                 android:ems="10"
-                android:gravity="top"
+                android:elevation="1dp"
                 android:inputType="textMultiLine"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -118,11 +118,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:text="@string/title_mail"
                 android:textColor="@color/colorLabels"
                 android:textSize="@dimen/label"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_finish_date_format" />
 

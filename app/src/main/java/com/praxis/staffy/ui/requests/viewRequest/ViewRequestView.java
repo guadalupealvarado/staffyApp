@@ -16,11 +16,15 @@ import com.praxis.staffy.ui.BaseView;
 import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentRequest;
 import com.praxis.staffy.ui.requests.ContainerRequest;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Optional;
+
 /**
  * A simple {@link Fragment} subclass.
  */
 public class ViewRequestView extends BaseView {
-    public static ManagerFragmentRequest states;
+    public ManagerFragmentRequest states;
     ImageView tool, format, permission;
 
 
@@ -33,38 +37,14 @@ public class ViewRequestView extends BaseView {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         rootView= inflater.inflate(R.layout.fragment_view_request, container, false);
+        ButterKnife.bind(this,rootView);
         showToolbar(rootView);
-        backButton();
-        tool= rootView.findViewById(R.id.btn_tools);
-        tool.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                eventTool();
-            }
-        });
+        //backButton();
 
-        format= rootView.findViewById(R.id.btn_format);
-        format.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                eventFormat();
-            }
-        });
 
-        permission= rootView.findViewById(R.id.btn_permission);
-        permission.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                eventPermission();
-            }
-        });
         return rootView;
     }
-
+/*
     private void backButton()
     {
         rootView.setFocusableInTouchMode(true);
@@ -78,7 +58,7 @@ public class ViewRequestView extends BaseView {
                 return false;
             }
         });
-    }
+    }*/
 
     private void changeFragment(ManagerFragmentRequest states) {
         this.states = ManagerFragmentRequest.setState(states);
@@ -100,6 +80,24 @@ public class ViewRequestView extends BaseView {
     {
         changeFragment(ManagerFragmentRequest.TOOL);
     }
+    @Optional
+    @OnClick(R.id.formats)
+    public void clickFormat(){
+        eventFormat();
+    }
+
+    @Optional
+    @OnClick(R.id.tools)
+    void clickTools(){
+        eventTool();
+    }
+    @Optional
+    @OnClick(R.id.permiss)
+    public void clickPermiss(){
+
+        eventPermission();
+    }
+
 
     private void showToolbar(View view)
     {

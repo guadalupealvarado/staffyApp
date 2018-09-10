@@ -14,7 +14,10 @@ public class MainRequiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_requi);
         MyAplication.setContext(this);
-        changeFragment(ManagerFragmentRequi.SHOWREQUI);
+        if(state!=null){
+
+            changeFragment(state);
+        }
     }
 
 

@@ -12,13 +12,16 @@ import android.support.v7.widget.Toolbar;
 
 import com.praxis.staffy.R;
 import com.praxis.staffy.ui.BaseView;
+import com.praxis.staffy.ui.managerFragment.manager.ManagerFragmentRequest;
+import com.praxis.staffy.ui.requests.ContainerRequest;
+
 import butterknife.BindView;
 import butterknife.OnClick;
 import butterknife.Optional;
 
 
 public class NewPermissionView extends BaseView {
-
+    public ManagerFragmentRequest states;
     @Nullable
     @BindView(R.id.ed_initialdate_fragment_new_permits)
     EditText edi_initialdate_fragment_newPermits;
@@ -50,9 +53,17 @@ public class NewPermissionView extends BaseView {
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                activity.finish();
+                goPermiss();
             }
         });
+    }
+    public void changeFragment(ManagerFragmentRequest states){
+        this.states=ManagerFragmentRequest.setState(states);
+        this.states.execute((ContainerRequest) getContext());
+
+    }
+    private void goPermiss() {
+        changeFragment(ManagerFragmentRequest.SHOWPERMIST);
     }
 
     @Optional

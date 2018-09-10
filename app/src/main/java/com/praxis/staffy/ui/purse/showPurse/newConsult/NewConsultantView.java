@@ -121,7 +121,7 @@ public class NewConsultantView extends BaseView {
     private void showToolConfiguration(View view) {
         Toolbar toolbar=view.findViewById(R.id.toolbar_fracment_newconsult);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Consultores");
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Agregar Consultor");
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(true);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back);
